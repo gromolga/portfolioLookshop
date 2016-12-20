@@ -8,6 +8,8 @@
   "dependencies": {
     "browser-sync": "^2.18.5",
     "gulp": "^3.9.1",
-    "gulp-sass": "^3.0.0"
+    "gulp-sass": "^3.0.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp.spritesmith": "^6.2.1"
   }
 }
