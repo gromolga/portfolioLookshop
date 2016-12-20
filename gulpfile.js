@@ -1,9 +1,10 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
-    browserSync = require('browser-sync');
+    browserSync = require('browser-sync'),
+    spritesmith = require('gulp.spritesmith');
 
 gulp.task('sass', function () {
-    return gulp.src('public/sass/**/*.sass')
+    return gulp.src('public/scss/**/*.scss')
         .pipe(sass())
         .pipe(gulp.dest('public/css'))
         .pipe(browserSync.reload({stream: true}))
@@ -19,5 +20,17 @@ gulp.task('browser-sync', function () {
 });
 
 gulp.task('watch', ['browser-sync', 'sass'], function () {
-    gulp.watch('public/sass/**/*.sass', ['sass']);
+    gulp.watch('public/scss/**/*.scss', ['sass']);
+});
+gulp.task('sprite', function() {
+    var spriteData =
+        gulp.src('./public/img/source-icons/**/*.*')
+            .pipe(spritesmith({
+                imgName: 'sprite.png',
+                cssName: 'sprite.css',
+                cssFormat: 'css',
+            }));
+
+    spriteData.img.pipe(gulp.dest('./public/img/sprites/'));
+    spriteData.css.pipe(gulp.dest('./public/scss/sprite-set/'));
 });
