@@ -1,25 +1,4 @@
-$orange-color: #fd926d;
-$turquoise-color: #4fafa0;
-$light-turquoise-color: #dfedee;
-$text-color: #999999;
-$grey-color-header: #b3b3b3;
-$brown-color-slider: #78645d;
-$brown-color-ratio-slider: #867a76;
-$gray-background-color: #ededed;
-$dark-color-header: #414141;
-$brown-color-banner: #4fafa0;
-$grey-color-banner: #6a6a6a;
-$grey-color-carousel: #555555;
-$dark-color-carousel: #4c4c4c;
-$dark-color-bag: #3d3d3d;
-$text-color-carousel: #373737;
-$gray-color-line: #d8d8d8;
-$lightblue-background-color: #f7f7f7;
-$darkgrey-background-color: #4c4c4b;
-$brown-color-light: #a59d9a;
-$grey-color-darklinks: #8b8887;
-$grey-color-lightlinks: #808080;
-
+@import "imports/_variables";
 body {
     font: 14px/1.5em Arial, sans-serif;
     color: $text-color;
@@ -55,6 +34,8 @@ h6 {
     line-height: 1.5;
 }
 
+@import "sprite.css";
+
 .clearfix:after {
     content: "";
     display: table;
@@ -75,5 +56,13 @@ h6 {
         display: inline-block;
     }
 }
+
+.icon {
+    display: inline-block;
+}
+
+@import "imports/_header";
+
+
 
 
