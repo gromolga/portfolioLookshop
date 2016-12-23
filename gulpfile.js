@@ -28,9 +28,10 @@ gulp.task('sprite', function() {
             .pipe(spritesmith({
                 imgName: 'sprite.png',
                 cssName: 'sprite.css',
+                imgPath: '../img/sprites/sprite.png',
                 cssFormat: 'css',
             }));
 
     spriteData.img.pipe(gulp.dest('./public/img/sprites/'));
-    spriteData.css.pipe(gulp.dest('./public/scss/sprite-set/'));
+    spriteData.css.pipe(gulp.dest('./public/css/'));
 });
