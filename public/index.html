@@ -7,92 +7,95 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 </head>
 <body>
     <header class="header">
-    <section class="top-header">
-        <div class="container clearfix">
-            <div class="left-col">
-                <span>custom care:888-23-4567</span>
+        <section class="top-header">
+            <div class="container clearfix">
+                <div class="left-col">
+                    <span>custom care:888-23-4567</span>
+                </div>
+                <div class="right-col">
+                    <ul class="dropdown-menu inline-block-list">
+                        <li class="static-item">
+                            <a href="#">$ us</a>
+                            <ul class="dropdown-items hide-dropdown-items">
+                                <li><a href="#">€ us</a></li>
+                                <li><a href="#">Rub us</a></li>
+                                <li><a href="#">Ua us</a></li>
+                            </ul>
+                        </li>
+                        <li class="account"><a href="">My account</a></li>
+                        <li class="search disabled">
+                            <label class="search-icon" for="search"></label>
+                            <input id="search" type="search" placeholder="Введите Ваш запрос">
+                            <ul id="search-result" class="slide-down disabled">
+                                <li><a href="">Result 1</a></li>
+                                <li><a href="">Result 2</a></li>
+                                <li><a href="">Result 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="right-col">
-                <ul class="dropdown-menu inline-block-list">
-                    <li class="static-item">
-                        <a href="">$ us</a>
-                        <ul class="dropdown-items">
-                            <li><a href="">€ us</a></li>
-                            <li><a href="">Rub us</a></li>
-                            <li><a href="">Ua us</a></li>
-                        </ul>
-                    </li>
-                    <li class="account"><a href="">My account</a></li>
-                    <li class="search disabled">
-                        <label class="search-icon" for="search"></label>
-                        <input id="search" type="search" placeholder="Введите Ваш запрос">
-                        <ul id="search-result" class="slide-down disabled">
-                            <li><a href="">Result 1</a></li>
-                            <li><a href="">Result 2</a></li>
-                            <li><a href="">Result 3</a></li>
-                        </ul>
-                    </li>
-                </ul>
+        </section>
+        <section class="main-header">
+            <div class="container clearfix">
+                <div class="logo"><a href=""><img id ="logo" src="img/logo/logo-small.png" alt="lookshop"
+                                                  data-large="img/logo/logo-large.png" data-small="img/logo/logo-small.png"></a><h1>lookshop</h1></div>
+                <div class="cart-wrapper">
+                    <a href="">Your cart</a>
+                    <a href="">0 items  |  $ 0</a>
+                </div>
+                <nav class="main-header-nav">
+                    <a class="media-nav-btn">Menu</a>
+                    <ul class="inline-block-list main-dropdown-menu">
+                        <li><a class="nav-btn">new</a>
+                            <ul class="submenu">
+                                <li><a href="">women</a></li>
+                                <li><a href="">men</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav-btn">designers</a>
+                            <ul class="submenu">
+                                <li><a href="">Oksana Mukha</a></li>
+                                <li><a href="">Giorgio Armani</a></li>
+                                <li><a href="">Chanel</a></li>
+                                <li><a href="">Gucci</a></li>
+                                <li><a href="">Yudashkin</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav-btn">women</a>
+                            <ul class="submenu">
+                                <li><a href="">classic</a></li>
+                                <li><a href="">sport</a></li>
+                                <li><a href="">casual</a></li>
+                                <li><a href="">smart-casual</a></li>
+                                <li><a href="">business-casual</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav-btn">men</a>
+                            <ul class="submenu">
+                                <li><a href="">classic</a></li>
+                                <li><a href="">sport</a></li>
+                                <li><a href="">casual</a></li>
+                                <li><a href="">smart-casual</a></li>
+                                <li><a href="">business-casual</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav-btn">clearence</a>
+                            <ul class="submenu">
+                                <li><a href="">men</a></li>
+                                <li><a href="">women</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </div>
-    </section>
-    <section class="main-header">
-        <div class="container clearfix">
-            <div class="logo"><a href=""><img id ="logo" src="img/logo-small.png" alt="lookshop"
-                                              data-large="img/logo-large.png" data-small="img/logo-small.png"></a><h1>lookshop</h1></div>
-            <div class="cart-wrapper">
-                <a href="">Your cart</a>
-                <a href="">0 items  |  $ 0</a>
-            </div>
-            <nav class="main-header-nav">
-                <a class="media-nav-btn">Menu</a>
-                <ul class="inline-block-list main-dropdown-menu">
-                    <li><a class="nav-btn">new</a>
-                        <ul class="submenu">
-                            <li><a href="">women</a></li>
-                            <li><a href="">men</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="nav-btn">designers</a>
-                        <ul class="submenu">
-                            <li><a href="">Oksana Mukha</a></li>
-                            <li><a href="">Giorgio Armani</a></li>
-                            <li><a href="">Chanel</a></li>
-                            <li><a href="">Gucci</a></li>
-                            <li><a href="">Yudashkin</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="nav-btn">women</a>
-                        <ul class="submenu">
-                            <li><a href="">classic</a></li>
-                            <li><a href="">sport</a></li>
-                            <li><a href="">casual</a></li>
-                            <li><a href="">smart-casual</a></li>
-                            <li><a href="">business-casual</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="nav-btn">men</a>
-                        <ul class="submenu">
-                            <li><a href="">classic</a></li>
-                            <li><a href="">sport</a></li>
-                            <li><a href="">casual</a></li>
-                            <li><a href="">smart-casual</a></li>
-                            <li><a href="">business-casual</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="nav-btn">clearence</a>
-                        <ul class="submenu">
-                            <li><a href="">men</a></li>
-                            <li><a href="">women</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </section>
-</header>
+        </section>
+    </header>
+    <script src="./js/functions.js"></script>
+    <script src="./js/common.js"></script>
 </body>
 </html>
