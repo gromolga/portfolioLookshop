@@ -502,3 +502,23 @@ h6 {
     top: 0px; }
   .cart-wrapper a:last-child {
     line-height: 40px; } }
+
+.bx-wrapper .bx-prev {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: -159px -120px; }
+
+.bx-wrapper .bx-prev:hover {
+  background-position: -159px -120px; }
+
+.bx-wrapper .bx-next {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: -159px -102px; }
+
+.bx-wrapper .bx-next:hover {
+  background-position: -159px -120px; }
+
+.bx-wrapper .bx-controls-direction a {
+  height: 18px; }
+
+.bx-wrapper .bx-loading {
+  background-image: url(../img/sprites/sprite.png); }
