@@ -59,6 +59,24 @@ $(document).ready(function(){
             logo.attr("src", logo.data("small"));
         }
     });
+
+    $(".bxslider").bxSlider();
+
+    function resizeSliderImage(width, slideClassName) {
+        var slides = $(slideClassName);
+        $.each(slides, function (index, slide) {
+            slide = $(slide);
+            if (width <= 768){
+                slide.attr("src", slide.data("small"));
+            } else {
+                slide.attr("src", slide.data("large"));
+            }
+        })
+    }
+
+
+
+
 });
 
 
