@@ -1,6 +1,6 @@
 @import "./imports/_variables";
 @import "./imports/_sprite";
-@include sprites($spritesheet-sprites);
+@import "../../node_modules/bourbon/app/assets/stylesheets/bourbon";
 body {
     font: 14px/1.5em Arial, sans-serif;
     color: $text-color;

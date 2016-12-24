@@ -29,6 +29,10 @@
         color: #fff;
         text-decoration: none;
     }
+    >li:first-child, >li:last-child{
+        border-left: 1px solid $grey-color-border;
+        border-right: 1px solid $grey-color-border;
+    }
 }
 .static-item {
     position: relative;
@@ -42,18 +46,10 @@
     }
 }
 .dropdown-items {
-    display: none;
     padding: 0;
     a {
         padding: 5px 10px;
         line-height: 1.2em;
-    }
-}
-.dropdown-menu {
-    .dropdown-items {
-        li:nth-child(n) {
-            border: none;
-        }
     }
 }
 .static-item:hover {
@@ -78,11 +74,9 @@
         &:before {
             content: "";
             position: absolute;
+            top: 13px;
             left: 10px;
-            height: 20px;
-            width: 20px;
-            background-image: url("../img/sprites/sprite.png");
-            background-position: -86px -118px;
+            @include sprite($account-small);
         }
     }
 }
@@ -96,13 +90,10 @@
         &:after {
             content: '';
             position: relative;
-            top: 6px;
+            top: 11px;
             margin-left: 10px;
             display: block;
-            height: 25px;
-            width: 15px;
-            background-image: url("../img/sprites/sprite.png");
-            background-position: -111px -62px;
+            @include sprite($search-small);
             cursor: pointer;
         }
     }
@@ -120,23 +111,13 @@
         display: none;
     }
 }
-.dropdown-menu {
-    .search {
-        .slide-down {
-            li {
-                width: 100%;
-            }
-        }
-    }
-}
 .slide-down {
     position: absolute;
-    right: -2px;
-    width: 305px;
+    right: -1px;
+    width: 302px;
     background-color: #fff;
     z-index: 20;
     a  {
-        padding: 5px 15px;
         font-size: 14px;
         text-transform: capitalize;
         border: 1px solid #444444;
@@ -158,15 +139,11 @@
 .logo{
     float: left;
     padding-top: 20px;
-    h1{
+    strong{
         display: inline-block;
         font-size: 0;
         line-height: 0;
         text-indent: -9999px;
-    }
-    a{
-        text-decoration: none;
-        color: #000;
     }
     img{
         font-size: 20px;
@@ -203,10 +180,7 @@
                 position: absolute;
                 top: 5px;
                 left: 10px;
-                height: 20px;
-                width: 22px;
-                background-image: url("../img/sprites/sprite.png");
-                background-position: -91px -68px;
+                @include sprite($bag-small);
                 z-index: 10;
             }
         }
@@ -239,7 +213,6 @@
             position: relative;
             z-index: 10;
             >a{
-                position: relative;
                 display: block;
                 padding: 20px 40px 0 0;
                 line-height: 30px;
@@ -263,21 +236,21 @@
     display: none;
     left: -20px;
     padding-left: 20px;
-    border-radius: 10px;
+    @include border-top-radius(10px);
+    @include border-right-radius(10px);
+    @include border-bottom-radius(10px);
+    @include border-left-radius(10px);
     background-color: rgba(255, 255, 255, 0.7);
     >li{
         display: block;
         width: 150px;
         >a{
-            display: block;
             line-height: 30px;
             text-decoration: none;
             color: #000;
         }
     }
 }
-
-
 @media only screen and (max-device-width: 860px) {
     .main-header-nav .inline-block-list > li > a {
         padding-right: 25px;
@@ -291,17 +264,8 @@
         display: none;
     }
     .static-item .dropdown-items{
-        position: absolute;
         display: block;
-        width: 100%;
-        background-color: rgba(0,0,0,.7);
-        color: #fff;
-        z-index: 20;
     }
-
-
-
-
     .main-header-nav{
         float: none;
         clear: both;
@@ -323,7 +287,10 @@
     .main-header-nav .submenu{
         position: static;
         padding-left: 40px;
-        border-radius: 0;
+        @include border-top-radius(0);
+        @include border-right-radius(0);
+        @include border-bottom-radius(0);
+        @include border-left-radius(0);
     }
     .main-header-nav .inline-block-list>li{
         display: block;
@@ -334,8 +301,6 @@
     .cart-wrapper{
         padding-bottom: 20px;
     }
-
-
 }
 @media only screen and (max-device-width: 640px) {
     .top-header .container {
@@ -388,9 +353,7 @@
     .top-header .account a:before {
         top: 24px;
         left: -40px;
-        height: 38px;
-        width: 40px;
-        background-position: -51px 0px;
+        @include sprite($account-large);
     }
     .search {
         float: right;
@@ -400,18 +363,12 @@
     .search label:after {
         top: 23px;
         left: -5px;
-        height: 40px;
-        width: 40px;
-        background-position: 0px -49px;
+        @include sprite($search-lagre);
     }
     .search input {
         height: 80px;
         width: 470px;
         font-size: 30px;
-    }
-    .search label:before{
-        top: 35px;
-        right: 15px;
     }
     .slide-down {
         top: 84px;
@@ -420,12 +377,10 @@
         padding: 0;
         text-align: left;
     }
-    .logo, .main-header-nav{
-        float: none;
-        text-align: center;
-    }
     .logo{
+        float: none;
         padding-bottom: 50px;
+        text-align: center;
     }
     .cart-wrapper{
         float: none;
@@ -454,19 +409,11 @@
         top: 30px;
         right: 20px;
         height: 30px;
-        width: 35px;
-        background-position: -126px 0px;
+        width: 33px;
     }
     .main-header-nav .media-nav-btn{
-        text-align: left;
         font-size: 30px;
         padding: 35px 20px;
-    }
-    .main-header-nav .nav-btn{
-        text-align: left;
-    }
-    .main-header-nav .submenu{
-        text-align: left;
     }
 }
 @media only screen and (max-device-width: 600px) {
@@ -489,28 +436,6 @@
     .main-header-nav>a:after{
         top: 15px;
         right: 15px;
-    }
-    .main-social .left-col input{
-        padding: 12px 60px 15px 15px;
-    }
-    .main-social .left-col .submit-button{
-        height: 65px;
-        width: 65px;
-        background-position: -218px -16px
-    }
-    .main-social-icons li a{
-        height: 60px;
-        width: 60px;
-    }
-    .main-social-icons a::after{
-        top: 5px;
-        left: 5px;
-    }
-    .main-social .right-col span{
-        line-height: 60px;
-    }
-    .main-social .right-col{
-        width: 335px;
     }
 }
 @media only screen and (max-device-width: 530px) {
@@ -542,9 +467,7 @@
     .top-header .account a:before {
         top: 19px;
         left: -20px;
-        height: 20px;
-        width: 20px;
-        background-position: -86px -121px;
+        @include sprite($account-small);
     }
     .search {
         height: 50px;
@@ -558,15 +481,10 @@
         top: 52px;
         width: 300px;
     }
-    .search label:before {
-        top: 13px;
-    }
     .search label:after {
-        top: 16px;
+        top: 18px;
         left: 5px;
-        height: 15px;
-        width: 15px;
-        background-position: -111px -68px;
+        @include sprite($search-small);
     }
     .logo{
         padding: 0 0 10px 0;
