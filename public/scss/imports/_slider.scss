@@ -1,20 +1,15 @@
-.bx-wrapper .bx-prev {
-    background-image: url(../img/sprites/sprite.png);
-    background-position: -159px -120px;
+.bx-wrapper a.bx-prev {
+    @include  sprite($arrow-medium-left);
 }
 .bx-wrapper .bx-prev:hover{
-    background-position: -159px -120px;
+    @include sprite-position($arrow-medium-left);
 }
-.bx-wrapper .bx-next {
-    background-image: url(../img/sprites/sprite.png);
-    background-position: -159px -102px;
+.bx-wrapper a.bx-next {
+    @include  sprite($arrow-medium-right);
 }
 .bx-wrapper .bx-next:hover{
-    background-position: -159px -120px;
-}
-.bx-wrapper .bx-controls-direction a{
-    height: 18px;
+    @include sprite-position($arrow-medium-right);
 }
 .bx-wrapper .bx-loading{
-    background-image: url(../img/sprites/sprite.png);
+    background-image: none;
 }
