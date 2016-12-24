@@ -1,0 +1,448 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$account-large-name: 'account-large';
+$account-large-x: 51px;
+$account-large-y: 0px;
+$account-large-offset-x: -51px;
+$account-large-offset-y: 0px;
+$account-large-width: 40px;
+$account-large-height: 38px;
+$account-large-total-width: 173px;
+$account-large-total-height: 142px;
+$account-large-image: '../img/sprites/sprite.png';
+$account-large: (51px, 0px, -51px, 0px, 40px, 38px, 173px, 142px, '../img/sprites/sprite.png', 'account-large', );
+$account-small-name: 'account-small';
+$account-small-x: 86px;
+$account-small-y: 121px;
+$account-small-offset-x: -86px;
+$account-small-offset-y: -121px;
+$account-small-width: 14px;
+$account-small-height: 13px;
+$account-small-total-width: 173px;
+$account-small-total-height: 142px;
+$account-small-image: '../img/sprites/sprite.png';
+$account-small: (86px, 121px, -86px, -121px, 14px, 13px, 173px, 142px, '../img/sprites/sprite.png', 'account-small', );
+$arrow-large-left-hover-name: 'arrow-large-left-hover';
+$arrow-large-left-hover-x: 159px;
+$arrow-large-left-hover-y: 0px;
+$arrow-large-left-hover-offset-x: -159px;
+$arrow-large-left-hover-offset-y: 0px;
+$arrow-large-left-hover-width: 14px;
+$arrow-large-left-hover-height: 27px;
+$arrow-large-left-hover-total-width: 173px;
+$arrow-large-left-hover-total-height: 142px;
+$arrow-large-left-hover-image: '../img/sprites/sprite.png';
+$arrow-large-left-hover: (159px, 0px, -159px, 0px, 14px, 27px, 173px, 142px, '../img/sprites/sprite.png', 'arrow-large-left-hover', );
+$arrow-large-left-name: 'arrow-large-left';
+$arrow-large-left-x: 105px;
+$arrow-large-left-y: 87px;
+$arrow-large-left-offset-x: -105px;
+$arrow-large-left-offset-y: -87px;
+$arrow-large-left-width: 14px;
+$arrow-large-left-height: 27px;
+$arrow-large-left-total-width: 173px;
+$arrow-large-left-total-height: 142px;
+$arrow-large-left-image: '../img/sprites/sprite.png';
+$arrow-large-left: (105px, 87px, -105px, -87px, 14px, 27px, 173px, 142px, '../img/sprites/sprite.png', 'arrow-large-left', );
+$arrow-large-right-hover-name: 'arrow-large-right-hover';
+$arrow-large-right-hover-x: 159px;
+$arrow-large-right-hover-y: 54px;
+$arrow-large-right-hover-offset-x: -159px;
+$arrow-large-right-hover-offset-y: -54px;
+$arrow-large-right-hover-width: 14px;
+$arrow-large-right-hover-height: 27px;
+$arrow-large-right-hover-total-width: 173px;
+$arrow-large-right-hover-total-height: 142px;
+$arrow-large-right-hover-image: '../img/sprites/sprite.png';
+$arrow-large-right-hover: (159px, 54px, -159px, -54px, 14px, 27px, 173px, 142px, '../img/sprites/sprite.png', 'arrow-large-right-hover', );
+$arrow-large-right-name: 'arrow-large-right';
+$arrow-large-right-x: 159px;
+$arrow-large-right-y: 27px;
+$arrow-large-right-offset-x: -159px;
+$arrow-large-right-offset-y: -27px;
+$arrow-large-right-width: 14px;
+$arrow-large-right-height: 27px;
+$arrow-large-right-total-width: 173px;
+$arrow-large-right-total-height: 142px;
+$arrow-large-right-image: '../img/sprites/sprite.png';
+$arrow-large-right: (159px, 27px, -159px, -27px, 14px, 27px, 173px, 142px, '../img/sprites/sprite.png', 'arrow-large-right', );
+$arrow-medium-left-name: 'arrow-medium-left';
+$arrow-medium-left-x: 159px;
+$arrow-medium-left-y: 120px;
+$arrow-medium-left-offset-x: -159px;
+$arrow-medium-left-offset-y: -120px;
+$arrow-medium-left-width: 12px;
+$arrow-medium-left-height: 18px;
+$arrow-medium-left-total-width: 173px;
+$arrow-medium-left-total-height: 142px;
+$arrow-medium-left-image: '../img/sprites/sprite.png';
+$arrow-medium-left: (159px, 120px, -159px, -120px, 12px, 18px, 173px, 142px, '../img/sprites/sprite.png', 'arrow-medium-left', );
+$arrow-medium-right-name: 'arrow-medium-right';
+$arrow-medium-right-x: 159px;
+$arrow-medium-right-y: 102px;
+$arrow-medium-right-offset-x: -159px;
+$arrow-medium-right-offset-y: -102px;
+$arrow-medium-right-width: 12px;
+$arrow-medium-right-height: 18px;
+$arrow-medium-right-total-width: 173px;
+$arrow-medium-right-total-height: 142px;
+$arrow-medium-right-image: '../img/sprites/sprite.png';
+$arrow-medium-right: (159px, 102px, -159px, -102px, 12px, 18px, 173px, 142px, '../img/sprites/sprite.png', 'arrow-medium-right', );
+$arrow-small-left-name: 'arrow-small-left';
+$arrow-small-left-x: 100px;
+$arrow-small-left-y: 121px;
+$arrow-small-left-offset-x: -100px;
+$arrow-small-left-offset-y: -121px;
+$arrow-small-left-width: 8px;
+$arrow-small-left-height: 12px;
+$arrow-small-left-total-width: 173px;
+$arrow-small-left-total-height: 142px;
+$arrow-small-left-image: '../img/sprites/sprite.png';
+$arrow-small-left: (100px, 121px, -100px, -121px, 8px, 12px, 173px, 142px, '../img/sprites/sprite.png', 'arrow-small-left', );
+$arrow-small-right-name: 'arrow-small-right';
+$arrow-small-right-x: 153px;
+$arrow-small-right-y: 108px;
+$arrow-small-right-offset-x: -153px;
+$arrow-small-right-offset-y: -108px;
+$arrow-small-right-width: 5px;
+$arrow-small-right-height: 8px;
+$arrow-small-right-total-width: 173px;
+$arrow-small-right-total-height: 142px;
+$arrow-small-right-image: '../img/sprites/sprite.png';
+$arrow-small-right: (153px, 108px, -153px, -108px, 5px, 8px, 173px, 142px, '../img/sprites/sprite.png', 'arrow-small-right', );
+$bag-large-name: 'bag-large';
+$bag-large-x: 0px;
+$bag-large-y: 0px;
+$bag-large-offset-x: 0px;
+$bag-large-offset-y: 0px;
+$bag-large-width: 51px;
+$bag-large-height: 49px;
+$bag-large-total-width: 173px;
+$bag-large-total-height: 142px;
+$bag-large-image: '../img/sprites/sprite.png';
+$bag-large: (0px, 0px, 0px, 0px, 51px, 49px, 173px, 142px, '../img/sprites/sprite.png', 'bag-large', );
+$bag-light-name: 'bag-light';
+$bag-light-x: 126px;
+$bag-light-y: 58px;
+$bag-light-offset-x: -126px;
+$bag-light-offset-y: -58px;
+$bag-light-width: 30px;
+$bag-light-height: 29px;
+$bag-light-total-width: 173px;
+$bag-light-total-height: 142px;
+$bag-light-image: '../img/sprites/sprite.png';
+$bag-light: (126px, 58px, -126px, -58px, 30px, 29px, 173px, 142px, '../img/sprites/sprite.png', 'bag-light', );
+$bag-small-name: 'bag-small';
+$bag-small-x: 91px;
+$bag-small-y: 68px;
+$bag-small-offset-x: -91px;
+$bag-small-offset-y: -68px;
+$bag-small-width: 20px;
+$bag-small-height: 19px;
+$bag-small-total-width: 173px;
+$bag-small-total-height: 142px;
+$bag-small-image: '../img/sprites/sprite.png';
+$bag-small: (91px, 68px, -91px, -68px, 20px, 19px, 173px, 142px, '../img/sprites/sprite.png', 'bag-small', );
+$burger-large-name: 'burger-large';
+$burger-large-x: 126px;
+$burger-large-y: 0px;
+$burger-large-offset-x: -126px;
+$burger-large-offset-y: 0px;
+$burger-large-width: 33px;
+$burger-large-height: 30px;
+$burger-large-total-width: 173px;
+$burger-large-total-height: 142px;
+$burger-large-image: '../img/sprites/sprite.png';
+$burger-large: (126px, 0px, -126px, 0px, 33px, 30px, 173px, 142px, '../img/sprites/sprite.png', 'burger-large', );
+$burger-small-name: 'burger-small';
+$burger-small-x: 22px;
+$burger-small-y: 121px;
+$burger-small-offset-x: -22px;
+$burger-small-offset-y: -121px;
+$burger-small-width: 22px;
+$burger-small-height: 20px;
+$burger-small-total-width: 173px;
+$burger-small-total-height: 142px;
+$burger-small-image: '../img/sprites/sprite.png';
+$burger-small: (22px, 121px, -22px, -121px, 22px, 20px, 173px, 142px, '../img/sprites/sprite.png', 'burger-small', );
+$home-name: 'home';
+$home-x: 142px;
+$home-y: 108px;
+$home-offset-x: -142px;
+$home-offset-y: -108px;
+$home-width: 11px;
+$home-height: 10px;
+$home-total-width: 173px;
+$home-total-height: 142px;
+$home-image: '../img/sprites/sprite.png';
+$home: (142px, 108px, -142px, -108px, 11px, 10px, 173px, 142px, '../img/sprites/sprite.png', 'home', );
+$letter-name: 'letter';
+$letter-x: 126px;
+$letter-y: 108px;
+$letter-offset-x: -126px;
+$letter-offset-y: -108px;
+$letter-width: 16px;
+$letter-height: 12px;
+$letter-total-width: 173px;
+$letter-total-height: 142px;
+$letter-image: '../img/sprites/sprite.png';
+$letter: (126px, 108px, -126px, -108px, 16px, 12px, 173px, 142px, '../img/sprites/sprite.png', 'letter', );
+$search-lagre-name: 'search-lagre';
+$search-lagre-x: 0px;
+$search-lagre-y: 49px;
+$search-lagre-offset-x: 0px;
+$search-lagre-offset-y: -49px;
+$search-lagre-width: 38px;
+$search-lagre-height: 38px;
+$search-lagre-total-width: 173px;
+$search-lagre-total-height: 142px;
+$search-lagre-image: '../img/sprites/sprite.png';
+$search-lagre: (0px, 49px, 0px, -49px, 38px, 38px, 173px, 142px, '../img/sprites/sprite.png', 'search-lagre', );
+$search-small-name: 'search-small';
+$search-small-x: 111px;
+$search-small-y: 68px;
+$search-small-offset-x: -111px;
+$search-small-offset-y: -68px;
+$search-small-width: 15px;
+$search-small-height: 15px;
+$search-small-total-width: 173px;
+$search-small-total-height: 142px;
+$search-small-image: '../img/sprites/sprite.png';
+$search-small: (111px, 68px, -111px, -68px, 15px, 15px, 173px, 142px, '../img/sprites/sprite.png', 'search-small', );
+$facebook-dark-large-name: 'facebook-dark-large';
+$facebook-dark-large-x: 73px;
+$facebook-dark-large-y: 49px;
+$facebook-dark-large-offset-x: -73px;
+$facebook-dark-large-offset-y: -49px;
+$facebook-dark-large-width: 15px;
+$facebook-dark-large-height: 30px;
+$facebook-dark-large-total-width: 173px;
+$facebook-dark-large-total-height: 142px;
+$facebook-dark-large-image: '../img/sprites/sprite.png';
+$facebook-dark-large: (73px, 49px, -73px, -49px, 15px, 30px, 173px, 142px, '../img/sprites/sprite.png', 'facebook-dark-large', );
+$facebook-dark-small-name: 'facebook-dark-small';
+$facebook-dark-small-x: 148px;
+$facebook-dark-small-y: 87px;
+$facebook-dark-small-offset-x: -148px;
+$facebook-dark-small-offset-y: -87px;
+$facebook-dark-small-width: 9px;
+$facebook-dark-small-height: 18px;
+$facebook-dark-small-total-width: 173px;
+$facebook-dark-small-total-height: 142px;
+$facebook-dark-small-image: '../img/sprites/sprite.png';
+$facebook-dark-small: (148px, 87px, -148px, -87px, 9px, 18px, 173px, 142px, '../img/sprites/sprite.png', 'facebook-dark-small', );
+$facebook-light-small-name: 'facebook-light-small';
+$facebook-light-small-x: 0px;
+$facebook-light-small-y: 87px;
+$facebook-light-small-offset-x: 0px;
+$facebook-light-small-offset-y: -87px;
+$facebook-light-small-width: 35px;
+$facebook-light-small-height: 34px;
+$facebook-light-small-total-width: 173px;
+$facebook-light-small-total-height: 142px;
+$facebook-light-small-image: '../img/sprites/sprite.png';
+$facebook-light-small: (0px, 87px, 0px, -87px, 35px, 34px, 173px, 142px, '../img/sprites/sprite.png', 'facebook-light-small', );
+$facebook-medium-small-name: 'facebook-medium-small';
+$facebook-medium-small-x: 159px;
+$facebook-medium-small-y: 81px;
+$facebook-medium-small-offset-x: -159px;
+$facebook-medium-small-offset-y: -81px;
+$facebook-medium-small-width: 11px;
+$facebook-medium-small-height: 21px;
+$facebook-medium-small-total-width: 173px;
+$facebook-medium-small-total-height: 142px;
+$facebook-medium-small-image: '../img/sprites/sprite.png';
+$facebook-medium-small: (159px, 81px, -159px, -81px, 11px, 21px, 173px, 142px, '../img/sprites/sprite.png', 'facebook-medium-small', );
+$google-name: 'google';
+$google-x: 91px;
+$google-y: 34px;
+$google-offset-x: -91px;
+$google-offset-y: -34px;
+$google-width: 35px;
+$google-height: 34px;
+$google-total-width: 173px;
+$google-total-height: 142px;
+$google-image: '../img/sprites/sprite.png';
+$google: (91px, 34px, -91px, -34px, 35px, 34px, 173px, 142px, '../img/sprites/sprite.png', 'google', );
+$pinterest-dark-name: 'pinterest-dark';
+$pinterest-dark-x: 0px;
+$pinterest-dark-y: 121px;
+$pinterest-dark-offset-x: 0px;
+$pinterest-dark-offset-y: -121px;
+$pinterest-dark-width: 22px;
+$pinterest-dark-height: 21px;
+$pinterest-dark-total-width: 173px;
+$pinterest-dark-total-height: 142px;
+$pinterest-dark-image: '../img/sprites/sprite.png';
+$pinterest-dark: (0px, 121px, 0px, -121px, 22px, 21px, 173px, 142px, '../img/sprites/sprite.png', 'pinterest-dark', );
+$pinterest-light-name: 'pinterest-light';
+$pinterest-light-x: 91px;
+$pinterest-light-y: 0px;
+$pinterest-light-offset-x: -91px;
+$pinterest-light-offset-y: 0px;
+$pinterest-light-width: 35px;
+$pinterest-light-height: 34px;
+$pinterest-light-total-width: 173px;
+$pinterest-light-total-height: 142px;
+$pinterest-light-image: '../img/sprites/sprite.png';
+$pinterest-light: (91px, 0px, -91px, 0px, 35px, 34px, 173px, 142px, '../img/sprites/sprite.png', 'pinterest-light', );
+$pinterest-medium-name: 'pinterest-medium';
+$pinterest-medium-x: 126px;
+$pinterest-medium-y: 87px;
+$pinterest-medium-offset-x: -126px;
+$pinterest-medium-offset-y: -87px;
+$pinterest-medium-width: 22px;
+$pinterest-medium-height: 21px;
+$pinterest-medium-total-width: 173px;
+$pinterest-medium-total-height: 142px;
+$pinterest-medium-image: '../img/sprites/sprite.png';
+$pinterest-medium: (126px, 87px, -126px, -87px, 22px, 21px, 173px, 142px, '../img/sprites/sprite.png', 'pinterest-medium', );
+$tumblr-name: 'tumblr';
+$tumblr-x: 38px;
+$tumblr-y: 49px;
+$tumblr-offset-x: -38px;
+$tumblr-offset-y: -49px;
+$tumblr-width: 35px;
+$tumblr-height: 34px;
+$tumblr-total-width: 173px;
+$tumblr-total-height: 142px;
+$tumblr-image: '../img/sprites/sprite.png';
+$tumblr: (38px, 49px, -38px, -49px, 35px, 34px, 173px, 142px, '../img/sprites/sprite.png', 'tumblr', );
+$twitter-dark-large-name: 'twitter-dark-large';
+$twitter-dark-large-x: 126px;
+$twitter-dark-large-y: 30px;
+$twitter-dark-large-offset-x: -126px;
+$twitter-dark-large-offset-y: -30px;
+$twitter-dark-large-width: 33px;
+$twitter-dark-large-height: 28px;
+$twitter-dark-large-total-width: 173px;
+$twitter-dark-large-total-height: 142px;
+$twitter-dark-large-image: '../img/sprites/sprite.png';
+$twitter-dark-large: (126px, 30px, -126px, -30px, 33px, 28px, 173px, 142px, '../img/sprites/sprite.png', 'twitter-dark-large', );
+$twitter-dark-small-name: 'twitter-dark-small';
+$twitter-dark-small-x: 44px;
+$twitter-dark-small-y: 121px;
+$twitter-dark-small-offset-x: -44px;
+$twitter-dark-small-offset-y: -121px;
+$twitter-dark-small-width: 21px;
+$twitter-dark-small-height: 17px;
+$twitter-dark-small-total-width: 173px;
+$twitter-dark-small-total-height: 142px;
+$twitter-dark-small-image: '../img/sprites/sprite.png';
+$twitter-dark-small: (44px, 121px, -44px, -121px, 21px, 17px, 173px, 142px, '../img/sprites/sprite.png', 'twitter-dark-small', );
+$twitter-light-small-name: 'twitter-light-small';
+$twitter-light-small-x: 70px;
+$twitter-light-small-y: 87px;
+$twitter-light-small-offset-x: -70px;
+$twitter-light-small-offset-y: -87px;
+$twitter-light-small-width: 35px;
+$twitter-light-small-height: 34px;
+$twitter-light-small-total-width: 173px;
+$twitter-light-small-total-height: 142px;
+$twitter-light-small-image: '../img/sprites/sprite.png';
+$twitter-light-small: (70px, 87px, -70px, -87px, 35px, 34px, 173px, 142px, '../img/sprites/sprite.png', 'twitter-light-small', );
+$twitter-medium-small-name: 'twitter-medium-small';
+$twitter-medium-small-x: 65px;
+$twitter-medium-small-y: 121px;
+$twitter-medium-small-offset-x: -65px;
+$twitter-medium-small-offset-y: -121px;
+$twitter-medium-small-width: 21px;
+$twitter-medium-small-height: 17px;
+$twitter-medium-small-total-width: 173px;
+$twitter-medium-small-total-height: 142px;
+$twitter-medium-small-image: '../img/sprites/sprite.png';
+$twitter-medium-small: (65px, 121px, -65px, -121px, 21px, 17px, 173px, 142px, '../img/sprites/sprite.png', 'twitter-medium-small', );
+$vimeo-name: 'vimeo';
+$vimeo-x: 35px;
+$vimeo-y: 87px;
+$vimeo-offset-x: -35px;
+$vimeo-offset-y: -87px;
+$vimeo-width: 35px;
+$vimeo-height: 34px;
+$vimeo-total-width: 173px;
+$vimeo-total-height: 142px;
+$vimeo-image: '../img/sprites/sprite.png';
+$vimeo: (35px, 87px, -35px, -87px, 35px, 34px, 173px, 142px, '../img/sprites/sprite.png', 'vimeo', );
+$spritesheet-width: 173px;
+$spritesheet-height: 142px;
+$spritesheet-image: '../img/sprites/sprite.png';
+$spritesheet-sprites: ($account-large, $account-small, $arrow-large-left-hover, $arrow-large-left, $arrow-large-right-hover, $arrow-large-right, $arrow-medium-left, $arrow-medium-right, $arrow-small-left, $arrow-small-right, $bag-large, $bag-light, $bag-small, $burger-large, $burger-small, $home, $letter, $search-lagre, $search-small, $facebook-dark-large, $facebook-dark-small, $facebook-light-small, $facebook-medium-small, $google, $pinterest-dark, $pinterest-light, $pinterest-medium, $tumblr, $twitter-dark-large, $twitter-dark-small, $twitter-light-small, $twitter-medium-small, $vimeo, );
+$spritesheet: (173px, 142px, '../img/sprites/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
