@@ -1,4 +1,6 @@
-@import "imports/_variables";
+@import "./imports/_variables";
+@import "./imports/_sprite";
+@import "../../node_modules/bourbon/app/assets/stylesheets/bourbon";
 body {
     font: 14px/1.5em Arial, sans-serif;
     color: $text-color;
@@ -34,8 +36,6 @@ h6 {
     line-height: 1.5;
 }
 
-@import "sprite.css";
-
 .clearfix:after {
     content: "";
     display: table;
@@ -62,6 +62,7 @@ h6 {
 }
 
 @import "imports/_header";
+@import "imports/_slider";
 
 
 

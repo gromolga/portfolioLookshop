@@ -1,0 +1,15 @@
+.bx-wrapper a.bx-prev {
+    @include  sprite($arrow-medium-left);
+}
+.bx-wrapper .bx-prev:hover{
+    @include sprite-position($arrow-medium-left);
+}
+.bx-wrapper a.bx-next {
+    @include  sprite($arrow-medium-right);
+}
+.bx-wrapper .bx-next:hover{
+    @include sprite-position($arrow-medium-right);
+}
+.bx-wrapper .bx-loading{
+    background-image: none;
+}
