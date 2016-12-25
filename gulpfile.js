@@ -27,11 +27,11 @@ gulp.task('sprite', function() {
         gulp.src('./public/img/source-icons/**/*.*')
             .pipe(spritesmith({
                 imgName: 'sprite.png',
-                cssName: 'sprite.css',
+                cssName: '_sprite.scss',
                 imgPath: '../img/sprites/sprite.png',
-                cssFormat: 'css',
+                cssFormat: 'scss',
             }));
 
     spriteData.img.pipe(gulp.dest('./public/img/sprites/'));
-    spriteData.css.pipe(gulp.dest('./public/css/'));
+    spriteData.css.pipe(gulp.dest('./public/scss/imports/'));
 });

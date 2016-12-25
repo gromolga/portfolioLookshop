@@ -6,6 +6,7 @@
   "repository": "git@github.com:gromolga/portfolioLookshop.git",
   "author": "gromolga <gromolga.work@gmail.com>",
   "dependencies": {
+    "bourbon": "^4.2.7",
     "browser-sync": "^2.18.5",
     "gulp": "^3.9.1",
     "gulp-sass": "^3.0.0",
