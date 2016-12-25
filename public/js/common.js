@@ -73,8 +73,10 @@ $(document).ready(function(){
             }
         })
     }
-
-
+    resizeSliderImage(jWindow.width(), ".slideImg img");
+    jWindow.resize(function () {
+        resizeSliderImage(jWindow.width(), ".slideImg img");
+    })
 
 
 });
