@@ -19,6 +19,16 @@
 }
 
 @font-face {
+  font-family: 'HelveticaNeueLTStd-ThCn';
+  src: url('./Helvetica/HelveticaNeueLTStd-ThCn.woff2') format('woff2'),
+  url('./Helvetica/HelveticaNeueLTStd-ThCn.woff') format('woff'),
+  url('./Helvetica/HelveticaNeueLTStd-ThCn.ttf') format('truetype'),
+  url('./Helvetica/helveticaneueltstd-thcn.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Bello';
   src: url('./Bello/bello-script-1.woff2') format('woff2'),
   url('./Bello/bello-script-1.woff') format('woff'),
