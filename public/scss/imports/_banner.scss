@@ -1,8 +1,8 @@
 .main-social{
   font-size: 12px;
   line-height: 50px;
-  color: #6b6b6b;
-  background-color: #ededed;
+  color: $social-text-color;
+  background-color: $social-bg-main-color;
   margin-bottom: 25px;
   .container{
     text-align: right;
@@ -25,8 +25,8 @@
     height: 28px;
     width: 28px;
     margin: 11px 0 8px 0;
-    border-bottom: 3px solid #dd6b44;
-    background-color: $orange-color;
+    border-bottom: 3px solid $banner-border-color;
+    background-color: $banner-bright-text-color;
     @include plus (12px);
   }
 }
@@ -76,17 +76,17 @@
     right: 0;
     padding: 45px 40px;
     text-align: center;
-      strong{
+      span{
         display: block;
         &:first-child{
           font: 34px/50px 'Helvetica Neue LT Std';
           text-transform: uppercase;
-          color: #414141;
+          color: $banner-dark-color;
         }
         &:nth-child(2){
           font: 75px/75px 'HelveticaNeueLTStd-ThCn';
           text-transform: uppercase;
-          color: #414141;
+          color: $banner-dark-color;
         }
         &:nth-child(3){
           position: relative;
@@ -99,7 +99,7 @@
           text-align: center;
           text-transform: uppercase;
           color: #fff;
-          background-color: #414141;
+          background-color: $banner-dark-color;
           &:before,  &:after{
             content: "";
             position: absolute;
@@ -107,7 +107,7 @@
             display: block;
             height: 1px;
             width: 85px;
-            background-color: #78645d;
+            background-color: $banner-dark-color;
           }
           &:before{
             left: 45px;
@@ -156,16 +156,16 @@
     box-sizing: border-box;
     text-align: center;
     background-color: #fff;
-    border: 1px solid #ddebec;
+    border: 1px solid $banner-border-color;
     border-radius: 50%;
     z-index: 10;
-    strong{
+    span{
       display: block;
       &:first-child{
         margin-top: 15%;
         font: 22px/22px 'Bello Script';
         text-transform: capitalize;
-        color: $orange-color;
+        color: $banner-bright-text-color;
       }
       &:nth-child(2){
         font: 42px/45px'HelveticaNeueLTStd-ThCn';
@@ -213,7 +213,7 @@
     top: 40px;
     left: 15px;
     text-align: center;
-    strong{
+    span{
       display: block;
       font: 36px/34px 'HelveticaNeueLTStd-ThCn';
       font-weight: bold;

@@ -5,7 +5,7 @@
 
 body {
     font: 14px/1.5em Arial, sans-serif;
-    color: $text-color;
+    color: #000;
 }
 
 h1 {
@@ -66,6 +66,6 @@ h6 {
 @import "imports/_header";
 @import "imports/_slider";
 @import "imports/_banner";
-
+@import "imports/_tabs-carousel.scss";
 
 
