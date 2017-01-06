@@ -8,6 +8,13 @@
   font-style: normal;
 }
 
+/*@font-face {*/
+  /*font-family: 'Helvetica Neue LT Std';*/
+  /*src: url('./Helvetica/Helvetica Neue LT Std.otf') format('opentype');*/
+  /*font-weight: normal;*/
+  /*font-style: normal;*/
+/*}*/
+
 @font-face {
   font-family: 'HelveticaNeueLTStd-LtCn';
   src: url('./Helvetica/HelveticaNeueLTStd-LtCn.woff2') format('woff2'),

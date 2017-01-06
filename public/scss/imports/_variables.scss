@@ -1,22 +1,41 @@
-$orange-color: #fd926d;
-$turquoise-color: #4fafa0;
-$light-turquoise-color: #dfedee;
-$text-color: #999999;
-$grey-color-header: #b3b3b3;
-$grey-color-border: #444444;
-$brown-color-slider: #78645d;
-$brown-color-ratio-slider: #867a76;
-$gray-background-color: #ededed;
-$dark-color-header: #414141;
-$brown-color-banner: #4fafa0;
-$grey-color-banner: #6a6a6a;
-$grey-color-carousel: #555555;
-$dark-color-carousel: #4c4c4c;
-$dark-color-bag: #3d3d3d;
-$text-color-carousel: #373737;
-$gray-color-line: #d8d8d8;
-$lightblue-background-color: #f7f7f7;
-$darkgrey-background-color: #4c4c4b;
-$brown-color-light: #a59d9a;
-$grey-color-darklinks: #8b8887;
-$grey-color-lightlinks: #808080;
+//header-colors
+$header-dropdown-border-color: #444;
+$header-arrow-color: #c1c1c1;
+$cart-wrapper-border-color: #d6d6d6;
+$cart-wrapper-text-color: #949393;
+$cart-wrapped-hover-bg-color: #f6f3ec;
+$header-bg-nav-responsive-color: #fd926d;
+$header-top-responsive-text-color: #838383;
+//slider-colors
+$slider-dark-color: #78645d;
+$slider-button-color: #fd926d;
+$slider-border-button-color: #dd6b44;
+$slider-border-color: #ccc3bc;
+$slider-ratio-inactive: #867a76;
+$slider-ratio-active: $slider-button-color;
+$slider-ratio-hover: $slider-button-color;
+//social-colors
+$social-text-color: #6b6b6b;
+$social-label-bg-color: $slider-button-color;
+$social-input-text-color: #a0a0a0;
+$social-bg-main-color: #ededed;
+$social-bg-light-color: #f7f7f7;
+//banner-colors
+$banner-main-text-color: #4fafa0;
+$banner-dark-color: #414141;
+$banner-bright-text-color: $slider-button-color;
+$banner-light-text-color: #c1aea8;
+$banner-medium-color: #6a6a6a;
+$banner-border-color: #dfedee;
+//tabs-colors
+$tabs-main-bg-color: $slider-button-color;
+$tabs-item-bg-color: #f7f7f7;
+$tabs-text-color: #555;
+$tabs-inset-bg-color: #4c4c4c;
+$tabs-hover-bg-color: #3d3d3d;
+$tabs-item-text-color: #373737;
+$tabs-button-bg-color: $slider-button-color;
+$tabs-border-button-color: $slider-border-button-color;
+$tabs-paginator-bg-color: #f2f2f2;
+$tabs-paginator-text-color: #979797;
+
