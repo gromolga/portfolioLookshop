@@ -123,6 +123,15 @@ $(document).ready(function(){
             tabs.addClass("responsive-hide");
         }
     })
+    $(".carousel").owlCarousel({
+        loop : true,
+        items: 10,
+        margin: 35,
+        // autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        autoWidth: true,
+    });
 });
 
 
