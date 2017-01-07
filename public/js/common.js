@@ -132,6 +132,15 @@ $(document).ready(function(){
         autoplayHoverPause: true,
         autoWidth: true,
     });
+    $(".brands-carousel").owlCarousel({
+        loop : true,
+        items: 7,
+        margin: 35,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        autoWidth: true,
+    });
 });
 
 
