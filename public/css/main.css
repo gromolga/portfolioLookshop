@@ -1404,3 +1404,66 @@ main .bx-wrapper .bx-viewport {
             left: -100%;
             height: 5.66667px;
             width: 17px; } }
+
+.discount-element {
+  position: absolute;
+  z-index: 10;
+  top: -80px;
+  left: 50%;
+  height: 170px;
+  width: 180px;
+  margin-left: -90px;
+  background-color: #fff;
+  background-image: url(../img/background-images/background-figure-dark.png);
+  background-position: center center; }
+
+.discount-info {
+  padding: 35px 0;
+  text-align: center;
+  font-family: a_empirialregular;
+  color: #fff; }
+  .discount-info span {
+    font-size: 36px;
+    line-height: 36px; }
+    .discount-info span::selection {
+      background: transparent; }
+    .discount-info span::-moz-selection {
+      background: transparent; }
+  .discount-info span ~ span {
+    font-size: 80px;
+    line-height: 65px; }
+  .discount-info sup {
+    font-size: 36px;
+    vertical-align: middle; }
+    .discount-info sup::selection {
+      background: transparent; }
+    .discount-info sup::-moz-selection {
+      background: transparent; }
+  .discount-info sub {
+    margin-left: -0.5em;
+    font-size: 36px;
+    vertical-align: 0.2em; }
+    .discount-info sub::selection {
+      background: transparent; }
+    .discount-info sub::-moz-selection {
+      background: transparent; }
+
+.product-items-carousel {
+  margin-bottom: 50px; }
+
+.owl-loaded {
+  overflow: hidden; }
+  .owl-loaded .owl-stage-outer {
+    overflow: visible; }
+  .owl-loaded .item-info {
+    background-color: #f7f7f7; }
+
+.discount-carousel {
+  position: relative; }
+  .discount-carousel .container .carousel {
+    margin-top: 100px;
+    padding-top: 100px;
+    border-top: 2px solid #d8d8d8;
+    background-color: transparent; }
+    .discount-carousel .container .carousel .owl-stage-outer .owl-stage .owl-item {
+      margin: 0 5px !important; }
