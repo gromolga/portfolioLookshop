@@ -8,6 +8,32 @@
   font-style: normal;
 }
 
+/*@font-face {*/
+  /*font-family: 'Helvetica Neue LT Std';*/
+  /*src: url('./Helvetica/Helvetica Neue LT Std.otf') format('opentype');*/
+  /*font-weight: normal;*/
+  /*font-style: normal;*/
+/*}*/
+
+@font-face {
+  font-family: 'HelveticaNeueLTStd-LtCn';
+  src: url('./Helvetica/HelveticaNeueLTStd-LtCn.woff2') format('woff2'),
+       url('./Helvetica/HelveticaNeueLTStd-LtCn.woff') format('woff'),
+       url('./Helvetica/HelveticaNeueLTStd-LtCn.ttf') format('truetype'),
+       url('./Helvetica/HelveticaNeueLTStd-LtCn.svg#HelveticaNeueLTStd-LtCn') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueLTStd-ThCn';
+  src: url('./Helvetica/HelveticaNeueLTStd-ThCn.woff2') format('woff2'),
+  url('./Helvetica/HelveticaNeueLTStd-ThCn.woff') format('woff'),
+  url('./Helvetica/HelveticaNeueLTStd-ThCn.ttf') format('truetype'),
+  url('./Helvetica/helveticaneueltstd-thcn.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'Bello';
@@ -116,4 +142,15 @@
   url('./Impact/impact-regular-0.svg#a_empirialregular') format('svg');
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+    font-family: 'luxuryroyalejfregular';
+    src: url('./LuxuryRoyale/luxuryroyalejf-webfont.woff2') format('woff2'),
+         url('./LuxuryRoyale/luxuryroyalejf-webfont.woff') format('woff'),
+         url('./LuxuryRoyale/luxuryroyalejf-webfont.ttf') format('truetype'),
+         url('./LuxuryRoyale/luxuryroyalejf-webfont.svg#luxuryroyalejfregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }

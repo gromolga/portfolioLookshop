@@ -1,9 +1,11 @@
-@import "./imports/_variables";
-@import "./imports/_sprite";
+@import "./imports/variables";
+@import "./imports/sprite";
 @import "../../node_modules/bourbon/app/assets/stylesheets/bourbon";
+@import "./imports/mixins";
+
 body {
     font: 14px/1.5em Arial, sans-serif;
-    color: $text-color;
+    color: #000;
 }
 
 h1 {
@@ -63,7 +65,9 @@ h6 {
 
 @import "imports/_header";
 @import "imports/_slider";
-
-
-
+@import "imports/_banner";
+@import "imports/_tabs-carousel.scss";
+@import "imports/_discount-carousel.scss";
+@import "imports/_brands.scss";
+@import "imports/_about.scss";
 

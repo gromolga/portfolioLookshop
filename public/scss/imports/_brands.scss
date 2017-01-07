@@ -1,0 +1,39 @@
+.brands {
+  .container {
+    position: relative;
+    border-top: 1px solid $brands-border-color;
+    border-bottom: 1px solid $brands-border-color;
+  }
+  .owl-carousel {
+    background-color: transparent;
+    .owl-stage {
+      .owl-item {
+        line-height: 100px;
+        img{
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  strong {
+    position: absolute;
+    top: -7px;
+    left: 42%;
+    width: 16%;
+    padding: 0 20px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #fff;
+    color: $brands-text-color;
+    z-index: 10;
+    &::selection {
+      background: transparent;
+    }
+    &::-moz-selection {
+      background: transparent;
+    }
+  }
+}
