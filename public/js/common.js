@@ -141,6 +141,9 @@ $(document).ready(function(){
         autoplayHoverPause: true,
         autoWidth: true,
     });
+    $(".footer-burger-menu").click(function () {
+        $(this).parent().toggleClass("mobile-footer-menu")
+    })
 });
 
 
