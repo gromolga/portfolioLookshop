@@ -3,7 +3,7 @@
   line-height: 50px;
   color: $social-text-color;
   background-color: $social-bg-main-color;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   .container {
     text-align: right;
   }
@@ -12,7 +12,7 @@
   }
   input {
     float: left;
-    width: 160px;
+    width: 120px;
     margin: 14px 0 0 10px;
     padding: 5px;
     font-style: italic;
@@ -60,7 +60,7 @@
   }
 }
 .banner {
-  margin-bottom: 40px;
+  margin-bottom: 45px;
   .left-col {
     position: relative;
     float: left;
@@ -73,17 +73,17 @@
     position: absolute;
     top: 0;
     right: 0;
-    padding: 45px 40px;
+    padding: 65px 40px;
     text-align: center;
       span {
         display: block;
         &:first-child {
-          font: 34px/50px 'Helvetica Neue LT Std';
+          font: 34px/34px 'Helvetica Neue LT Std';
           text-transform: uppercase;
           color: $banner-dark-color;
         }
         &:nth-child(2) {
-          font: 75px/75px 'HelveticaNeueLTStd-ThCn';
+          font: 75px/68px 'HelveticaNeueLTStd-ThCn';
           text-transform: uppercase;
           color: $banner-dark-color;
         }
@@ -115,7 +115,7 @@
           }
         }
         &:nth-child(4) {
-          font: 82px/82px 'Helvetica Neue LT Std';
+          font: 82px/65px 'Helvetica Neue LT Std';
           text-transform: uppercase;
           color: $banner-main-text-color;
         }
@@ -135,8 +135,8 @@
   }
   .large-img-header-box {
     position: absolute;
-    top: 10%;
-    left: 5%;
+    top: 12%;
+    left: 7%;
     height: 75%;
     width: 26%;
     background-color: #fff;
@@ -188,8 +188,8 @@
   }
   .left-img-header {
     position: absolute;
-    left: 10px;
-    bottom: 10px;
+    left: 15px;
+    bottom: 15px;
     font: 34px/34px 'HelveticaNeueLTStd-ThCn';
     text-transform: uppercase;
     color: #fff;
@@ -203,8 +203,8 @@
   }
   .right-img-header {
     position: absolute;
-    top: 30px;
-    left: 15px;
+    top: 45px;
+    left: 20px;
     text-align: center;
     span {
       display: block;
@@ -216,11 +216,11 @@
   }
   .button {
     position: absolute;
-    left: 25px;
-    bottom: 20px;
+    left: 30px;
+    bottom: 23px;
     a {
       display: block;
-      padding: 5px 25px 5px 10px;
+      padding: 5px 22px 5px 10px;
       font-size: 12px;
       text-transform: uppercase;
       background-color: $banner-main-text-color;
