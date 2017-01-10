@@ -3,59 +3,50 @@
     text-transform: uppercase;
     background-color: #000;
     color: #fff;
-    .left-col {
+    .phone {
         float: left;
-        >strong {
-            display: block;
-            padding: 10px 0;
-            font-weight: normal;
-        }
+        padding: 10px 0;
+        font-weight: normal;
     }
-    .right-col {
-        float: right;
-        >li:first-child {
-          border-left: 1px solid $header-dropdown-border-color;
-          border-right: 1px solid $header-dropdown-border-color;
-        }
-        >li:last-child {
-          border-left: 1px solid $header-dropdown-border-color;
-          border-right: 1px solid $header-dropdown-border-color;
-        }
+    .static-item {
+      border-left: 1px solid $header-dropdown-border-color;
+      border-right: 1px solid $header-dropdown-border-color;
+    }
+    .search {
+      border-left: 1px solid $header-dropdown-border-color;
+      border-right: 1px solid $header-dropdown-border-color;
     }
 }
-.dropdown-menu {
+.top-header-nav {
+    float: right;
+    .static-item, .account, .search{
+        display: inline-block;
+    }
     a {
         display: block;
-        padding: 10px 30px 10px 15px;
         color: #fff;
         text-decoration: none;
     }
-    >li:first-child, >li:last-child{
+    >.static-item, >.search{
         border-left: 1px solid $header-dropdown-border-color;
         border-right: 1px solid $header-dropdown-border-color;
     }
 }
 .static-item {
     position: relative;
-    >a:after  {
-        content: "";
-        position: absolute;
-        top: 17px;
-        right: 10px;
-        border: 5px solid transparent;
-        border-top: 5px solid #fff;
+    a{
+        padding: 0 0 0 15px;
     }
-}
-.dropdown-items {
-    padding: 0;
-    a {
-        padding: 5px 10px;
-        line-height: 1.2em;
-    }
-}
-.static-item:hover {
-    .dropdown-items {
-        display: block;
+    > a {
+        padding: 10px 30px 10px 15px;
+        &:after  {
+            content: "";
+            position: absolute;
+            top: 17px;
+            right: 10px;
+            border: 5px solid transparent;
+            border-top: 5px solid #fff;
+        }
     }
 }
 .static-item {
@@ -63,22 +54,27 @@
         position: absolute;
         display: none;
         width: 100%;
+        margin: 0;
+        padding: 0;
         background-color: rgba(0,0,0,.7);
         color: #fff;
         z-index: 20;
     }
 }
+.static-item:hover {
+    .dropdown-items {
+        display: block;
+    }
+}
 .account {
-    a {
-        position: relative;
-        padding: 10px 15px 10px 35px;
-        &:before {
-            content: "";
-            position: absolute;
-            top: 13px;
-            left: 10px;
-            @include sprite($account-small);
-        }
+    position: relative;
+    padding: 10px 15px 10px 35px;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 13px;
+        left: 10px;
+        @include sprite($account-small);
     }
 }
 .search {
@@ -116,9 +112,12 @@
     position: absolute;
     right: -1px;
     width: 302px;
+    margin: 0;
+    padding: 0;
     background-color: #fff;
     z-index: 20;
     a  {
+        padding: 5px 10px;
         font-size: 14px;
         text-transform: capitalize;
         border: 1px solid $header-dropdown-border-color;
@@ -275,12 +274,12 @@
 @media only screen and (max-device-width: 768px) {
     .static-item{
         .dropdown-items.hide-dropdown-items {
-            display: none;
+            //display: none;
         }
     }
     .static-item{
         .dropdown-items{
-            display: block;
+            //display: block;
         }
     }
     .main-header-nav{
@@ -339,89 +338,56 @@
 }
 @media only screen and (max-device-width: 640px) {
     .top-header{
-        .container {
+        .container{
             padding: 0;
         }
-    }
-    .top-header{
-        .right-col, .left-col {
+        .phone, .top-header-nav {
             float: left;
-            padding: 0 15px;
+            width: 100%;
+            font-size: 30px;
         }
-    }
-    .top-header{
-        .left-col {
+        .phone {
             padding: 25px 15px;
             text-align: center;
-            font-size: 30px;
             color: $header-top-responsive-text-color;
             background-color: #fff;
         }
-    }
-    .top-header{
-        .right-col{
-            li:first-child {
-                border-left: none;
-            }
-        }
-    }
-    .top-header{
-        .right-col{
-            li:last-child {
-                border-right: none;
-            }
-        }
-    }
-    .dropdown-menu {
-        text-align: center;
-    }
-    .dropdown-menu{
-        a {
-            padding: 35px 15px;
-            font-size: 30px;
-        }
-    }
-    .static-item {
-        float: left;
-        margin-left: -15px;
-        padding-right: 25px;
-    }
-    .top-header{
-        .right-col{
+        .top-header-nav{
+            display: table;
+            table-layout: fixed;
+            text-align: center;
             .static-item{
-                a:after {
+                float: left;
+                margin-left: -25px;
+                padding: 25px;
+                border-left: none;
+                >a:after {
                     top: 40px;
                     right: 12px;
                     border: 10px solid transparent;
                     border-top: 10px solid white;
                 }
             }
-        }
-    }
-    .dropdown-items {
-        text-align: left;
-    }
-    .dropdown-menu{
-        display: table;
-        width: 100%;
-        table-layout: fixed;
-        .dropdown-items{
-            a  {
-                padding: 15px 10px;
+            .dropdown-items{
+                top: 90px;
+                width: 140px;
+                text-align: left;
+                a  {
+                    padding: 15px 10px;
+                }
             }
-        }
-    }
-    .right-col{
-        .account {
-            padding-left: 60px;
-        }
-    }
-    .top-header{
-        .account{
-            a:before {
-                top: 24px;
-                left: -40px;
-                @include sprite($account-large);
+            .account {
+                margin-top: 25px;
+                padding: 10px;
+                padding-left: 70px;
+                &:before {
+                    top: 0;
+                    left: 20px;
+                    @include sprite($account-large);
+                }
+            }
+            .search{
+                border-right: none;
             }
         }
     }
@@ -429,18 +395,15 @@
         float: right;
         height: 90px;
         width: 90px;
-    }
-    .search{
         label:after {
             top: 23px;
             left: -5px;
             @include sprite($search-lagre);
         }
-    }
-    .search{
         input {
             height: 80px;
             width: 470px;
+            padding: 20px;
             font-size: 30px;
         }
     }
@@ -450,6 +413,10 @@
         width: 470px;
         padding: 0;
         text-align: left;
+        a{
+            padding: 30px 15px;
+            font-size: 30px;
+        }
     }
     .logo{
         float: none;
@@ -458,33 +425,25 @@
     }
     .cart-wrapper{
         float: none;
-    }
-    .cart-wrapper{
         a{
             width: auto;
             height: 80px;
             padding-right: 20px;
             font-size: 30px;
             line-height: 80px;
-        }
-    }
-    .cart-wrapper{
-        a:first-child{
-            display: none;
-        }
-    }
-    .cart-wrapper{
-        a:nth-child(2){
-            border-top: 1px solid #949393;
-        }
-    }
-    .cart-wrapper{
-        a:last-child:before{
-            top: 16px;
-            left: 20px;
-            height: 50px;
-            width: 50px;
-            background-position: -1730px -1px
+            &:first-child{
+                display: none;
+            }
+            &:nth-child(2){
+                border-top: 1px solid #949393;
+            }
+            &:last-child:before{
+                top: 16px;
+                left: 20px;
+                height: 50px;
+                width: 50px;
+                background-position: -1730px -1px;
+            }
         }
     }
     .main-header-nav{
@@ -494,8 +453,6 @@
             height: 30px;
             width: 33px;
         }
-    }
-    .main-header-nav{
         .media-nav-btn{
             font-size: 30px;
             padding: 35px 20px;
@@ -516,8 +473,6 @@
             top: 5px;
             left: 10px;
         }
-    }
-    .cart-wrapper{
         a:last-child{
             line-height: 50px;
         }
@@ -526,8 +481,6 @@
         .media-nav-btn{
             padding: 20px 15px;
         }
-    }
-    .main-header-nav{
         >a:after{
             top: 15px;
             right: 15px;
@@ -541,27 +494,18 @@
 }
 @media only screen and (max-device-width: 500px) {
     .top-header{
-        .left-col {
-            padding: 0px 15px;
+        .phone {
+            padding: 12px;
             font-size: 15px;
         }
-    }
-    .dropdown-menu{
-        a {
-            padding: 15px 5px;
+        .top-header-nav{
             font-size: 15px;
-        }
-    }
-    .dropdown-menu{
-        .dropdown-items{
-            a {
-                padding: 10px 5px;
-            }
-        }
-    }
-    .top-header{
-        .right-col{
             .static-item{
+                padding: 15px;
+                padding-right: 30px;
+                >a{
+                    padding: 0 0 0 25px;
+                }
                 a:after {
                     top: 24px;
                     right: 15px;
@@ -569,52 +513,51 @@
                     border-top: 5px solid white;
                 }
             }
-        }
-    }
-    .right-col{
-        .account {
-            padding-left: 40px;
-        }
-    }
-    .top-header{
-        .account{
-            a:before {
-                top: 19px;
-                left: -20px;
-                @include sprite($account-small);
+            .account{
+                margin: 0;
+                padding: 15px;
+                padding-left: 50px;
+                &:before{
+                    top: 19px;
+                    left: 20px;
+                    @include sprite($account-small);
+                }
+            }
+            .dropdown-items{
+                top: 50px;
+                width: 75px;
+                padding-left: 15px;
+                a {
+                    padding: 10px 5px;
+                }
             }
         }
     }
     .search {
         height: 50px;
-    }
-    .search{
         input {
             height: 42px;
             width: 300px;
+            padding: 0 10px;
             font-size: 16px;
         }
-    }
-    .search{
         .slide-down {
             top: 52px;
             width: 300px;
+            li{
+                a{
+                    padding: 10px;
+                    font-size: 16px;
+                }
+            }
         }
-    }
-    .search{
         label:after {
             top: 18px;
-            left: 5px;
             @include sprite($search-small);
         }
     }
     .logo{
         padding: 0 0 10px 0;
-    }
-    .logo{
-        img{
-            max-width: 280px;
-        }
     }
     .cart-wrapper{
         a:nth-child(2){

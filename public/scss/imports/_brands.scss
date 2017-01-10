@@ -16,14 +16,16 @@
       }
     }
   }
-  strong {
+  h6 {
     position: absolute;
     top: -7px;
-    left: 42%;
-    width: 16%;
+    left: 39%;
+    width: 22%;
+    margin: 0;
     padding: 0 20px;
     line-height: 15px;
     text-align: center;
+    font-size: 15px;
     text-transform: uppercase;
     font-weight: bold;
     background-color: #fff;
@@ -35,5 +37,10 @@
     &::-moz-selection {
       background: transparent;
     }
+  }
+}
+@media only screen and (max-device-width: 640px) {
+  .brands{
+    display: none;
   }
 }

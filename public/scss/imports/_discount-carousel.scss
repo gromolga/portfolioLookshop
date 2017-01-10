@@ -81,7 +81,33 @@
     }
   }
 }
-
+.discount-button {
+  display: none;
+}
+@media only screen and (max-device-width: 640px) {
+  .discount-carousel {
+    .owl-stage-outer {
+      position: relative;
+      height: 650px;
+    }
+  }
+  .discount-button {
+    position: absolute;
+    display: block;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    a {
+      display: inline-block;
+      padding: 20px 50px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff;
+      background-color: #000;
+    }
+  }
+}
 
 
 

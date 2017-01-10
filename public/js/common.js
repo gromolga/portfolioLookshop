@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
     var jWindow = $(window);
     var search = $("#search");
     var navBtn =  $(".nav-btn");
@@ -30,7 +30,7 @@ $(document).ready(function(){
     });
 
     navBtn.click(function () {
-        if($(this).hasClass("active")){
+        if($(this).hasClass("active")) {
             $(this).removeClass("active");
             $(this).siblings(".submenu").slideUp(300);
         }else{
