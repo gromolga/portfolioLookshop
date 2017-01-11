@@ -19,7 +19,7 @@
   font-size: 0;
   background-color: $footer-nav-bg-color;
   .container {
-    padding: 30px 0 0 0;
+    padding: 30px 15px 0 15px;
   }
   .inline-block-list {
     font-size: 0;
@@ -27,6 +27,7 @@
       list-style-type: none;
       vertical-align: top;
       font-size: 12px;
+      line-height: 18px;
       >ul{
         padding: 0;
       }
@@ -39,7 +40,7 @@
       }
     }
     h6 {
-      margin: 0 0 15px;
+      margin: 0 0 7px;
       font-weight: bold;
       color: $footer-header-color;
       &::selection {
@@ -62,17 +63,17 @@
       width: 193px;
     }
     >li:last-child {
-      width: 120px;
+      width: 115px;
     }
   }
   .right-col {
     float: right;
     >li:first-child {
-      width: 170px;
+      width: 179px;
     }
     >li:last-child {
       min-height: 100px;
-      width: 140px;
+      width: 115px;
       padding-top: 60px;
       text-align: center;
       font-size: 14px;
@@ -137,7 +138,7 @@
 .down-footer {
   background-color: #000;
   .container {
-    padding: 25px 0;
+    padding: 25px 15px;
   }
   .inline-block-list {
     line-height: 40px;
@@ -150,8 +151,14 @@
         text-decoration: none;
         border-right: 1px solid $footer-links-color;
       }
+      &:first-child {
+        a{
+          padding-left: 0;
+        }
+      }
       &:last-child {
         a{
+          padding-right: 0;
           border: none;
         }
       }
@@ -172,9 +179,23 @@
   }
 }
 @media only screen and (max-device-width: 1050px) {
-  .footer-navigation {
-    .left-col, .right-col {
-      width: 50%;
+  .footer-navigation{
+    .container {
+      .left-col, .right-col {
+        float: none;
+      }
+      .left-col {
+        > li {
+          width: 20%;
+          padding-right: 5%;
+        }
+      }
+    }
+    .right-col{
+      text-align: center;
+      li{
+        text-align: left;
+      }
     }
   }
 }

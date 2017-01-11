@@ -1,6 +1,7 @@
 .brands {
   .container {
     position: relative;
+    padding: 0;
     border-top: 1px solid $brands-border-color;
     border-bottom: 1px solid $brands-border-color;
   }
@@ -8,7 +9,7 @@
     background-color: transparent;
     .owl-stage {
       .owl-item {
-        line-height: 80px;
+        line-height: 45px;
         img{
           display: inline-block;
           vertical-align: middle;

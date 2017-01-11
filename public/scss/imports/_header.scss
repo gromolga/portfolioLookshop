@@ -277,16 +277,6 @@
     }
 }
 @media only screen and (max-device-width: 768px) {
-    .static-item{
-        .dropdown-items.hide-dropdown-items {
-            //display: none;
-        }
-    }
-    .static-item{
-        .dropdown-items{
-            //display: block;
-        }
-    }
     .main-header-nav{
         float: none;
         clear: both;

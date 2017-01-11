@@ -71,3 +71,11 @@ h6 {
 @import "imports/_brands.scss";
 @import "imports/_about.scss";
 @import "imports/_footer.scss";
+
+@media only screen and (max-device-width: 768px) {
+    .background-image{
+        position: absolute;
+        opacity: 0.4;
+        z-index: 1;
+    }
+}

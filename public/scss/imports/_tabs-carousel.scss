@@ -65,7 +65,7 @@
   @include sprite($arrow-large-right);
 }
 .owl-prev {
-  right: 146px;
+  right: 160px;
   &:hover {
     background-color: $tabs-main-bg-color;
     &:after {
@@ -74,7 +74,7 @@
   }
 }
 .owl-next {
-  right: 100px;
+  right: 115px;
   &:hover {
     background-color: $tabs-main-bg-color;
     &:after {
@@ -84,7 +84,7 @@
 }
 .owl-carousel {
   .owl-stage-outer {
-    padding: 10px 0;
+    padding: 25px 0;
   }
 }
 .owl-carousel, .carousel {
@@ -210,14 +210,22 @@
     z-index: 20;
   }
 }
+@media only screen and (max-device-width: 950px) {
+  .banner{
+    .right-img-header{
+      top: 30px;
+    }
+    .button{
+      bottom: 10px;
+    }
+  }
+}
 @media only screen and (max-device-width: 640px) {
   .tabs {
     .container {
       position: relative;
       padding: 0;
     }
-  }
-  .tabs {
     .tabs-wrapper {
       .tab {
         position: absolute;
@@ -228,10 +236,6 @@
         background-color: #f4845d;
         color: #fff;
       }
-    }
-  }
-  .tabs {
-    .tabs-wrapper {
       .tab {
         position: absolute;
         display: block;
@@ -263,11 +267,11 @@
         }
       }
     }
+    .responsive-hide:not(.active) {
+      display: none;
+    }
   }
   .tab-paginator, .owl-nav {
-    display: none;
-  }
-  .tabs .responsive-hide:not(.active) {
     display: none;
   }
   .owl-carousel, .carousel {
