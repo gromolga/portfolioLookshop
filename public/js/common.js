@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
     var jWindow = $(window);
     var search = $("#search");
     var navBtn =  $(".nav-btn");
@@ -30,7 +30,7 @@ $(document).ready(function(){
     });
 
     navBtn.click(function () {
-        if($(this).hasClass("active")){
+        if($(this).hasClass("active")) {
             $(this).removeClass("active");
             $(this).siblings(".submenu").slideUp(300);
         }else{
@@ -84,7 +84,7 @@ $(document).ready(function(){
         loop : true,
         center: true,
         autoWidth: true,
-        // autoplay: true,
+        autoplay: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
         responsive:{
@@ -127,7 +127,7 @@ $(document).ready(function(){
         loop : true,
         items: 10,
         margin: 35,
-        // autoplay: true,
+        autoplay: true,
         autoplayTimeout: 2000,
         autoplayHoverPause: true,
         autoWidth: true,
@@ -141,6 +141,9 @@ $(document).ready(function(){
         autoplayHoverPause: true,
         autoWidth: true,
     });
+    $(".footer-burger-menu").click(function () {
+        $(this).parent().toggleClass("mobile-footer-menu")
+    })
 });
 
 

@@ -1,39 +1,54 @@
 .brands {
-  .container {
-    position: relative;
-    border-top: 1px solid $brands-border-color;
-    border-bottom: 1px solid $brands-border-color;
-  }
-  .owl-carousel {
-    background-color: transparent;
-    .owl-stage {
-      .owl-item {
-        line-height: 100px;
-        img{
-          display: inline-block;
-          vertical-align: middle;
+    .container {
+        position: relative;
+        padding: 0;
+        border-top: 1px solid $brands-border-color;
+        border-bottom: 1px solid $brands-border-color;
+    }
+    .owl-carousel {
+        background-color: transparent;
+        .owl-stage {
+            .owl-item {
+                line-height: 45px;
+                img {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
         }
-      }
     }
-  }
-  strong {
-    position: absolute;
-    top: -7px;
-    left: 42%;
-    width: 16%;
-    padding: 0 20px;
-    line-height: 15px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    background-color: #fff;
-    color: $brands-text-color;
-    z-index: 10;
-    &::selection {
-      background: transparent;
+    ul {
+        padding: 0;
+        li {
+            list-style-type: none;
+        }
     }
-    &::-moz-selection {
-      background: transparent;
+    h6 {
+        position: absolute;
+        top: -7px;
+        left: 39%;
+        width: 22%;
+        margin: 0;
+        padding: 0 20px;
+        line-height: 15px;
+        text-align: center;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: #fff;
+        color: $brands-text-color;
+        z-index: 10;
+        &::selection {
+            background: transparent;
+        }
+        &::-moz-selection {
+            background: transparent;
+        }
     }
-  }
+}
+
+@media only screen and (max-device-width: 640px) {
+    .brands {
+        display: none;
+    }
 }

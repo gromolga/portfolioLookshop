@@ -10,7 +10,6 @@ $header-top-responsive-text-color: #838383;
 $slider-dark-color: #78645d;
 $slider-button-color: #fd926d;
 $slider-border-button-color: #dd6b44;
-$slider-border-color: #ccc3bc;
 $slider-ratio-inactive: #867a76;
 $slider-ratio-active: $slider-button-color;
 $slider-ratio-hover: $slider-button-color;
@@ -20,6 +19,7 @@ $social-label-bg-color: $slider-button-color;
 $social-input-text-color: #a0a0a0;
 $social-bg-main-color: #ededed;
 $social-bg-light-color: #f7f7f7;
+$social-border-button-color: $slider-border-button-color;
 //banner-colors
 $banner-main-text-color: #4fafa0;
 $banner-dark-color: #414141;
@@ -47,3 +47,12 @@ $brands-text-color: #414141;
 //about
 $about-header-color: #414141;
 $about-text-color: #999999;
+//footer
+$payment-system-bg-color: #f7f7f7;
+$footer-nav-bg-color: #ededed;
+$footer-nav-text-color: #8d8d8d;
+$footer-hover-text-color: #625d5c;
+$footer-header-color: #625d5c;
+$secured-color: #a59d9a;
+$footer-social-background: #4c4c4b;
+$footer-links-color: #808080;
