@@ -84,7 +84,7 @@ $(document).ready(function() {
         loop : true,
         center: true,
         autoWidth: true,
-        // autoplay: true,
+        autoplay: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
         responsive:{
@@ -127,7 +127,7 @@ $(document).ready(function() {
         loop : true,
         items: 10,
         margin: 35,
-        // autoplay: true,
+        autoplay: true,
         autoplayTimeout: 2000,
         autoplayHoverPause: true,
         autoWidth: true,

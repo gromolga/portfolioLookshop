@@ -3,7 +3,7 @@
     a.bx-prev {
         top: 228px;
         left: 8px;
-        @include  sprite($arrow-medium-left);
+        @include sprite($arrow-medium-left);
     }
     .bx-prev:hover {
         top: 228px;
@@ -13,7 +13,7 @@
     a.bx-next {
         top: 228px;
         right: 8px;
-        @include  sprite($arrow-medium-right);
+        @include sprite($arrow-medium-right);
     }
     .bx-next:hover {
         top: 228px;
@@ -32,21 +32,22 @@
         bottom: -58px;
     }
 }
+
 .slide {
     height: 440px;
     background-color: #f6f3ec;
     background: -moz-linear-gradient(right, #ebe7de 0%, #ede6de 10%, #f4f1e9 51%, #ebe7de 100%);
-    background: -webkit-linear-gradient(right, #ebe7de 0%,#ede6de 10%,#f4f1e9 51%,#ebe7de 100%);
-    background: -o-linear-gradient(right, #ebe7de 0%,#ede6de 10%,#f4f1e9 51%,#ebe7de 100%);
-    background: -ms-linear-gradient(right, #ebe7de 0%,#ede6de 10%,#f4f1e9 51%,#ebe7de 100%);
-    background: linear-gradient(right, #ebe7de 0%,#ede6de 10%,#f4f1e9 51%,#ebe7de 100%);
+    background: -webkit-linear-gradient(right, #ebe7de 0%, #ede6de 10%, #f4f1e9 51%, #ebe7de 100%);
+    background: -o-linear-gradient(right, #ebe7de 0%, #ede6de 10%, #f4f1e9 51%, #ebe7de 100%);
+    background: -ms-linear-gradient(right, #ebe7de 0%, #ede6de 10%, #f4f1e9 51%, #ebe7de 100%);
+    background: linear-gradient(right, #ebe7de 0%, #ede6de 10%, #f4f1e9 51%, #ebe7de 100%);
     .container {
         position: relative;
         height: 100%;
     }
     .slideImg {
         height: 100%;
-        img{
+        img {
             height: 100%;
             margin: 0 0 0 360px;
         }
@@ -62,7 +63,7 @@
             display: block;
             font: 36px/1.2 luxuryroyalejfregular;
             color: $slider-dark-color;
-            &:before,  &:after {
+            &:before, &:after {
                 content: "";
                 position: absolute;
                 top: 25px;
@@ -74,7 +75,7 @@
             &:before {
                 left: 50px;
             }
-            &:after{
+            &:after {
                 right: 50px;
             }
         }
@@ -121,7 +122,7 @@
                 border: 5px solid transparent;
                 border-left: 5px solid white;
             }
-            &:hover {
+            &:hover, &:active {
                 background-color: #dd6b44;
                 background: -moz-linear-gradient(#fd926d, #dd6b44, #dd6b44);
                 background: -webkit-gradient(linear, 0 0, 0 100%, from(#fd926d), to(#dd6b44), color-stop(0.5, #dd6b44));
@@ -132,6 +133,7 @@
         }
     }
 }
+
 .bx-wrapper {
     .bx-controls {
         .bx-pager {
@@ -150,6 +152,7 @@
         }
     }
 }
+
 main {
     .bx-wrapper {
         .bx-viewport {
@@ -159,6 +162,7 @@ main {
         }
     }
 }
+
 .slide {
     position: relative;
     &:before, &:after {
@@ -173,18 +177,20 @@ main {
         right: 0;
     }
 }
+
 @media only screen and (max-device-width: 1050px) {
     .slide {
-        >.container {
+        > .container {
             img {
                 margin: 0 0 0 300px
             }
         }
     }
 }
+
 @media only screen and (max-device-width: 860px) {
     .slide {
-        >.container {
+        > .container {
             img {
                 margin: 0 0 0 200px;
             }
@@ -210,6 +216,7 @@ main {
         }
     }
 }
+
 @media only screen and (max-device-width: 768px) {
     .slide {
         height: 350px;
@@ -232,6 +239,7 @@ main {
         }
     }
 }
+
 @media only screen and (max-device-width: 640px) {
     .left-col {
         width: 100%;

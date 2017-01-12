@@ -17,7 +17,7 @@
     <header class="header">
         <section class="top-header">
             <div class="container clearfix">
-                <span class="phone">custom care:  888-23-4567</span>
+                <strong class="phone">custom care:  888-23-4567</strong>
                 <div class="top-header-nav">
                     <div class="static-item">
                         <a href="#">$ us</a>
@@ -28,9 +28,9 @@
                         </ul>
                     </div>
                     <a class="account" href="#">My account</a>
-                    <form class="search disabled">
+                    <form class="search disabled" action="">
                         <label class="search-icon" for="search"></label>
-                        <input id="search" type="search" placeholder="Введите Ваш запрос">
+                        <input id="search" type="search" name="serch" placeholder="Введите Ваш запрос">
                         <ul id="search-result" class="slide-down disabled">
                             <li><a href="#">Result 1</a></li>
                             <li><a href="#">Result 2</a></li>
@@ -42,11 +42,13 @@
         </section>
         <section class="main-header">
             <div class="container clearfix">
-                <div class="logo"><a href="#"><img id ="logo" src="img/logo/logo-small.png" alt="lookshop"
-                                                  data-large="img/logo/logo-large.png" data-small="img/logo/logo-small.png"></a><strong>lookshop</strong></div>
+                <div class="logo">
+                    <a href="#"><img id ="logo" src="img/logo/logo-small.png" alt="lookshop" data-large="img/logo/logo-large.png" data-small="img/logo/logo-small.png"></a>
+                    <strong>lookshop</strong>
+                </div>
                 <div class="cart-wrapper">
                     <a href="#">Your cart</a>
-                    <a href="#">0 items  |  $ 0</a>
+                    <a href="#">0 items | $ 0</a>
                 </div>
                 <nav class="main-header-nav">
                     <a class="media-nav-btn">Menu</a>
@@ -173,8 +175,8 @@
         <div class="main-social">
             <div class="container clearfix">
                 <span class="email-pointer">Stay updated</span>
-                <form action="#" method="post" class="email clearfix">
-                    <input type="email" placeholder="Your email address">
+                <form action="" method="post" class="email clearfix">
+                    <input type="email" name="email" placeholder="Your email address">
                     <label class="wrapper-submit">
                         <input type="submit" hidden>
                         <i class="plus"></i>
@@ -190,8 +192,8 @@
         </div>
         <section class="banner">
             <div class="container clearfix">
-                <div class="left-col clearfix">
-                    <img src="./img/banner/banner-img1.jpg" alt="#">
+                <div class="left-col">
+                    <img src="./img/banner/banner-img1.jpg" alt="banner">
                     <div class="left-col-header">
                         <span>best</span>
                         <span>outfits</span>
@@ -220,32 +222,25 @@
                             <span>fall</span>
                             <span>leather</span>
                         </div>
-                        <div class="button">
-                            <a href="#">Shop now</a>
-                        </div>
+                        <a class="button" href="#">Shop now</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="tabs clearfix">
-            <div class="tabs-wrapper">
-                <div class="container">
-                    <div class="tab active">What is hot?</div>
-                    <div class="tab tab-1 responsive-hide">Designers</div>
-                    <div class="tab tab-2 responsive-hide">Featured</div>
-                    <div class="tab tab-3 responsive-hide">Latest</div>
-                    <div class="tab-paginator">
-                        <div class="arrow-right"></div>
-                        <div class="arrow-left"></div>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="tabs_cont">
-                    <div class="tab_content active">
-                        <div class="owl-carousel">
-                            <div class="review-item">
+        <section class="tabs">
+            <ul class="tabs-wrapper">
+                <ul class="container clearfix">
+                    <li class="tab active">What is hot?</li>
+                    <li class="tab tab-1 responsive-hide">Designers</li>
+                    <li class="tab tab-2 responsive-hide">Featured</li>
+                    <li class="tab tab-3 responsive-hide">Latest</li>
+                </ul>
+                <ul class="tabs-cont">
+                    <li class="tab_content active">
+                        <ul class="owl-carousel">
+                            <li class="product-item">
                                 <div class="item-img">
-                                    <div class="inset" data-inset>
+                                    <div class="inset" >
                                         <span>sale</span>
                                     </div>
                                     <img src="./img/products/product1.jpg" alt="feel tank">
@@ -253,21 +248,19 @@
                                 <div class="item-info">
                                     <span class="item-name">feel tank</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
-                                    <div class="inset" data-inset>
+                                    <div class="inset" >
                                         <span>sale</span>
                                     </div>
                                     <img src="./img/products/product1.jpg" alt="feel tank">
@@ -275,291 +268,261 @@
                                 <div class="item-info">
                                     <span class="item-name">feel tank</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
                                     <img src="./img/products/product1.jpg" alt="feel tank">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">feel tank</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
                                     <img src="./img/products/product1.jpg" alt="feel tank">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">feel tank</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
                                     <img src="./img/products/product1.jpg" alt="feel tank">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">feel tank</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
                                     <img src="./img/products/product1.jpg" alt="feel tank">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">feel tank</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
                                     <img src="./img/products/product1.jpg" alt="feel tank">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">feel tank</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
                                     <img src="./img/products/product1.jpg" alt="feel tank">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">feel tank</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
                                     <img src="./img/products/product1.jpg" alt="feel tank">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">feel tank</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
                                     <img src="./img/products/product1.jpg" alt="feel tank">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">feel tank</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
                                     <img src="./img/products/product1.jpg" alt="feel tank">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">feel tank</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
                                     <img src="./img/products/product1.jpg" alt="feel tank">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">feel tank</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab_content">
-                        <div class="owl-carousel">
-                            <div class="review-item">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="tab_content">
+                        <ul class="owl-carousel">
+                            <li class="product-item">
                                 <div class="item-img">
                                     <img src="./img/products/product2.jpg" alt="feel tank">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">feel tank</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
                                     <img src="./img/products/product2.jpg" alt="#">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
                                     <img src="./img/products/product2.jpg" alt="#">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">feel tank</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
                                     <img src="./img/products/product2.jpg" alt="#">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
-                                    <div class="inset" data-inset>
+                                    <div class="inset" >
                                         <span>sale</span>
                                     </div>
                                     <img src="./img/products/product2.jpg" alt="#">
@@ -567,21 +530,19 @@
                                 <div class="item-info">
                                     <span class="item-name">feel tank</span>
                                     <span class="item-price">$59.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
-                                    <div class="inset" data-inset>
+                                    <div class="inset" >
                                         <span>sale</span>
                                     </div>
                                     <img src="./img/products/product2.jpg" alt="#">
@@ -589,21 +550,19 @@
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
-                                    <div class="inset" data-inset>
+                                    <div class="inset" >
                                         <span>sale</span>
                                     </div>
                                     <img src="./img/products/product2.jpg" alt="#">
@@ -611,40 +570,36 @@
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
                                     <img src="./img/products/product2.jpg" alt="#">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
-                                    <div class="inset" data-inset>
+                                    <div class="inset" >
                                         <span>sale</span>
                                     </div>
                                     <img src="./img/products/product2.jpg" alt="#">
@@ -652,21 +607,19 @@
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
-                                    <div class="inset" data-inset>
+                                    <div class="inset" >
                                         <span>sale</span>
                                     </div>
                                     <img src="./img/products/product2.jpg" alt="#">
@@ -674,44 +627,40 @@
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab_content">
-                        <div class="owl-carousel">
-                            <div class="review-item">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="tab_content">
+                        <ul class="owl-carousel">
+                            <li class="product-item">
                                 <div class="item-img">
                                     <img src="./img/products/product3.jpg" alt="feel tank">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">feel tank</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item third-inset">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
-                                    <div class="inset" data-inset>
+                                    <div class="inset" >
                                         <span>sale</span>
                                     </div>
                                     <img src="./img/products/product3.jpg" alt="#">
@@ -719,40 +668,36 @@
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
                                     <img src="./img/products/product3.jpg" alt="#">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">feel tank</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
-                                    <div class="inset" data-inset>
+                                    <div class="inset" >
                                         <span>sale</span>
                                     </div>
                                     <img src="./img/products/product3.jpg" alt="#">
@@ -760,59 +705,53 @@
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
                                     <img src="./img/products/product3.jpg" alt="#">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">feel tank</span>
                                     <span class="item-price">$59.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
                                     <img src="./img/products/product3.jpg" alt="#">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
-                                    <div class="inset" data-inset>
+                                    <div class="inset" >
                                         <span>sale</span>
                                     </div>
                                     <img src="./img/products/product3.jpg" alt="#">
@@ -820,59 +759,53 @@
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
                                     <img src="./img/products/product3.jpg" alt="#">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
                                     <img src="./img/products/product3.jpg" alt="#">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
-                                    <div class="inset" data-inset>
+                                    <div class="inset" >
                                         <span>sale</span>
                                     </div>
                                     <img src="./img/products/product3.jpg" alt="#">
@@ -880,120 +813,108 @@
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab_content">
-                        <div class="owl-carousel">
-                            <div class="review-item">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="tab_content">
+                        <ul class="owl-carousel">
+                            <li class="product-item">
                                 <div class="item-img">
                                     <img src="./img/products/product4.jpg" alt="feel tank">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">feel tank</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
                                     <img src="./img/products/product4.jpg" alt="#">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
                                     <img src="./img/products/product4.jpg" alt="#">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">feel tank</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
                                     <img src="./img/products/product4.jpg" alt="#">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
                                     <span class="item-price">$76.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
                                     <img src="./img/products/product4.jpg" alt="#">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">feel tank</span>
                                     <span class="item-price">$59.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-item">
+                            </li>
+                            <li class="product-item">
                                 <div class="item-img">
-                                    <div class="inset" data-inset>
+                                    <div class="inset" >
                                         <span>sale</span>
                                     </div>
                                     <img src="./img/products/product4.jpg" alt="#">
@@ -1001,238 +922,216 @@
                                 <div class="item-info">
                                     <span class="item-name">feel tank</span>
                                     <span class="item-price">$59.95</span>
-                                    <div class="button">
-                                        <a href="#">add to cart
-                                            <div class="wrapper-plus">
-                                                <i class="plus"></i>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
                                     <div class="active-item">
                                         <a href="#">shop it</a>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
+                            </li>
+                        </ul>
+                    </li>
                     <div class="tabs-button">
                         <a href="#">Load more</a>
                     </div>
-                </div>
+                </ul>
             </div>
         </section>
         <section class="discount-carousel">
             <div class="container">
                 <div class="discount-element">
                     <div class="discount-info">
-                        <span>clearance</span><br>
+                        <span>clearance</span>
                         <span>50<sup>%</sup><sub>off</sub></span>
                     </div>
                 </div>
                 <div class="carousel">
-                    <div class="review-item">
+                    <div class="product-item">
                         <div class="item-img">
-                            <div class="inset" data-inset>
+                            <div class="inset" >
                                 <span>sale</span>
                             </div>
-                            <img src="./img/products/product1.jpg" alt="feel tank">
+                            <img src="./img/products/product5.jpg" alt="feel tank">
                         </div>
                         <div class="item-info clearfix">
                             <span class="item-name">feel tank</span>
                             <span class="item-price">$76.95</span>
-                            <div class="button">
-                                <a href="#">add to cart
-                                    <div class="wrapper-plus">
-                                        <i class="plus"></i>
-                                    </div>
-                                </a>
-                            </div>
+                            <a class="button" href="#">add to cart
+                                <div class="wrapper-plus">
+                                    <i class="plus"></i>
+                                </div>
+                            </a>
                             <div class="active-item">
                                 <a href="#">shop it</a>
                             </div>
                         </div>
                     </div>
-                    <div class="review-item">
+                    <div class="product-item">
                         <div class="item-img">
-                            <div class="inset" data-inset>
+                            <div class="inset" >
                                 <span>sale</span>
                             </div>
-                            <img src="./img/products/product1.jpg" alt="feel tank">
+                            <img src="./img/products/product5.jpg" alt="feel tank">
                         </div>
                         <div class="item-info clearfix">
                             <span class="item-name">mimosa lace dress</span>
                             <span class="item-price">$76.95</span>
-                            <div class="button">
-                                <a href="#">add to cart
-                                    <div class="wrapper-plus">
-                                        <i class="plus"></i>
-                                    </div>
-                                </a>
-                            </div>
+                            <a class="button" href="#">add to cart
+                                <div class="wrapper-plus">
+                                    <i class="plus"></i>
+                                </div>
+                            </a>
                             <div class="active-item">
                                 <a href="#">shop it</a>
                             </div>
                         </div>
                     </div>
-                    <div class="review-item">
+                    <div class="product-item">
                         <div class="item-img">
-                            <div class="inset" data-inset>
+                            <div class="inset" >
                                 <span>sale</span>
                             </div>
-                            <img src="./img/products/product1.jpg" alt="feel tank">
+                            <img src="./img/products/product5.jpg" alt="feel tank">
                         </div>
                         <div class="item-info clearfix">
                             <span class="item-name">feel tank</span>
                             <span class="item-price">$76.95</span>
-                            <div class="button">
-                                <a href="#">add to cart
-                                    <div class="wrapper-plus">
-                                        <i class="plus"></i>
-                                    </div>
-                                </a>
-                            </div>
+                            <a class="button" href="#">add to cart
+                                <div class="wrapper-plus">
+                                    <i class="plus"></i>
+                                </div>
+                            </a>
                             <div class="active-item">
                                 <a href="#">shop it</a>
                             </div>
                         </div>
                     </div>
-                    <div class="review-item">
+                    <div class="product-item">
                         <div class="item-img">
-                            <img src="./img/products/product1.jpg" alt="feel tank">
+                            <img src="./img/products/product5.jpg" alt="feel tank">
                         </div>
                         <div class="item-info clearfix">
                             <span class="item-name">mimosa lace dress</span>
                             <span class="item-price">$76.95</span>
-                            <div class="button">
-                                <a href="#">add to cart
-                                    <div class="wrapper-plus">
-                                        <i class="plus"></i>
-                                    </div>
-                                </a>
-                            </div>
+                            <a class="button" href="#">add to cart
+                                <div class="wrapper-plus">
+                                    <i class="plus"></i>
+                                </div>
+                            </a>
                             <div class="active-item">
                                 <a href="#">shop it</a>
                             </div>
                         </div>
                     </div>
-                    <div class="review-item">
+                    <div class="product-item">
                         <div class="item-img">
-                            <img src="./img/products/product1.jpg" alt="feel tank">
+                            <img src="./img/products/product5.jpg" alt="feel tank">
                         </div>
                         <div class="item-info clearfix">
                             <span class="item-name">feel tank</span>
                             <span class="item-price">$59.95</span>
-                            <div class="button">
-                                <a href="#">add to cart
-                                    <div class="wrapper-plus">
-                                        <i class="plus"></i>
-                                    </div>
-                                </a>
-                            </div>
+                            <a class="button" href="#">add to cart
+                                <div class="wrapper-plus">
+                                    <i class="plus"></i>
+                                </div>
+                            </a>
                             <div class="active-item">
                                 <a href="#">shop it</a>
                             </div>
                         </div>
                     </div>
-                    <div class="review-item">
+                    <div class="product-item">
                         <div class="item-img">
-                            <div class="inset" data-inset>
+                            <div class="inset" >
                                 <span>sale</span>
                             </div>
-                            <img src="./img/products/product1.jpg" alt="feel tank">
+                            <img src="./img/products/product5.jpg" alt="feel tank">
                         </div>
                         <div class="item-info clearfix">
                             <span class="item-name">mimosa lace dress</span>
                             <span class="item-price">$76.95</span>
-                            <div class="button">
-                                <a href="#">add to cart
-                                    <div class="wrapper-plus">
-                                        <i class="plus"></i>
-                                    </div>
-                                </a>
-                            </div>
+                            <a class="button" href="#">add to cart
+                                <div class="wrapper-plus">
+                                    <i class="plus"></i>
+                                </div>
+                            </a>
                             <div class="active-item">
                                 <a href="#">shop it</a>
                             </div>
                         </div>
                     </div>
-                    <div class="review-item">
+                    <div class="product-item">
                         <div class="item-img">
-                            <div class="inset" data-inset>
+                            <div class="inset" >
                                 <span>sale</span>
                             </div>
-                            <img src="./img/products/product1.jpg" alt="feel tank">
+                            <img src="./img/products/product5.jpg" alt="feel tank">
                         </div>
                         <div class="item-info clearfix">
                             <span class="item-name">mimosa lace dress</span>
                             <span class="item-price">$76.95</span>
-                            <div class="button">
-                                <a href="#">add to cart
-                                    <div class="wrapper-plus">
-                                        <i class="plus"></i>
-                                    </div>
-                                </a>
-                            </div>
+                            <a class="button" href="#">add to cart
+                                <div class="wrapper-plus">
+                                    <i class="plus"></i>
+                                </div>
+                            </a>
                             <div class="active-item">
                                 <a href="#">shop it</a>
                             </div>
                         </div>
                     </div>
-                    <div class="review-item">
+                    <div class="product-item">
                         <div class="item-img">
-                            <img src="./img/products/product1.jpg" alt="feel tank">
+                            <img src="./img/products/product5.jpg" alt="feel tank">
                         </div>
                         <div class="item-info clearfix">
                             <span class="item-name">mimosa lace dress</span>
                             <span class="item-price">$76.95</span>
-                            <div class="button">
-                                <a href="#">add to cart
-                                    <div class="wrapper-plus">
-                                        <i class="plus"></i>
-                                    </div>
-                                </a>
-                            </div>
+                            <a class="button" href="#">add to cart
+                                <div class="wrapper-plus">
+                                    <i class="plus"></i>
+                                </div>
+                            </a>
                             <div class="active-item">
                                 <a href="#">shop it</a>
                             </div>
                         </div>
                     </div>
-                    <div class="review-item">
+                    <div class="product-item">
                         <div class="item-img">
-                            <img src="./img/products/product1.jpg" alt="feel tank">
+                            <img src="./img/products/product5.jpg" alt="feel tank">
                         </div>
                         <div class="item-info clearfix">
                             <span class="item-name">mimosa lace dress</span>
                             <span class="item-price">$76.95</span>
-                            <div class="button">
-                                <a href="#">add to cart
-                                    <div class="wrapper-plus">
-                                        <i class="plus"></i>
-                                    </div>
-                                </a>
-                            </div>
+                            <a class="button" href="#">add to cart
+                                <div class="wrapper-plus">
+                                    <i class="plus"></i>
+                                </div>
+                            </a>
                             <div class="active-item">
                                 <a href="#">shop it</a>
                             </div>
                         </div>
                     </div>
-                    <div class="review-item">
+                    <div class="product-item">
                         <div class="item-img">
-                            <div class="inset" data-inset>
+                            <div class="inset" >
                                 <span>sale</span>
                             </div>
-                            <img src="./img/products/product1.jpg" alt="feel tank">
+                            <img src="./img/products/product5.jpg" alt="feel tank">
                         </div>
                         <div class="item-info clearfix">
                             <span class="item-name">mimosa lace dress</span>
                             <span class="item-price">$76.95</span>
-                            <div class="button">
-                                <a href="#">add to cart
-                                    <div class="wrapper-plus">
-                                        <i class="plus"></i>
-                                    </div>
-                                </a>
-                            </div>
+                            <a class="button" href="#">add to cart
+                                <div class="wrapper-plus">
+                                    <i class="plus"></i>
+                                </div>
+                            </a>
                             <div class="active-item">
                                 <a href="#">shop it</a>
                             </div>
@@ -1242,16 +1141,16 @@
                 <section class="brands">
                     <div class="container">
                         <h6>favorite brands</h6>
-                        <div class="brands-carousel">
-                            <img src="./img/brands/addict.jpg" alt="">
-                            <img src="./img/brands/abandon.jpg" alt="">
-                            <img src="./img/brands/adidas.jpg" alt="">
-                            <img src="./img/brands/boy.jpg" alt="">
-                            <img src="./img/brands/converce.jpg" alt="">
-                            <img src="./img/brands/calwinclein.jpg" alt="">
-                            <img src="./img/brands/edwin.jpg" alt="">
-                            <img src="./img/brands/crenson.jpg" alt="">
-                        </div>
+                        <ul class="brands-carousel">
+                            <li><img src="./img/brands/addict.jpg" alt=""></li>
+                            <li><img src="./img/brands/abandon.jpg" alt=""></li>
+                            <li><img src="./img/brands/adidas.jpg" alt=""></li>
+                            <li><img src="./img/brands/boy.jpg" alt=""></li>
+                            <li><img src="./img/brands/converce.jpg" alt=""></li>
+                            <li><img src="./img/brands/calwinclein.jpg" alt=""></li>
+                            <li><img src="./img/brands/edwin.jpg" alt=""></li>
+                            <li><img src="./img/brands/crenson.jpg" alt=""></li>
+                        </ul>
                     </div>
                 </section>
             </div>
@@ -1339,16 +1238,16 @@
                     <li>
                         <h6>Social</h6>
                         <ul class="inline-block-list">
-                            <li class="twitter"><a href="#"></a></li>
-                            <li class="pinterest-sign"><a href="#"></a></li>
-                            <li class="facebook"><a href="#"></a></li>
-                            <li class="google"><a href="#"></a></li>
-                            <li class="tumblr"><a href="#"></a></li>
-                            <li class="vimeo"><a href="#"></a></li>
+                            <li class="twitter"><a href="#">twitter</a></li>
+                            <li class="pinterest-sign"><a href="#">pinterest-sign</a></li>
+                            <li class="facebook"><a href="#">facebook</a></li>
+                            <li class="google"><a href="#">google</a></li>
+                            <li class="tumblr"><a href="#">tumblr</a></li>
+                            <li class="vimeo"><a href="#">vimeo</a></li>
                         </ul>
                     </li>
                     <li>
-                        <span>100%</span><br>
+                        <span>100%</span>
                         secured
                     </li>
                 </ul>
@@ -1357,7 +1256,7 @@
         <section class="down-footer">
             <div class="container clearfix">
                 <div class="copyright">
-                    &copy;LookShop.com<br>
+                    &copy;LookShop.com
                     All Rights Reserved
                 </div>
                 <div class="nav-footer">

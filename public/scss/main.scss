@@ -4,13 +4,13 @@
 @import "./imports/mixins";
 
 body {
-    font: 14px/1.5em Arial, sans-serif;
+    font: 14px/1.5 Arial, sans-serif;
     color: #000;
 }
 
 h1 {
     font-size: 32px;
-    line-height: 1.5em;
+    line-height: 1.5;
 }
 
 h2 {
@@ -54,8 +54,9 @@ h6 {
 .inline-block-list {
     margin: 0;
     padding: 0;
-    >li{
+    > li {
         display: inline-block;
+        vertical-align: middle;
     }
 }
 
@@ -73,7 +74,7 @@ h6 {
 @import "imports/_footer.scss";
 
 @media only screen and (max-device-width: 768px) {
-    .background-image{
+    .background-image {
         position: absolute;
         opacity: 0.4;
         z-index: 1;
