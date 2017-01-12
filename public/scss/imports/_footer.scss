@@ -1,229 +1,269 @@
 .payment-system {
-  text-align: center;
-  line-height: 55px;
-  background-color: $payment-system-bg-color;
-  span {
-    &::selection {
-      background: transparent;
-    }
-    &::-moz-selection {
-      background: transparent;
-    }
-  }
-  img {
-    margin: 0 5px;
-    vertical-align: middle;
-  }
-}
-.footer-navigation {
-  font-size: 0;
-  background-color: $footer-nav-bg-color;
-  .container {
-    padding: 30px 0;
-  }
-  .inline-block-list {
-    font-size: 0;
-    li {
-      list-style-type: none;
-      vertical-align: top;
-      font-size: 12px;
-      a {
-        text-decoration: none;
-        color: $footer-nav-text-color;
-        &:hover {
-          color: $footer-hover-text-color;
-        }
-      }
-    }
-    h6 {
-      margin: 0 0 15px;
-      font-weight: bold;
-      color: $footer-header-color;
-      &::selection {
-        background: transparent;
-      }
-      &::-moz-selection {
-        background: transparent;
-      }
-    }
-  }
-  .left-col {
-    float: left;
-    >li:first-child {
-      width: 200px;
-    }
-    >li:nth-child(2) {
-      width: 150px;
-    }
-    >li:nth-child(3) {
-      width: 200px;
-    }
-    >li:last-child {
-      width: 120px;
-    }
-  }
-  .right-col {
-    float: right;
-    >li:first-child {
-      width: 170px;
-    }
-    >li:last-child {
-      min-height: 100px;
-      width: 110px;
-      padding-top: 60px;
-      text-align: center;
-      font-size: 14px;
-      line-height: 14px;
-      background-image: url(../img/background-images/background-figure-light.png);
-      background-position: right 20px;
-      background-repeat: no-repeat;
-      color: $secured-color;
-    }
+    text-align: center;
+    line-height: 55px;
+    background-color: $payment-system-bg-color;
     span {
-      font-family: Impact;
-      font-size: 30px;
-      &::selection {
-        background: transparent;
-      }
-      &::-moz-selection {
-        background: transparent;
-      }
-    }
-  }
-  .twitter, .pinterest-sign, .facebook, .google, .tumblr, .vimeo {
-    a {
-      display: block;
-      height: 35px;
-      width: 35px;
-      margin: 0 10px 10px 0;
-      border-radius: 50%;
-      background-color: $footer-social-background;
-    }
-  }
-  .twitter {
-    a {
-      @include sprite($twitter-light-small);
-    }
-  }
-  .pinterest-sign {
-    a {
-      @include sprite($pinterest-light);
-    }
-  }
-  .facebook {
-    a {
-      @include sprite($facebook-light-small);
-    }
-  }
-  .google {
-    a {
-      @include sprite($google);
-    }
-  }
-  .tumblr {
-    a {
-      @include sprite($tumblr);
-    }
-  }
-  .vimeo {
-    a {
-      @include sprite($vimeo);
-    }
-  }
-}
-.down-footer {
-  background-color: #000;
-  .container {
-    padding: 25px 0;
-  }
-  .inline-block-list {
-    line-height: 40px;
-    li {
-      a {
-        padding: 0 10px;
-        font-size: 11px;
-        line-height: 11px;
-        color: $footer-links-color;
-        text-decoration: none;
-        border-right: 1px solid $footer-links-color;
-      }
-      &:last-child {
-        a{
-          border: none;
+        &::selection {
+            background: transparent;
         }
-      }
+        &::-moz-selection {
+            background: transparent;
+        }
     }
-  }
-  .copyright {
-    float: right;
-    text-align: right;
-    font-size: 11px;
-    line-height: 20px;
-    color: $footer-links-color;
-    &::selection {
-      background: transparent;
+    img {
+        margin: 0 5px;
+        vertical-align: middle;
     }
-    &::-moz-selection {
-      background: transparent;
-    }
-  }
 }
-@media only screen and (max-device-width: 1050px) {
-  .footer-navigation {
-    .left-col, .right-col {
-      width: 50%;
-    }
-  }
-}
-@media only screen and (max-device-width: 640px) {
-  .nav-footer {
-    position: relative;
-  }
-  .payment-system, .about, .footer-navigation {
-    display: none;
-  }
-  .footer-burger-menu:before {
-    content: '';
-    position: absolute;
-    top: 15px;
-    @include sprite($burger-large);
-  }
-  .nav-footer {
-    .inline-block-list {
-      display: none;
-    }
-  }
-  .down-footer {
+
+.footer-navigation {
+    font-size: 0;
+    background-color: $footer-nav-bg-color;
     .container {
-      padding: 30px;
+        padding: 30px 15px 0 15px;
+    }
+    .inline-block-list {
+        font-size: 0;
+        li {
+            list-style-type: none;
+            vertical-align: top;
+            font-size: 12px;
+            line-height: 18px;
+            > ul {
+                padding: 0;
+            }
+            a {
+                text-decoration: none;
+                color: $footer-nav-text-color;
+                &:hover {
+                    color: $footer-hover-text-color;
+                }
+            }
+        }
+        h6 {
+            margin: 0 0 7px;
+            font-weight: bold;
+            color: $footer-header-color;
+            &::selection {
+                background: transparent;
+            }
+            &::-moz-selection {
+                background: transparent;
+            }
+        }
+    }
+    .left-col {
+        float: left;
+        > li:first-child {
+            width: 203px;
+        }
+        > li:nth-child(2) {
+            width: 163px;
+        }
+        > li:nth-child(3) {
+            width: 193px;
+        }
+        > li:last-child {
+            width: 115px;
+        }
+    }
+    .right-col {
+        float: right;
+        > li:first-child {
+            width: 179px;
+        }
+        > li:last-child {
+            min-height: 100px;
+            width: 115px;
+            padding-top: 60px;
+            text-align: center;
+            font-size: 14px;
+            line-height: 14px;
+            background-image: url(../img/background-images/background-figure-light.png);
+            background-position: 6px 20px;
+            background-repeat: no-repeat;
+            color: $secured-color;
+        }
+        span {
+            font-family: Impact;
+            font-size: 30px;
+            &::selection {
+                background: transparent;
+            }
+            &::-moz-selection {
+                background: transparent;
+            }
+        }
+    }
+    .inline-block-list {
+        li {
+            a {
+                text-indent: -9999px;
+                overflow: hidden;
+            }
+        }
+    }
+    .twitter, .pinterest-sign, .facebook, .google, .tumblr, .vimeo {
+        a {
+            display: block;
+            margin: 0 10px 10px 0;
+            border-radius: 50%;
+            background-color: $footer-social-background;
+        }
+    }
+    .twitter {
+        a {
+            @include sprite($twitter-light-small);
+        }
+    }
+    .pinterest-sign {
+        a {
+            @include sprite($pinterest-light);
+        }
+    }
+    .facebook {
+        a {
+            @include sprite($facebook-light-small);
+        }
+    }
+    .google {
+        a {
+            @include sprite($google);
+        }
+    }
+    .tumblr {
+        a {
+            @include sprite($tumblr);
+        }
+    }
+    .vimeo {
+        a {
+            @include sprite($vimeo);
+        }
+    }
+}
+
+.down-footer {
+    background-color: #000;
+    .container {
+        padding: 25px 15px;
+    }
+    .inline-block-list {
+        line-height: 20px;
+        li {
+            a {
+                padding: 0 10px;
+                font-size: 11px;
+                line-height: 11px;
+                color: $footer-links-color;
+                text-decoration: none;
+                border-right: 1px solid $footer-links-color;
+            }
+            &:first-child {
+                a {
+                    padding-left: 0;
+                }
+            }
+            &:last-child {
+                a {
+                    padding-right: 0;
+                    border: none;
+                }
+            }
+        }
     }
     .copyright {
-      font-size: 24px;
-      line-height: 30px;
-    }
-  }
-  .mobile-footer-menu {
-    .inline-block-list {
-      position: absolute;
-      bottom: 0;
-      left: -30px;
-      display: block;
-      padding: 0 20px 40px 20px;
-      width: 640px;
-      text-transform: uppercase;
-      background-color: #000;
-      z-index: 10;
-      li {
-        a {
-          border: none;
-          font-size: 24px;
+        float: right;
+        text-align: right;
+        font-size: 11px;
+        line-height: 20px;
+        color: $footer-links-color;
+        &::selection {
+            background: transparent;
         }
-      }
+        &::-moz-selection {
+            background: transparent;
+        }
     }
-  }
-  .mobile-footer-menu {
-    .inline-block-list > li {
-      display: block;
+}
+
+@media only screen and (max-device-width: 1050px) {
+    .footer-navigation {
+        .container {
+            .left-col, .right-col {
+                float: none;
+            }
+            .left-col {
+                > li {
+                    width: 20%;
+                    padding-right: 5%;
+                }
+            }
+        }
+        .right-col {
+            text-align: center;
+            li {
+                text-align: left;
+                a {
+                    text-indent: -9999px;
+                    overflow: hidden;
+                    font-size: 0;
+                    line-height: 0;
+                }
+            }
+        }
     }
-  }
+}
+
+@media only screen and (max-device-width: 640px) {
+    .nav-footer {
+        position: relative;
+    }
+    .payment-system, .about, .footer-navigation {
+        display: none;
+    }
+    .footer-burger-menu:before {
+        content: '';
+        position: absolute;
+        top: 15px;
+        @include sprite($burger-large);
+    }
+    .nav-footer {
+        .inline-block-list {
+            display: none;
+        }
+    }
+    .down-footer {
+        .container {
+            padding: 30px;
+        }
+        .copyright {
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+    .mobile-footer-menu {
+        .inline-block-list {
+            position: absolute;
+            bottom: 0;
+            left: -30px;
+            display: block;
+            padding: 0 20px 40px 20px;
+            width: 640px;
+            text-transform: uppercase;
+            background-color: #000;
+            z-index: 10;
+            li {
+                a {
+                    border: none;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    .mobile-footer-menu {
+        .inline-block-list > li {
+            display: block;
+        }
+    }
 }
