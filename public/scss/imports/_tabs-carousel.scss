@@ -1,6 +1,7 @@
 .tabs-wrapper {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0;
 }
 
 .tabs {
@@ -16,11 +17,19 @@
         cursor: pointer;
         list-style-type: none;
     }
+    .tab.active {
+        color: #fff;
+        background-color: $tabs-main-bg-color;
+    }
 }
 
 .tabs-cont {
     height: 450px;
     margin: 0;
+    padding: 0;
+    .tab_content{
+        list-style-type: none;
+    }
     .owl-loaded {
         overflow: visible;
         padding: 0;
@@ -30,15 +39,12 @@
     }
 }
 
-.tabs {
-    .tab.active {
-        color: #fff;
-        background-color: $tabs-main-bg-color;
-    }
-}
-
 .owl-carousel {
     background-color: $tabs-main-bg-color;
+    .owl-stage-outer {
+        padding: 25px 0;
+    }
+
 }
 
 .tab_content {
@@ -95,12 +101,6 @@
         &:after {
             @include sprite($arrow-large-right-hover);
         }
-    }
-}
-
-.owl-carousel {
-    .owl-stage-outer {
-        padding: 25px 0;
     }
 }
 
@@ -369,12 +369,10 @@
         }
         .button {
             width: 220px;
-            a {
-                padding: 20px;
-                font-size: 20px;
-                border-bottom: 7px solid $tabs-border-button-color;
-                @include plus(17px);
-            }
+            padding: 20px;
+            font-size: 20px;
+            border-bottom: 7px solid $tabs-border-button-color;
+            @include plus(17px);
         }
     }
 }

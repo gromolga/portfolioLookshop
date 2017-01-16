@@ -36,23 +36,6 @@
 
 .static-item {
     position: relative;
-    a {
-        padding: 0 0 0 15px;
-    }
-    > a {
-        padding: 10px 30px 10px 15px;
-        &:after {
-            content: "";
-            position: absolute;
-            top: 17px;
-            right: 10px;
-            border: 5px solid transparent;
-            border-top: 5px solid #fff;
-        }
-    }
-}
-
-.static-item {
     .dropdown-items {
         position: absolute;
         display: none;
@@ -64,12 +47,25 @@
         z-index: 20;
     }
     // @todo maxim 2
-}
-
-.static-item:hover {
-    // @todo maxim 2
-    .dropdown-items {
-        display: block;
+    a {
+        padding: 5px 0 5px 15px;
+    }
+    > a {
+        padding: 10px 30px 10px 15px;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 15px;
+            right: 10px;
+            border: 5px solid transparent;
+            border-top: 5px solid #fff;
+        }
+    }
+    &:hover {
+        // @todo maxim 2
+        .dropdown-items {
+            display: block;
+        }
     }
 }
 
@@ -79,7 +75,7 @@
     &:before {
         content: "";
         position: absolute;
-        top: 14px;
+        top: 12px;
         left: 17px;
         @include sprite($account-small);
     }
@@ -210,7 +206,7 @@
         &:after {
             content: "";
             position: absolute;
-            top: 10px;
+            top: 13px;
             right: 15px;
             height: 30px;
             width: 35px;
@@ -379,7 +375,7 @@
                 padding: 25px;
                 border-left: none;
                 > a:after {
-                    top: 40px;
+                    top: 53px;
                     right: 12px;
                     border: 10px solid transparent;
                     border-top: 10px solid white;
@@ -399,22 +395,20 @@
                 padding-left: 70px;
                 // @todo maxim 4
                 &:before {
-                    top: 0;
+                    top: 13px;
                     left: 20px;
                     @include sprite($account-large);
                 }
-            }
-            .search {
-                border-right: none;
             }
         }
     }
     .search {
         float: right;
-        height: 90px;
+        height: 115px;
         width: 90px;
+        border-right: none;
         label:after {
-            top: 23px;
+            top: 35px;
             left: -5px;
             @include sprite($search-lagre);
         }
@@ -474,7 +468,7 @@
         }
         .media-nav-btn {
             font-size: 30px;
-            padding: 35px 20px;
+            padding: 25px 20px;
         }
     }
 }
@@ -499,7 +493,7 @@
     }
     .main-header-nav {
         .media-nav-btn {
-            padding: 20px 15px;
+            padding: 10px 15px;
         }
         > a:after {
             top: 15px;

@@ -1,0 +1,29 @@
+.bread-crumbs{
+    ul{
+        padding: 0;
+        line-height: 30px;
+        border-top: 1px solid $products-slider-border-color;
+    }
+    .icon-home{
+        text-indent: -9999px;
+        overflow: hidden;
+        @include sprite($home);
+
+    }
+    a{
+        font-size: 11px;
+        text-decoration: none;
+        color: $products-bread-crumbs-color;
+    }
+}
+@media only screen and (max-device-width: 640px) {
+    .bread-crumbs{
+        >.inline-block-list{
+            padding: 30px 10px;
+            border-bottom: 1px solid $products-slider-border-color;
+        }
+        a{
+            font-size: 20px;
+        }
+    }
+}

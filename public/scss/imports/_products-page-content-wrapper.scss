@@ -1,0 +1,184 @@
+.content-wrapper {
+    .leftcol{
+        width: 70%;
+    }
+    .nav{
+        padding-bottom: 15px;
+        border-bottom: 1px solid $products-nav-border-color;
+    }
+    .sort-view-label {
+        position: relative;
+        float: left;
+        line-height: 30px;
+        font-size: 11px;
+        color: $products-content-wrapper-nav-color;
+    }
+    .dropdown-menu {
+        position: absolute;
+        display: none;
+        margin: 0;
+        padding: 0;
+        left: 60px;
+        li {
+            list-style-type: none;
+            color: $products-content-wrapper-nav-color;
+        }
+        a {
+            text-decoration: none;
+            color: $products-content-wrapper-nav-color;
+        }
+    }
+    .dropdown-menu.show {
+        display: block;
+    }
+    .description {
+        padding-right: 10px;
+    }
+    .selected {
+        position: relative;
+        display: inline-block;
+        width: 70px;
+        padding: 0 10px;
+        line-height: 30px;
+        background-color: $products-content-wrapper-nav-bg-color;
+        &:before {
+            content: "";
+            position: absolute;
+            right: 0;
+            height: 30px;
+            width: 30px;
+            background-color: $products-content-wrapper-nav-bg-dark-color;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            top: 13px;
+            right: 10px;
+            border-top: 5px solid $products-sort-border-color;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            z-index: 10;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .paginator{
+        float: right;
+        font-size: 11px;
+        color: $products-content-wrapper-nav-color;
+        span{
+            display: inline-block;
+            padding-right: 15px;
+            vertical-align: middle;
+        }
+        ul{
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 0;
+        }
+        a{
+            display: block;
+            line-height: 30px;
+            width: 30px;
+            font-size: 11px;
+            text-align: center;
+            text-decoration: none;
+            color: $products-content-wrapper-nav-color;
+            background-color: $products-paginator-bg-color;
+            &:hover{
+                background-color: $products-paginator-hover-bg-color;
+            }
+        }
+        li:last-child{
+            a{
+                position: relative;
+                text-indent: -9999px;
+                overflow: hidden;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    top: 12px;
+                    left: 12px;
+                    display: block;
+                    height:6px;
+                    width: 6px;
+                    border-top: 1px solid $products-paginator-arrow-color;
+                    border-right: 1px solid $products-paginator-arrow-color;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-device-width: 1050px) {
+    .paginator{
+        .inline-block-list{
+            position: relative;
+            z-index: 10;
+        }
+    }
+}
+@media only screen and (max-device-width: 860px) {
+
+}
+@media only screen and (max-device-width: 768px) {
+
+}
+@media only screen and (max-device-width: 640px) {
+    .content-wrapper{
+        .leftcol {
+            width: 100%;
+        }
+        .nav{
+            padding: 20px 0;
+            .sort-view-label{
+                float: none;
+                padding-bottom: 20px;
+                font-size: 25px;
+            }
+        }
+        .paginator{
+            float: left;
+            font-size: 25px;
+            a{
+                line-height: 60px;
+                width: 60px;
+                font-size: 25px;
+            }
+            li:last-child{
+                a:after{
+                    top: 22px;
+                    left: 18px;
+                    height: 15px;
+                    width: 15px;
+                }
+            }
+        }
+        .selected{
+            width: 200px;
+            padding: 20px;
+            &:before{
+                top: 0;
+                height: 70px;
+                width: 70px;
+            }
+            &:after{
+                top: 30px;
+                right: 25px;
+                border-top: 10px solid $products-sort-border-color;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-bottom: 10px solid transparent
+            }
+        }
+        .dropdown-menu{
+            left: 150px;
+            li{
+                padding: 5px 0;
+            }
+        }
+    }
+
+}

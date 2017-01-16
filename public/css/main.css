@@ -43,6 +43,9 @@ The `sprites` mixin generates identical output to the CSS template
 
 @include sprites($spritesheet-sprites);
 */
+.icon {
+  display: inline-block; }
+
 body {
   font: 14px/1.5 Arial, sans-serif;
   color: #000; }
@@ -122,30 +125,28 @@ h6 {
 
 .static-item {
   position: relative; }
+  .static-item .dropdown-items {
+    position: absolute;
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    z-index: 20; }
   .static-item a {
-    padding: 0 0 0 15px; }
+    padding: 5px 0 5px 15px; }
   .static-item > a {
     padding: 10px 30px 10px 15px; }
     .static-item > a:after {
       content: "";
       position: absolute;
-      top: 17px;
+      top: 15px;
       right: 10px;
       border: 5px solid transparent;
       border-top: 5px solid #fff; }
-
-.static-item .dropdown-items {
-  position: absolute;
-  display: none;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  z-index: 20; }
-
-.static-item:hover .dropdown-items {
-  display: block; }
+  .static-item:hover .dropdown-items {
+    display: block; }
 
 .account {
   position: relative;
@@ -153,7 +154,7 @@ h6 {
   .account:before {
     content: "";
     position: absolute;
-    top: 14px;
+    top: 12px;
     left: 17px;
     background-image: url(../img/sprites/sprite.png);
     background-position: -86px -121px;
@@ -268,7 +269,7 @@ h6 {
     .main-header-nav > a:after {
       content: "";
       position: absolute;
-      top: 10px;
+      top: 13px;
       right: 15px;
       height: 30px;
       width: 35px;
@@ -381,7 +382,7 @@ h6 {
       padding: 25px;
       border-left: none; }
       .top-header .top-header-nav .static-item > a:after {
-        top: 40px;
+        top: 53px;
         right: 12px;
         border: 10px solid transparent;
         border-top: 10px solid white; }
@@ -396,20 +397,19 @@ h6 {
       padding: 10px;
       padding-left: 70px; }
       .top-header .top-header-nav .account:before {
-        top: 0;
+        top: 13px;
         left: 20px;
         background-image: url(../img/sprites/sprite.png);
         background-position: -51px 0px;
         width: 40px;
         height: 38px; }
-    .top-header .top-header-nav .search {
-      border-right: none; }
   .search {
     float: right;
-    height: 90px;
-    width: 90px; }
+    height: 115px;
+    width: 90px;
+    border-right: none; }
     .search label:after {
-      top: 23px;
+      top: 35px;
       left: -5px;
       background-image: url(../img/sprites/sprite.png);
       background-position: 0px -49px;
@@ -458,7 +458,7 @@ h6 {
     width: 33px; }
   .main-header-nav .media-nav-btn {
     font-size: 30px;
-    padding: 35px 20px; } }
+    padding: 25px 20px; } }
 
 @media only screen and (max-device-width: 600px) {
   .logo {
@@ -471,7 +471,7 @@ h6 {
   .cart-wrapper a:last-child {
     line-height: 50px; }
   .main-header-nav .media-nav-btn {
-    padding: 20px 15px; }
+    padding: 10px 15px; }
   .main-header-nav > a:after {
     top: 15px;
     right: 15px; } }
@@ -1091,7 +1091,8 @@ main .bx-wrapper .bx-viewport {
 
 .tabs-wrapper {
   max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0; }
 
 .tabs .tab {
   float: left;
@@ -1105,21 +1106,26 @@ main .bx-wrapper .bx-viewport {
   cursor: pointer;
   list-style-type: none; }
 
+.tabs .tab.active {
+  color: #fff;
+  background-color: #fd926d; }
+
 .tabs-cont {
   height: 450px;
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
+  .tabs-cont .tab_content {
+    list-style-type: none; }
   .tabs-cont .owl-loaded {
     overflow: visible;
     padding: 0; }
     .tabs-cont .owl-loaded .owl-stage-outer {
       overflow: hidden; }
 
-.tabs .tab.active {
-  color: #fff;
-  background-color: #fd926d; }
-
 .owl-carousel {
   background-color: #fd926d; }
+  .owl-carousel .owl-stage-outer {
+    padding: 25px 0; }
 
 .tab_content {
   position: absolute;
@@ -1177,9 +1183,6 @@ main .bx-wrapper .bx-viewport {
       background-position: -159px -27px;
       width: 14px;
       height: 27px; }
-
-.owl-carousel .owl-stage-outer {
-  padding: 25px 0; }
 
 .owl-carousel .product-item, .carousel .product-item {
   position: relative;
@@ -1405,27 +1408,26 @@ main .bx-wrapper .bx-viewport {
       font-size: 28px;
       line-height: 40px; }
     .item-info .button {
-      width: 220px; }
-      .item-info .button a {
-        padding: 20px;
-        font-size: 20px;
-        border-bottom: 7px solid #dd6b44;
-        position: relative; }
-        .item-info .button a .plus, .item-info .button a .plus:before {
-          position: absolute;
-          background: #fff; }
-        .item-info .button a .plus {
-          top: 50%;
-          left: 50%;
-          height: 17px;
-          width: 5.66667px;
-          transform: translate(-50%, -50%); }
-          .item-info .button a .plus:before {
-            content: '';
-            top: 33%;
-            left: -100%;
-            height: 5.66667px;
-            width: 17px; } }
+      width: 220px;
+      padding: 20px;
+      font-size: 20px;
+      border-bottom: 7px solid #dd6b44;
+      position: relative; }
+      .item-info .button .plus, .item-info .button .plus:before {
+        position: absolute;
+        background: #fff; }
+      .item-info .button .plus {
+        top: 50%;
+        left: 50%;
+        height: 17px;
+        width: 5.66667px;
+        transform: translate(-50%, -50%); }
+        .item-info .button .plus:before {
+          content: '';
+          top: 33%;
+          left: -100%;
+          height: 5.66667px;
+          width: 17px; } }
 
 .discount-element {
   position: absolute;
@@ -1724,8 +1726,6 @@ main .bx-wrapper .bx-viewport {
         line-height: 0; } }
 
 @media only screen and (max-device-width: 640px) {
-  .nav-footer {
-    position: relative; }
   .payment-system, .about, .footer-navigation {
     display: none; }
   .footer-burger-menu:before {
@@ -1736,13 +1736,19 @@ main .bx-wrapper .bx-viewport {
     background-position: -126px 0px;
     width: 33px;
     height: 30px; }
-  .nav-footer .inline-block-list {
-    display: none; }
+  .nav-footer {
+    position: relative; }
+    .nav-footer .inline-block-list {
+      display: none; }
   .down-footer .container {
     padding: 30px; }
   .down-footer .copyright {
     font-size: 24px;
     line-height: 30px; }
+    .down-footer .copyright span {
+      display: block; }
+  .down-footer .inline-block-list li:first-child a {
+    padding-left: 10px; }
   .mobile-footer-menu .inline-block-list {
     position: absolute;
     bottom: 0;
@@ -1753,11 +1759,359 @@ main .bx-wrapper .bx-viewport {
     text-transform: uppercase;
     background-color: #000;
     z-index: 10; }
-    .mobile-footer-menu .inline-block-list li a {
-      border: none;
-      font-size: 24px; }
-  .mobile-footer-menu .inline-block-list > li {
-    display: block; } }
+    .mobile-footer-menu .inline-block-list > li {
+      display: block; }
+    .mobile-footer-menu .inline-block-list li {
+      padding: 10px 0; }
+      .mobile-footer-menu .inline-block-list li a {
+        border: none;
+        font-size: 24px; } }
+
+.bx-wrapper {
+  margin: 0 auto 84px; }
+  .bx-wrapper a.bx-prev {
+    top: 228px;
+    left: 8px;
+    background-image: url(../img/sprites/sprite.png);
+    background-position: -159px -102px;
+    width: 12px;
+    height: 18px; }
+  .bx-wrapper .bx-prev:hover {
+    top: 228px;
+    left: 8px;
+    background-position: -159px -102px; }
+  .bx-wrapper a.bx-next {
+    top: 228px;
+    right: 8px;
+    background-image: url(../img/sprites/sprite.png);
+    background-position: -159px -120px;
+    width: 12px;
+    height: 18px; }
+  .bx-wrapper .bx-next:hover {
+    top: 228px;
+    right: 8px;
+    background-position: -159px -120px; }
+  .bx-wrapper .bx-loading {
+    background-image: none; }
+  .bx-wrapper .bx-viewport .bxslider {
+    margin: 0; }
+  .bx-wrapper .bx-pager {
+    bottom: -58px; }
+
+.product-slide {
+  height: 440px;
+  background: #fff; }
+  .product-slide .container {
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6; }
+  .product-slide .slideImg {
+    height: 100%;
+    float: left; }
+    .product-slide .slideImg img {
+      height: 100%;
+      margin: 0; }
+  .product-slide .product-info {
+    position: absolute;
+    right: 0;
+    width: 388px;
+    padding-top: 90px; }
+    .product-slide .product-info a {
+      position: relative;
+      display: block;
+      width: 130px;
+      padding: 20px 20px 20px 0;
+      font-size: 16px;
+      line-height: 16px;
+      text-transform: uppercase;
+      text-align: center;
+      text-decoration: none;
+      border-bottom: 3px solid #dd6b44;
+      color: #fff;
+      background-color: #fd926d; }
+      .product-slide .product-info a:hover, .product-slide .product-info a:active {
+        background-color: #dd6b44;
+        background: -moz-linear-gradient(#fd926d, #dd6b44, #dd6b44);
+        background: -webkit-gradient(linear, 0 0, 0 100%, from(#fd926d), to(#dd6b44), color-stop(0.5, #dd6b44));
+        background: -o-linear-gradient(#fd926d, #dd6b44, #dd6b44);
+        background: -ms-linear-gradient(#fd926d, #dd6b44, #dd6b44);
+        background: linear-gradient(#fd926d, #dd6b44, #dd6b44); }
+    .product-slide .product-info .button {
+      width: 155px;
+      padding: 20px;
+      text-align: left; }
+  .product-slide .wrapper-plus {
+    float: right;
+    height: 11px;
+    width: 11px;
+    position: relative; }
+    .product-slide .wrapper-plus .plus, .product-slide .wrapper-plus .plus:before {
+      position: absolute;
+      background: #fff; }
+    .product-slide .wrapper-plus .plus {
+      top: 50%;
+      left: 50%;
+      height: 11px;
+      width: 3.66667px;
+      transform: translate(-50%, -50%); }
+      .product-slide .wrapper-plus .plus:before {
+        content: '';
+        top: 33%;
+        left: -100%;
+        height: 3.66667px;
+        width: 11px; }
+  .product-slide .product-name {
+    display: block;
+    padding-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #4a4a4a; }
+  .product-slide .product-price {
+    padding-bottom: 30px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #fd926d; }
+
+.bx-wrapper .bx-controls .bx-pager .bx-pager-item .bx-pager-link {
+  margin: 0 10px;
+  background-color: #867a76; }
+  .bx-wrapper .bx-controls .bx-pager .bx-pager-item .bx-pager-link:hover {
+    background-color: #fd926d; }
+
+.bx-wrapper .bx-controls .bx-pager .bx-pager-item .bx-pager-link.active {
+  background-color: #fd926d; }
+
+main .bx-wrapper .bx-viewport {
+  border: none;
+  box-shadow: none;
+  left: 0; }
+
+.slide {
+  position: relative; }
+  .slide:before, .slide:after {
+    content: '';
+    position: absolute;
+    top: 160px;
+    height: 120px;
+    width: 30px;
+    background-color: white; }
+  .slide:after {
+    right: 0; }
+
+@media only screen and (max-device-width: 1050px) {
+  .product-slide .container {
+    height: 70%; }
+  .product-slide .slideImg img {
+    margin: 0; }
+  .product-slide .product-info {
+    right: 30px;
+    width: 440px;
+    padding-top: 10px; }
+  .product-slide .product-name {
+    padding-bottom: 0; }
+  .product-slide p {
+    margin-top: 0; }
+  .bx-wrapper {
+    height: 307px; }
+  .bx-controls .bx-controls-direction .bx-next, .bx-controls .bx-controls-direction .bx-prev {
+    top: 160px; } }
+
+@media only screen and (max-device-width: 860px) {
+  .product-slide .product-info {
+    width: 350px; }
+  .product-slide .product-name, .product-slide .product-price {
+    font-size: 22px; } }
+
+@media only screen and (max-device-width: 768px) {
+  .slide {
+    height: 350px; }
+  .product-slide .product-info {
+    width: 290px; }
+    .product-slide .product-info .button {
+      width: 100px;
+      padding: 5px;
+      font-size: 12px; }
+  .product-slide p {
+    font-size: 12px; }
+  .bx-wrapper .bx-controls .bx-controls-direction .bx-next, .bx-wrapper .bx-controls .bx-controls-direction .bx-prev {
+    top: 130px; }
+  .bx-wrapper {
+    height: 245px; } }
+
+@media only screen and (max-device-width: 640px) {
+  .slider {
+    display: none; } }
+
+.bread-crumbs ul {
+  padding: 0;
+  line-height: 30px;
+  border-top: 1px solid #d6d6d6; }
+
+.bread-crumbs .icon-home {
+  text-indent: -9999px;
+  overflow: hidden;
+  background-image: url(../img/sprites/sprite.png);
+  background-position: -142px -108px;
+  width: 11px;
+  height: 10px; }
+
+.bread-crumbs a {
+  font-size: 11px;
+  text-decoration: none;
+  color: #7a706d; }
+
+@media only screen and (max-device-width: 640px) {
+  .bread-crumbs > .inline-block-list {
+    padding: 30px 10px;
+    border-bottom: 1px solid #d6d6d6; }
+  .bread-crumbs a {
+    font-size: 20px; } }
+
+.content-wrapper .leftcol {
+  width: 70%; }
+
+.content-wrapper .nav {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #d6d6d6; }
+
+.content-wrapper .sort-view-label {
+  position: relative;
+  float: left;
+  line-height: 30px;
+  font-size: 11px;
+  color: #4d4d4d; }
+
+.content-wrapper .dropdown-menu {
+  position: absolute;
+  display: none;
+  margin: 0;
+  padding: 0;
+  left: 60px; }
+  .content-wrapper .dropdown-menu li {
+    list-style-type: none;
+    color: #4d4d4d; }
+  .content-wrapper .dropdown-menu a {
+    text-decoration: none;
+    color: #4d4d4d; }
+
+.content-wrapper .dropdown-menu.show {
+  display: block; }
+
+.content-wrapper .description {
+  padding-right: 10px; }
+
+.content-wrapper .selected {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  padding: 0 10px;
+  line-height: 30px;
+  background-color: #f4f4f4; }
+  .content-wrapper .selected:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 30px;
+    width: 30px;
+    background-color: #e5e5e5; }
+  .content-wrapper .selected:after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    border-top: 5px solid #6a6a6a;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    z-index: 10; }
+  .content-wrapper .selected:hover {
+    cursor: pointer; }
+
+.content-wrapper .paginator {
+  float: right;
+  font-size: 11px;
+  color: #4d4d4d; }
+  .content-wrapper .paginator span {
+    display: inline-block;
+    padding-right: 15px;
+    vertical-align: middle; }
+  .content-wrapper .paginator ul {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0; }
+  .content-wrapper .paginator a {
+    display: block;
+    line-height: 30px;
+    width: 30px;
+    font-size: 11px;
+    text-align: center;
+    text-decoration: none;
+    color: #4d4d4d;
+    background-color: #f4f4f4; }
+    .content-wrapper .paginator a:hover {
+      background-color: #e5e5e5; }
+  .content-wrapper .paginator li:last-child a {
+    position: relative;
+    text-indent: -9999px;
+    overflow: hidden; }
+    .content-wrapper .paginator li:last-child a:after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      display: block;
+      height: 6px;
+      width: 6px;
+      border-top: 1px solid #929292;
+      border-right: 1px solid #929292;
+      transform: rotate(45deg); }
+
+@media only screen and (max-device-width: 1050px) {
+  .paginator .inline-block-list {
+    position: relative;
+    z-index: 10; } }
+
+@media only screen and (max-device-width: 640px) {
+  .content-wrapper .leftcol {
+    width: 100%; }
+  .content-wrapper .nav {
+    padding: 20px 0; }
+    .content-wrapper .nav .sort-view-label {
+      float: none;
+      padding-bottom: 20px;
+      font-size: 25px; }
+  .content-wrapper .paginator {
+    float: left;
+    font-size: 25px; }
+    .content-wrapper .paginator a {
+      line-height: 60px;
+      width: 60px;
+      font-size: 25px; }
+    .content-wrapper .paginator li:last-child a:after {
+      top: 22px;
+      left: 18px;
+      height: 15px;
+      width: 15px; }
+  .content-wrapper .selected {
+    width: 200px;
+    padding: 20px; }
+    .content-wrapper .selected:before {
+      top: 0;
+      height: 70px;
+      width: 70px; }
+    .content-wrapper .selected:after {
+      top: 30px;
+      right: 25px;
+      border-top: 10px solid #6a6a6a;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid transparent; }
+  .content-wrapper .dropdown-menu {
+    left: 150px; }
+    .content-wrapper .dropdown-menu li {
+      padding: 5px 0; } }
 
 @media only screen and (max-device-width: 768px) {
   .background-image {

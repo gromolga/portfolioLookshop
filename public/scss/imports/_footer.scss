@@ -216,9 +216,6 @@
 }
 
 @media only screen and (max-device-width: 640px) {
-    .nav-footer {
-        position: relative;
-    }
     .payment-system, .about, .footer-navigation {
         display: none;
     }
@@ -229,6 +226,7 @@
         @include sprite($burger-large);
     }
     .nav-footer {
+        position: relative;
         .inline-block-list {
             display: none;
         }
@@ -240,6 +238,16 @@
         .copyright {
             font-size: 24px;
             line-height: 30px;
+            span{
+                display: block;
+            }
+        }
+        .inline-block-list{
+            li:first-child{
+                a{
+                    padding-left: 10px;
+                }
+            }
         }
     }
     .mobile-footer-menu {
@@ -253,17 +261,17 @@
             text-transform: uppercase;
             background-color: #000;
             z-index: 10;
+            >li{
+                display: block;
+            }
             li {
+                padding: 10px 0;
+
                 a {
                     border: none;
                     font-size: 24px;
                 }
             }
-        }
-    }
-    .mobile-footer-menu {
-        .inline-block-list > li {
-            display: block;
         }
     }
 }
