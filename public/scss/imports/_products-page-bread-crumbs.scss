@@ -20,13 +20,14 @@
 @media only screen and (max-device-width: 640px) {
     .bread-crumbs {
         > .inline-block-list {
-            padding: 30px 10px;
+            margin-bottom: 20px;
+            padding: 20px 10px;
             border-bottom: 1px solid $products-slider-border-color;
         }
         a {
             font-size: 30px;
         }
-        .icon-home-holder{
+        .icon-home-holder {
             line-height: 50px;
             width: 50px;
             text-align: center;

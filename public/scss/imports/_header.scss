@@ -415,12 +415,13 @@
         input {
             height: 80px;
             width: 470px;
+            margin-top: 15px;
             padding: 20px;
             font-size: 30px;
         }
     }
     .slide-down {
-        top: 84px;
+        top: 100px;
         right: 0;
         width: 470px;
         padding: 0;
@@ -554,6 +555,7 @@
         input {
             height: 42px;
             width: 300px;
+            margin-top: 0;
             padding: 0 10px;
             font-size: 16px;
         }

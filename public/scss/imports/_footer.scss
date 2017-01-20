@@ -149,7 +149,7 @@
         padding: 25px 15px;
     }
     .inline-block-list {
-        line-height: 20px;
+        line-height: 40px;
         li {
             a {
                 padding: 0 10px;
@@ -176,13 +176,16 @@
         float: right;
         text-align: right;
         font-size: 11px;
-        line-height: 20px;
         color: $footer-links-color;
         &::selection {
             background: transparent;
         }
         &::-moz-selection {
             background: transparent;
+        }
+        p {
+            margin: 0;
+            line-height: 2;
         }
     }
 }
@@ -222,7 +225,7 @@
     .footer-burger-menu:before {
         content: '';
         position: absolute;
-        top: 15px;
+        top: 30px;
         @include sprite($burger-large);
     }
     .nav-footer {
@@ -238,13 +241,13 @@
         .copyright {
             font-size: 24px;
             line-height: 30px;
-            span{
+            span {
                 display: block;
             }
         }
-        .inline-block-list{
-            li:first-child{
-                a{
+        .inline-block-list {
+            li:first-child {
+                a {
                     padding-left: 10px;
                 }
             }
@@ -261,7 +264,7 @@
             text-transform: uppercase;
             background-color: #000;
             z-index: 10;
-            >li{
+            > li {
                 display: block;
             }
             li {
