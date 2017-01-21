@@ -1,0 +1,42 @@
+@mixin plus($size) {
+    position: relative;
+    .plus, .plus:before {
+        position: absolute;
+        background: #fff;
+    }
+    .plus {
+        top: 50%;
+        left: 50%;
+        height: $size/3;
+        width: $size;
+        transform: translate(-50%, -50%);
+        &:before {
+            content: '';
+            top: -100%;
+            left: 33%;
+            height: $size;
+            width: $size/3;
+        }
+    }
+}
+@mixin dark-plus ($size) {
+    position: relative;
+    .dark-plus, .dark-plus:before {
+        position: absolute;
+        background: #000;
+    }
+    .dark-plus {
+        top: 50%;
+        left: 50%;
+        height: $size/3;
+        width: $size;
+        transform: translate(-50%, -50%);
+        &:before {
+            content: '';
+            top: -100%;
+            left: 33%;
+            height: $size;
+            width: $size/3;
+        }
+    }
+}

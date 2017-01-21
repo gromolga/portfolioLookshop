@@ -1,0 +1,84 @@
+@import "./imports/variables";
+@import "./imports/sprite";
+@import "../../node_modules/bourbon/app/assets/stylesheets/bourbon";
+@import "./imports/mixins";
+
+body {
+    font: 14px/1.5 Arial, sans-serif;
+    color: #000;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 1.5;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+h5 {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+h6 {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    width: 100%;
+    clear: both;
+}
+
+.container {
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.inline-block-list {
+    margin: 0;
+    padding: 0;
+    > li {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.icon {
+    display: inline-block;
+}
+
+@import "imports/_header.scss";
+@import "imports/_slider.scss";
+@import "imports/_banner.scss";
+@import "imports/_tabs-carousel.scss";
+@import "imports/_discount-carousel.scss";
+@import "imports/_brands.scss";
+@import "imports/_about.scss";
+@import "imports/_footer.scss";
+@import "imports/_products-page-slider.scss";
+@import "imports/_products-page-bread-crumbs.scss";
+@import "imports/_products-page-content-wrapper.scss";
+@media only screen and (max-device-width: 768px) {
+    .background-image {
+        position: absolute;
+        opacity: 0.4;
+        z-index: 1;
+    }
+}

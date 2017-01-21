@@ -1,0 +1,39 @@
+.bread-crumbs {
+    ul {
+        padding: 0;
+        line-height: 30px;
+        border-top: 1px solid $products-slider-border-color;
+    }
+    .icon-home {
+        text-indent: -9999px;
+        overflow: hidden;
+        @include sprite($home);
+
+    }
+    a {
+        font-size: 11px;
+        line-height: 1.2;
+        text-decoration: none;
+        color: $products-bread-crumbs-color;
+    }
+}
+
+@media only screen and (max-device-width: 640px) {
+    .bread-crumbs {
+        > .inline-block-list {
+            margin-bottom: 20px;
+            padding: 20px 10px;
+            border-bottom: 1px solid $products-slider-border-color;
+        }
+        a {
+            font-size: 30px;
+            line-height: 1.2;
+        }
+        .icon-home-holder {
+            line-height: 50px;
+            width: 50px;
+            text-align: center;
+            background-color: $products-adaptive-bread-crumbs-bg-color;
+        }
+    }
+}

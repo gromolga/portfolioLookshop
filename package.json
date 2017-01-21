@@ -1,0 +1,16 @@
+{
+  "name": "portfolioLookshop",
+  "version": "1.0.0",
+  "description": "adaptive online shop",
+  "main": "index.js",
+  "repository": "git@github.com:gromolga/portfolioLookshop.git",
+  "author": "gromolga <gromolga.work@gmail.com>",
+  "dependencies": {
+    "bourbon": "^4.2.7",
+    "browser-sync": "^2.18.5",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.0.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp.spritesmith": "^6.2.1"
+  }
+}
