@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lookshop</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="./js/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="fonts/fonts.css">
     <link href="./css/jquery.bxslider.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/owl.carousel.css">
-    <script src="./js/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="./js/jquery.bxslider.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -19,8 +19,8 @@
             <div class="container clearfix">
                 <strong class="phone">custom care:  888-23-4567</strong>
                 <div class="top-header-nav">
-                    <div class="static-item">
-                        <a href="#">$ us</a>
+                    <div class="monetary-choice">
+                        <span>$ us</span>
                         <ul class="dropdown-items hide-dropdown-items">
                             <li><a href="#">€ us</a></li>
                             <li><a href="#">Rub us</a></li>
@@ -28,7 +28,7 @@
                         </ul>
                     </div>
                     <a class="account" href="#">My account</a>
-                    <form class="search disabled" action="">
+                    <form class="search disabled" method="get" action="#">
                         <label class="search-icon" for="search"></label>
                         <input id="search" type="search" name="serch" placeholder="Введите Ваш запрос">
                         <ul id="search-result" class="slide-down disabled">
@@ -46,20 +46,20 @@
                     <a href="#"><img id ="logo" src="img/logo/logo-small.png" alt="lookshop" data-large="img/logo/logo-large.png" data-small="img/logo/logo-small.png"></a>
                     <strong>lookshop</strong>
                 </div>
-                <div class="cart-wrapper">
+                <div class="wrapper-cart">
                     <a href="#">Your cart</a>
                     <a href="#">0 items | $ 0</a>
                 </div>
                 <nav class="main-header-nav">
-                    <a class="media-nav-btn">Menu</a>
+                    <a class="media-nav-list">Menu</a>
                     <ul class="inline-block-list main-dropdown-menu">
-                        <li><a class="nav-btn">new</a>
+                        <li><a class="nav-list">new</a>
                             <ul class="submenu">
                                 <li><a href="#">women</a></li>
                                 <li><a href="#">men</a></li>
                             </ul>
                         </li>
-                        <li><a class="nav-btn">designers</a>
+                        <li><a class="nav-list">designers</a>
                             <ul class="submenu">
                                 <li><a href="#">Oksana Mukha</a></li>
                                 <li><a href="#">Giorgio Armani</a></li>
@@ -68,7 +68,7 @@
                                 <li><a href="#">Yudashkin</a></li>
                             </ul>
                         </li>
-                        <li><a class="nav-btn">women</a>
+                        <li><a class="nav-list">women</a>
                             <ul class="submenu">
                                 <li><a href="#">classic</a></li>
                                 <li><a href="#">sport</a></li>
@@ -77,7 +77,7 @@
                                 <li><a href="#">business-casual</a></li>
                             </ul>
                         </li>
-                        <li><a class="nav-btn">men</a>
+                        <li><a class="nav-list">men</a>
                             <ul class="submenu">
                                 <li><a href="#">classic</a></li>
                                 <li><a href="#">sport</a></li>
@@ -86,7 +86,7 @@
                                 <li><a href="#">business-casual</a></li>
                             </ul>
                         </li>
-                        <li><a class="nav-btn">clearence</a>
+                        <li><a class="nav-list">clearence</a>
                             <ul class="submenu">
                                 <li><a href="#">men</a></li>
                                 <li><a href="#">women</a></li>
@@ -102,7 +102,7 @@
             <ul class="bxslider clearfix">
                 <li class="slide slide1">
                     <div class="container">
-                        <div class="slideImg">
+                        <div class="slide-img">
                             <img src="./img/slides/slide-small.png" alt="#" data-large="./img/slides/slide-large.png"
                                  data-small="./img/slides/slide-small.png">
                         </div>
@@ -116,7 +116,7 @@
                 </li>
                 <li class="slide slide1">
                     <div class="container">
-                        <div class="slideImg">
+                        <div class="slide-img">
                             <img src="./img/slides/slide-small.png" alt="#" data-large="./img/slides/slide-large.png"
                                  data-small="./img/slides/slide-small.png">
                         </div>
@@ -130,7 +130,7 @@
                 </li>
                 <li class="slide slide1">
                     <div class="container">
-                        <div class="slideImg">
+                        <div class="slide-img">
                             <img src="./img/slides/slide-small.png" alt="#" data-large="./img/slides/slide-large.png"
                                  data-small="./img/slides/slide-small.png">
                         </div>
@@ -144,7 +144,7 @@
                 </li>
                 <li class="slide slide1">
                     <div class="container">
-                        <div class="slideImg">
+                        <div class="slide-img">
                             <img src="./img/slides/slide-small.png" alt="#" data-large="./img/slides/slide-large.png"
                                  data-small="./img/slides/slide-small.png">
                         </div>
@@ -158,7 +158,7 @@
                 </li>
                 <li class="slide slide1">
                     <div class="container">
-                        <div class="slideImg">
+                        <div class="slide-img">
                             <img src="./img/slides/slide-small.png" alt="#" data-large="./img/slides/slide-large.png"
                                  data-small="./img/slides/slide-small.png">
                         </div>
@@ -175,7 +175,7 @@
         <div class="main-social">
             <div class="container clearfix">
                 <span class="email-pointer">Stay updated</span>
-                <form action="" method="post" class="email clearfix">
+                <form method="get" action="#" class="email clearfix">
                     <input type="email" name="email" placeholder="Your email address">
                     <label class="wrapper-submit">
                         <input type="submit" hidden>
@@ -193,7 +193,7 @@
         <section class="banner">
             <div class="container clearfix">
                 <div class="left-col">
-                    <img src="./img/banner/banner-img1.jpg" alt="banner">
+                    <img src="./img/banner/banner-img1.jpg" alt="advertising">
                     <div class="left-col-header">
                         <span>best</span>
                         <span>outfits</span>
@@ -203,7 +203,7 @@
                 </div>
                 <div class="right-col">
                     <div class="large-img">
-                        <img src="./img/banner/banner-img2.jpg" alt="#">
+                        <img src="./img/banner/banner-img2.jpg" alt="advertising">
                         <div class="large-img-header-box">
                             <div class="large-img-header">
                                 <span>summer</span>
@@ -213,11 +213,11 @@
                         </div>
                     </div>
                     <div class="small-img left-img">
-                        <img src="./img/banner/banner-img3.jpg" alt="#">
+                        <img src="./img/banner/banner-img3.jpg" alt="advertising">
                         <span class="left-img-header">best sellers</span>
                     </div>
                     <div class="small-img right-img">
-                        <img src="./img/banner/banner-img4.jpg" alt="#">
+                        <img src="./img/banner/banner-img4.jpg" alt="advertising">
                         <div class="right-img-header">
                             <span>fall</span>
                             <span>leather</span>
@@ -228,7 +228,7 @@
             </div>
         </section>
         <section class="tabs">
-            <ul class="tabs-wrapper">
+            <ul class="wrapper-tabs">
                 <ul class="container clearfix">
                     <li class="tab active">What is hot?</li>
                     <li class="tab tab-1 responsive-hide">Designers</li>
@@ -471,7 +471,7 @@
                             </li>
                             <li class="product-item">
                                 <div class="item-img">
-                                    <img src="./img/products/product2.jpg" alt="#">
+                                    <img src="./img/products/product2.jpg" alt="mimosa lace dress">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
@@ -488,7 +488,7 @@
                             </li>
                             <li class="product-item">
                                 <div class="item-img">
-                                    <img src="./img/products/product2.jpg" alt="#">
+                                    <img src="./img/products/product2.jpg" alt="feel tank">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">feel tank</span>
@@ -505,7 +505,7 @@
                             </li>
                             <li class="product-item">
                                 <div class="item-img">
-                                    <img src="./img/products/product2.jpg" alt="#">
+                                    <img src="./img/products/product2.jpg" alt="mimosa lace dress">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
@@ -525,7 +525,7 @@
                                     <div class="inset" >
                                         <span>sale</span>
                                     </div>
-                                    <img src="./img/products/product2.jpg" alt="#">
+                                    <img src="./img/products/product2.jpg" alt="feel tank">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">feel tank</span>
@@ -545,7 +545,7 @@
                                     <div class="inset" >
                                         <span>sale</span>
                                     </div>
-                                    <img src="./img/products/product2.jpg" alt="#">
+                                    <img src="./img/products/product2.jpg" alt="mimosa lace dress">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
@@ -565,7 +565,7 @@
                                     <div class="inset" >
                                         <span>sale</span>
                                     </div>
-                                    <img src="./img/products/product2.jpg" alt="#">
+                                    <img src="./img/products/product2.jpg" alt="mimosa lace dress">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
@@ -582,27 +582,7 @@
                             </li>
                             <li class="product-item">
                                 <div class="item-img">
-                                    <img src="./img/products/product2.jpg" alt="#">
-                                </div>
-                                <div class="item-info">
-                                    <span class="item-name">mimosa lace dress</span>
-                                    <span class="item-price">$76.95</span>
-                                    <a class="button" href="#">add to cart
-                                        <div class="wrapper-plus">
-                                            <i class="plus"></i>
-                                        </div>
-                                    </a>
-                                    <div class="active-item">
-                                        <a href="#">shop it</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="product-item">
-                                <div class="item-img">
-                                    <div class="inset" >
-                                        <span>sale</span>
-                                    </div>
-                                    <img src="./img/products/product2.jpg" alt="#">
+                                    <img src="./img/products/product2.jpg" alt="mimosa lace dress">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
@@ -622,7 +602,27 @@
                                     <div class="inset" >
                                         <span>sale</span>
                                     </div>
-                                    <img src="./img/products/product2.jpg" alt="#">
+                                    <img src="./img/products/product2.jpg" alt="mimosa lace dress">
+                                </div>
+                                <div class="item-info">
+                                    <span class="item-name">mimosa lace dress</span>
+                                    <span class="item-price">$76.95</span>
+                                    <a class="button" href="#">add to cart
+                                        <div class="wrapper-plus">
+                                            <i class="plus"></i>
+                                        </div>
+                                    </a>
+                                    <div class="active-item">
+                                        <a href="#">shop it</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-item">
+                                <div class="item-img">
+                                    <div class="inset" >
+                                        <span>sale</span>
+                                    </div>
+                                    <img src="./img/products/product2.jpg" alt="mimosa lace dress">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
@@ -663,7 +663,7 @@
                                     <div class="inset" >
                                         <span>sale</span>
                                     </div>
-                                    <img src="./img/products/product3.jpg" alt="#">
+                                    <img src="./img/products/product3.jpg" alt="mimosa lace dress">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
@@ -680,7 +680,7 @@
                             </li>
                             <li class="product-item">
                                 <div class="item-img">
-                                    <img src="./img/products/product3.jpg" alt="#">
+                                    <img src="./img/products/product3.jpg" alt="feel tank">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">feel tank</span>
@@ -700,7 +700,7 @@
                                     <div class="inset" >
                                         <span>sale</span>
                                     </div>
-                                    <img src="./img/products/product3.jpg" alt="#">
+                                    <img src="./img/products/product3.jpg" alt="mimosa lace dress">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
@@ -717,7 +717,7 @@
                             </li>
                             <li class="product-item">
                                 <div class="item-img">
-                                    <img src="./img/products/product3.jpg" alt="#">
+                                    <img src="./img/products/product3.jpg" alt="feel tank">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">feel tank</span>
@@ -734,7 +734,7 @@
                             </li>
                             <li class="product-item">
                                 <div class="item-img">
-                                    <img src="./img/products/product3.jpg" alt="#">
+                                    <img src="./img/products/product3.jpg" alt="mimosa lace dress">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
@@ -754,7 +754,7 @@
                                     <div class="inset" >
                                         <span>sale</span>
                                     </div>
-                                    <img src="./img/products/product3.jpg" alt="#">
+                                    <img src="./img/products/product3.jpg" alt="mimosa lace dress">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
@@ -771,7 +771,7 @@
                             </li>
                             <li class="product-item">
                                 <div class="item-img">
-                                    <img src="./img/products/product3.jpg" alt="#">
+                                    <img src="./img/products/product3.jpg" alt="mimosa lace dress">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
@@ -788,7 +788,7 @@
                             </li>
                             <li class="product-item">
                                 <div class="item-img">
-                                    <img src="./img/products/product3.jpg" alt="#">
+                                    <img src="./img/products/product3.jpg" alt="mimosa lace dress">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
@@ -808,7 +808,7 @@
                                     <div class="inset" >
                                         <span>sale</span>
                                     </div>
-                                    <img src="./img/products/product3.jpg" alt="#">
+                                    <img src="./img/products/product3.jpg" alt="mimosa lace dress">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
@@ -846,7 +846,7 @@
                             </li>
                             <li class="product-item">
                                 <div class="item-img">
-                                    <img src="./img/products/product4.jpg" alt="#">
+                                    <img src="./img/products/product4.jpg" alt="mimosa lace dress">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
@@ -863,7 +863,7 @@
                             </li>
                             <li class="product-item">
                                 <div class="item-img">
-                                    <img src="./img/products/product4.jpg" alt="#">
+                                    <img src="./img/products/product4.jpg" alt="feel tank">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">feel tank</span>
@@ -880,7 +880,7 @@
                             </li>
                             <li class="product-item">
                                 <div class="item-img">
-                                    <img src="./img/products/product4.jpg" alt="#">
+                                    <img src="./img/products/product4.jpg" alt="mimosa lace dress">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">mimosa lace dress</span>
@@ -897,7 +897,7 @@
                             </li>
                             <li class="product-item">
                                 <div class="item-img">
-                                    <img src="./img/products/product4.jpg" alt="#">
+                                    <img src="./img/products/product4.jpg" alt="feel tank">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">feel tank</span>
@@ -917,7 +917,7 @@
                                     <div class="inset" >
                                         <span>sale</span>
                                     </div>
-                                    <img src="./img/products/product4.jpg" alt="#">
+                                    <img src="./img/products/product4.jpg" alt="feel tank">
                                 </div>
                                 <div class="item-info">
                                     <span class="item-name">feel tank</span>
@@ -974,7 +974,7 @@
                             <div class="inset" >
                                 <span>sale</span>
                             </div>
-                            <img src="./img/products/product5.jpg" alt="feel tank">
+                            <img src="./img/products/product5.jpg" alt="mimosa lace dress">
                         </div>
                         <div class="item-info clearfix">
                             <span class="item-name">mimosa lace dress</span>
@@ -1011,7 +1011,7 @@
                     </div>
                     <div class="product-item">
                         <div class="item-img">
-                            <img src="./img/products/product5.jpg" alt="feel tank">
+                            <img src="./img/products/product5.jpg" alt="mimosa lace dress">
                         </div>
                         <div class="item-info clearfix">
                             <span class="item-name">mimosa lace dress</span>
@@ -1048,7 +1048,7 @@
                             <div class="inset" >
                                 <span>sale</span>
                             </div>
-                            <img src="./img/products/product5.jpg" alt="feel tank">
+                            <img src="./img/products/product5.jpg" alt="mimosa lace dress">
                         </div>
                         <div class="item-info clearfix">
                             <span class="item-name">mimosa lace dress</span>
@@ -1068,7 +1068,7 @@
                             <div class="inset" >
                                 <span>sale</span>
                             </div>
-                            <img src="./img/products/product5.jpg" alt="feel tank">
+                            <img src="./img/products/product5.jpg" alt="mimosa lace dress">
                         </div>
                         <div class="item-info clearfix">
                             <span class="item-name">mimosa lace dress</span>
@@ -1085,7 +1085,7 @@
                     </div>
                     <div class="product-item">
                         <div class="item-img">
-                            <img src="./img/products/product5.jpg" alt="feel tank">
+                            <img src="./img/products/product5.jpg" alt="mimosa lace dress">
                         </div>
                         <div class="item-info clearfix">
                             <span class="item-name">mimosa lace dress</span>
@@ -1102,7 +1102,7 @@
                     </div>
                     <div class="product-item">
                         <div class="item-img">
-                            <img src="./img/products/product5.jpg" alt="feel tank">
+                            <img src="./img/products/product5.jpg" alt="mimosa lace dress">
                         </div>
                         <div class="item-info clearfix">
                             <span class="item-name">mimosa lace dress</span>
@@ -1122,7 +1122,7 @@
                             <div class="inset" >
                                 <span>sale</span>
                             </div>
-                            <img src="./img/products/product5.jpg" alt="feel tank">
+                            <img src="./img/products/product5.jpg" alt="mimosa lace dress">
                         </div>
                         <div class="item-info clearfix">
                             <span class="item-name">mimosa lace dress</span>
@@ -1142,14 +1142,14 @@
                     <div class="container">
                         <h6>favorite brands</h6>
                         <ul class="brands-carousel">
-                            <li><img src="./img/brands/addict.jpg" alt=""></li>
-                            <li><img src="./img/brands/abandon.jpg" alt=""></li>
-                            <li><img src="./img/brands/adidas.jpg" alt=""></li>
-                            <li><img src="./img/brands/boy.jpg" alt=""></li>
-                            <li><img src="./img/brands/converce.jpg" alt=""></li>
-                            <li><img src="./img/brands/calwinclein.jpg" alt=""></li>
-                            <li><img src="./img/brands/edwin.jpg" alt=""></li>
-                            <li><img src="./img/brands/crenson.jpg" alt=""></li>
+                            <li><img src="./img/brands/addict.jpg" alt="addict"></li>
+                            <li><img src="./img/brands/abandon.jpg" alt="abandon"></li>
+                            <li><img src="./img/brands/adidas.jpg" alt="adidas"></li>
+                            <li><img src="./img/brands/boy.jpg" alt="boy"></li>
+                            <li><img src="./img/brands/converce.jpg" alt="converce"></li>
+                            <li><img src="./img/brands/calwinclein.jpg" alt="calwinclein"></li>
+                            <li><img src="./img/brands/edwin.jpg" alt="edwin"></li>
+                            <li><img src="./img/brands/crenson.jpg" alt="crenson"></li>
                         </ul>
                     </div>
                 </section>
@@ -1176,17 +1176,17 @@
         <section class="payment-system">
             <div class="container">
                 <span>We accept</span>
-                <img src="./img/payment-system/visa.jpg" alt="">
-                <img src="./img/payment-system/master-card.jpg" alt="">
-                <img src="./img/payment-system/paypal.jpg" alt="">
-                <img src="./img/payment-system/ami-hecan.jpg" alt="">
-                <img src="./img/payment-system/visa-electron.jpg" alt="">
-                <img src="./img/payment-system/lafer.jpg" alt="">
-                <img src="./img/payment-system/maestro.jpg" alt="">
-                <img src="./img/payment-system/delta.jpg" alt="">
-                <img src="./img/payment-system/loto.jpg" alt="">
-                <img src="./img/payment-system/ideal.jpg" alt="">
-                <img src="./img/payment-system/dk.jpg" alt="">
+                <img src="./img/payment-system/visa.jpg" alt="visa">
+                <img src="./img/payment-system/master-card.jpg" alt="master-card">
+                <img src="./img/payment-system/paypal.jpg" alt="paypal">
+                <img src="./img/payment-system/ami-hecan.jpg" alt="ami-hecan">
+                <img src="./img/payment-system/visa-electron.jpg" alt="visa-electron">
+                <img src="./img/payment-system/lafer.jpg" alt="lafer">
+                <img src="./img/payment-system/maestro.jpg" alt="maestro">
+                <img src="./img/payment-system/delta.jpg" alt="delta">
+                <img src="./img/payment-system/loto.jpg" alt="loto">
+                <img src="./img/payment-system/ideal.jpg" alt="ideal">
+                <img src="./img/payment-system/dk.jpg" alt="dk">
             </div>
         </section>
         <section class="footer-navigation">

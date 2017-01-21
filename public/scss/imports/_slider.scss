@@ -45,7 +45,7 @@
         position: relative;
         height: 100%;
     }
-    .slideImg {
+    .slide-img {
         height: 100%;
         img {
             height: 100%;
@@ -108,7 +108,7 @@
             width: 130px;
             padding: 20px 20px 20px 0;
             font-size: 16px;
-            line-height: 16px;
+            line-height: 1;
             text-transform: uppercase;
             text-decoration: none;
             border-bottom: 3px solid $slider-border-button-color;
@@ -140,7 +140,7 @@
             .bx-pager-item {
                 .bx-pager-link {
                     margin: 0 10px;
-                    background-color: $slider-ratio-inactive;
+                    background-color: $slider-ratio-inactive-color;
                     &:hover {
                         background-color: $slider-ratio-hover;
                     }
@@ -211,6 +211,7 @@ main {
                 .bottom-text {
                     width: 290px;
                     font-size: 30px;
+                    line-height: 1.2;
                 }
             }
         }

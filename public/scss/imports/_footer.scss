@@ -18,6 +18,7 @@
 
 .footer-navigation {
     font-size: 0;
+    line-height: 0;
     background-color: $footer-nav-bg-color;
     .container {
         padding: 30px 15px 0 15px;
@@ -28,7 +29,7 @@
             list-style-type: none;
             vertical-align: top;
             font-size: 12px;
-            line-height: 18px;
+            line-height: 1.5;
             > ul {
                 padding: 0;
             }
@@ -78,7 +79,7 @@
             padding-top: 60px;
             text-align: center;
             font-size: 14px;
-            line-height: 14px;
+            line-height: 1;
             background-image: url(../img/background-images/background-figure-light.png);
             background-position: 6px 20px;
             background-repeat: no-repeat;
@@ -87,6 +88,7 @@
         span {
             font-family: Impact;
             font-size: 30px;
+            line-height: 1.2;
             &::selection {
                 background: transparent;
             }
@@ -154,7 +156,7 @@
             a {
                 padding: 0 10px;
                 font-size: 11px;
-                line-height: 11px;
+                line-height: 1;
                 color: $footer-links-color;
                 text-decoration: none;
                 border-right: 1px solid $footer-links-color;
@@ -176,6 +178,7 @@
         float: right;
         text-align: right;
         font-size: 11px;
+        line-height: 1;
         color: $footer-links-color;
         &::selection {
             background: transparent;
@@ -240,7 +243,7 @@
         }
         .copyright {
             font-size: 24px;
-            line-height: 30px;
+            line-height: 1.2;
             span {
                 display: block;
             }
@@ -273,6 +276,7 @@
                 a {
                     border: none;
                     font-size: 24px;
+                    line-height: 1.2;
                 }
             }
         }

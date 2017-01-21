@@ -100,6 +100,7 @@
     .product-price {
         padding-bottom: 30px;
         font-size: 36px;
+        line-height: 1.2;
         font-weight: bold;
         color: $products-price-color;
     }
@@ -190,6 +191,7 @@ main {
         }
         .product-name, .product-price {
             font-size: 22px;
+            line-height: 1.2;
         }
     }
 }
@@ -205,10 +207,12 @@ main {
                 width: 100px;
                 padding: 5px;
                 font-size: 12px;
+                line-height: 1.2;
             }
         }
         p {
             font-size: 12px;
+            line-height: 1.2;
         }
     }
     .bx-wrapper {

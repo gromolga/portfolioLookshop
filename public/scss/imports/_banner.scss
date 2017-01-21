@@ -41,6 +41,7 @@
 
 .main-social-icons, .social-pointer {
     display: inline-block;
+    vertical-align: middle;
 }
 
 .social-pointer {
@@ -104,9 +105,7 @@
                 width: 35px;
                 margin: 0 auto;
                 border-radius: 50%;
-                font: 22px/22px 'HelveticaNeueLTStd-LtCnO';
-                line-height: 35px;
-                 //@todo 6
+                font: 22px/35px 'HelveticaNeueLTStd-LtCnO';
                 text-align: center;
                 text-transform: uppercase;
                 color: #fff;
@@ -234,6 +233,7 @@
         display: block;
         padding: 5px 22px 5px 10px;
         font-size: 12px;
+        line-height: 1.2;
         text-transform: uppercase;
         background-color: $banner-main-text-color;
         color: #fff;
@@ -296,6 +296,7 @@
             bottom: 15px;
             a {
                 font-size: 10px;
+                line-height: 1.2;
                 padding: 0 20px 0 10px;
                 &:after {
                     top: 5px;
@@ -352,6 +353,7 @@
             padding: 30px;
             background-color: $social-bg-main-color;
             font-size: 30px;
+            line-height: 1.2;
         }
         .email {
             float: none;
@@ -369,6 +371,7 @@
         }
         .social-pointer {
             font-size: 26px;
+            line-height: 1.2;
         }
         .main-social-icons {
             a {
@@ -421,6 +424,7 @@
                 width: calc(100% - 85px);
                 padding: 20px 10px;
                 font-size: 20px;
+                line-height: 1.2;
             }
         }
     }

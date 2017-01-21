@@ -8,19 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lookshop</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="./js/jquery.bxslider.min.js"></script>
-    <link href="./css/jquery.bxslider.css" rel="stylesheet"/>
     <link rel="stylesheet" href="fonts/fonts.css">
+    <link href="./css/jquery.bxslider.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/nouislider.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="./js/jquery.bxslider.min.js"></script>
     <header class="header">
         <section class="top-header">
             <div class="container clearfix">
                 <strong class="phone">custom care:  888-23-4567</strong>
                 <div class="top-header-nav">
-                    <div class="static-item">
-                        <a href="#">$ us</a>
+                    <div class="monetary-choice">
+                        <span>$ us</span>
                         <ul class="dropdown-items hide-dropdown-items">
                             <li><a href="#">€ us</a></li>
                             <li><a href="#">Rub us</a></li>
@@ -28,7 +28,7 @@
                         </ul>
                     </div>
                     <a class="account" href="#">My account</a>
-                    <form class="search disabled" action="">
+                    <form method="get" action="#" class="search disabled">
                         <label class="search-icon" for="search"></label>
                         <input id="search" type="search" name="serch" placeholder="Введите Ваш запрос">
                         <ul id="search-result" class="slide-down disabled">
@@ -46,20 +46,20 @@
                     <a href="#"><img id ="logo" src="img/logo/logo-small.png" alt="lookshop" data-large="img/logo/logo-large.png" data-small="img/logo/logo-small.png"></a>
                     <strong>lookshop</strong>
                 </div>
-                <div class="cart-wrapper">
+                <div class="wrapper-cart">
                     <a href="#">Your cart</a>
                     <a href="#">0 items | $ 0</a>
                 </div>
                 <nav class="main-header-nav">
-                    <a class="media-nav-btn">Menu</a>
+                    <a class="media-nav-list">Menu</a>
                     <ul class="inline-block-list main-dropdown-menu">
-                        <li><a class="nav-btn">new</a>
+                        <li><a class="nav-list">new</a>
                             <ul class="submenu">
                                 <li><a href="#">women</a></li>
                                 <li><a href="#">men</a></li>
                             </ul>
                         </li>
-                        <li><a class="nav-btn">designers</a>
+                        <li><a class="nav-list">designers</a>
                             <ul class="submenu">
                                 <li><a href="#">Oksana Mukha</a></li>
                                 <li><a href="#">Giorgio Armani</a></li>
@@ -68,7 +68,7 @@
                                 <li><a href="#">Yudashkin</a></li>
                             </ul>
                         </li>
-                        <li><a class="nav-btn">women</a>
+                        <li><a class="nav-list">women</a>
                             <ul class="submenu">
                                 <li><a href="#">classic</a></li>
                                 <li><a href="#">sport</a></li>
@@ -77,7 +77,7 @@
                                 <li><a href="#">business-casual</a></li>
                             </ul>
                         </li>
-                        <li><a class="nav-btn">men</a>
+                        <li><a class="nav-list">men</a>
                             <ul class="submenu">
                                 <li><a href="#">classic</a></li>
                                 <li><a href="#">sport</a></li>
@@ -86,7 +86,7 @@
                                 <li><a href="#">business-casual</a></li>
                             </ul>
                         </li>
-                        <li><a class="nav-btn">clearence</a>
+                        <li><a class="nav-list">clearence</a>
                             <ul class="submenu">
                                 <li><a href="#">men</a></li>
                                 <li><a href="#">women</a></li>
@@ -111,8 +111,8 @@
             <ul class="bxslider clearfix">
                 <li class="slide product-slide">
                     <div class="container">
-                        <div class="slideImg">
-                            <img src="./img/slides/product-slider.png" alt="#">
+                        <div class="slide-img">
+                            <img src="./img/slides/product-slider.png" alt="product-slide">
                         </div>
                         <div class="product-info">
                             <span class="product-name">Open Heart Top</span>
@@ -131,8 +131,8 @@
                 </li>
                 <li class="slide product-slide">
                     <div class="container">
-                        <div class="slideImg">
-                            <img src="./img/slides/product-slider.png" alt="#">
+                        <div class="slide-img">
+                            <img src="./img/slides/product-slider.png" alt="product-slide">
                         </div>
                         <div class="product-info">
                             <span class="product-name">Open Heart Top</span>
@@ -151,8 +151,8 @@
                 </li>
                 <li class="slide product-slide">
                     <div class="container">
-                        <div class="slideImg">
-                            <img src="./img/slides/product-slider.png" alt="#">
+                        <div class="slide-img">
+                            <img src="./img/slides/product-slider.png" alt="product-slide">
                         </div>
                         <div class="product-info">
                             <span class="product-name">Open Heart Top</span>
@@ -171,8 +171,8 @@
                 </li>
                 <li class="slide product-slide">
                     <div class="container">
-                        <div class="slideImg">
-                            <img src="./img/slides/product-slider.png" alt="#">
+                        <div class="slide-img">
+                            <img src="./img/slides/product-slider.png" alt="product-slide">
                         </div>
                         <div class="product-info">
                             <span class="product-name">Open Heart Top</span>
@@ -191,8 +191,8 @@
                 </li>
                 <li class="slide product-slide">
                     <div class="container">
-                        <div class="slideImg">
-                            <img src="./img/slides/product-slider.png" alt="#">
+                        <div class="slide-img">
+                            <img src="./img/slides/product-slider.png" alt="product-slide">
                         </div>
                         <div class="product-info">
                             <span class="product-name">Open Heart Top</span>
@@ -211,7 +211,7 @@
                 </li>
             </ul>
         </section>
-       <div class="container content-wrapper clearfix">
+       <div class="container wrapper-content clearfix">
            <aside>
                <div class="navbar-holder">
                    <h6 class="navbar-holder-head">Categories</h6>
@@ -287,7 +287,7 @@
                        </li>
                    </ul>
                </div>
-               <form action="#">
+               <form method="get" action="#">
                    <div id="range" class="range"></div>
                    <span>Price $</span>
                    <span id="range-value-lower"></span>
@@ -318,7 +318,7 @@
                        <li class="aside-product clearfix">
                            <a href="#">
                                <div class="product-img">
-                                   <img src="./img/products/product-aside-1.jpg" alt="product 1">
+                                   <img src="./img/products/product-aside-1.jpg" alt="product">
                                </div>
                                <p>Pintuck tank</p>
                                <span>$45.55</span>
@@ -327,7 +327,7 @@
                        <li class="aside-product clearfix">
                            <a href="#">
                                <div class="product-img">
-                                   <img src="./img/products/product-aside-1.jpg" alt="product 1">
+                                   <img src="./img/products/product-aside-1.jpg" alt="product">
                                </div>
                                <p>Pintuck tank</p>
                                <span>$45.55</span>
@@ -336,7 +336,7 @@
                        <li class="aside-product clearfix">
                            <a href="#">
                                <div class="product-img">
-                                   <img src="./img/products/product-aside-1.jpg" alt="product 1">
+                                   <img src="./img/products/product-aside-1.jpg" alt="product">
                                </div>
                                <p>Pintuck tank</p>
                                <span>$45.55</span>
@@ -352,7 +352,7 @@
                        <li class="aside-product clearfix">
                            <a href="#">
                                <div class="product-img">
-                                   <img src="./img/products/product-aside-2.jpg" alt="product 2">
+                                   <img src="./img/products/product-aside-2.jpg" alt="product">
                                </div>
                                <p>Pintuck tank</p>
                                <span>$45.55</span>
@@ -361,7 +361,7 @@
                        <li class="aside-product clearfix">
                            <a href="#">
                                <div class="product-img">
-                                   <img src="./img/products/product-aside-2.jpg" alt="product 2">
+                                   <img src="./img/products/product-aside-2.jpg" alt="product">
                                </div>
                                <p>Pintuck tank</p>
                                <span>$45.55</span>
@@ -370,7 +370,7 @@
                        <li class="aside-product clearfix">
                            <a href="#">
                                <div class="product-img">
-                                   <img src="./img/products/product-aside-2.jpg" alt="product 2">
+                                   <img src="./img/products/product-aside-2.jpg" alt="product">
                                </div>
                                <p>Pintuck tank</p>
                                <span>$45.55</span>
@@ -401,7 +401,7 @@
                        </ul>
                    </div>
                </div>
-               <div class="products-list-wrapper">
+               <div class="wrapper-products-list">
                    <ul class="products-list">
                        <li class="product-item">
                            <div class="item-img">
@@ -425,7 +425,7 @@
                        </li>
                        <li class="product-item">
                            <div class="item-img">
-                               <div class="inset" >
+                               <div class="inset">
                                    <span>sale</span>
                                </div>
                                <img src="./img/products/product6.jpg" alt="feel tank">
@@ -592,17 +592,17 @@
         <section class="payment-system">
             <div class="container">
                 <span>We accept</span>
-                <img src="./img/payment-system/visa.jpg" alt="">
-                <img src="./img/payment-system/master-card.jpg" alt="">
-                <img src="./img/payment-system/paypal.jpg" alt="">
-                <img src="./img/payment-system/ami-hecan.jpg" alt="">
-                <img src="./img/payment-system/visa-electron.jpg" alt="">
-                <img src="./img/payment-system/lafer.jpg" alt="">
-                <img src="./img/payment-system/maestro.jpg" alt="">
-                <img src="./img/payment-system/delta.jpg" alt="">
-                <img src="./img/payment-system/loto.jpg" alt="">
-                <img src="./img/payment-system/ideal.jpg" alt="">
-                <img src="./img/payment-system/dk.jpg" alt="">
+                <img src="./img/payment-system/visa.jpg" alt="visa">
+                <img src="./img/payment-system/master-card.jpg" alt="master-card">
+                <img src="./img/payment-system/paypal.jpg" alt="paypal">
+                <img src="./img/payment-system/ami-hecan.jpg" alt="ami-hecan">
+                <img src="./img/payment-system/visa-electron.jpg" alt="visa-electron">
+                <img src="./img/payment-system/lafer.jpg" alt="lafer">
+                <img src="./img/payment-system/maestro.jpg" alt="maestro">
+                <img src="./img/payment-system/delta.jpg" alt="delta">
+                <img src="./img/payment-system/loto.jpg" alt="loto">
+                <img src="./img/payment-system/ideal.jpg" alt="ideal">
+                <img src="./img/payment-system/dk.jpg" alt="dk">
             </div>
         </section>
         <section class="footer-navigation">

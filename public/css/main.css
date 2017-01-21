@@ -104,7 +104,7 @@ h6 {
     float: left;
     padding: 10px 0;
     font-weight: normal; }
-  .top-header .static-item {
+  .top-header .monetary-choice {
     border-left: 1px solid #444;
     border-right: 1px solid #444; }
   .top-header .search {
@@ -113,19 +113,19 @@ h6 {
 
 .top-header-nav {
   float: right; }
-  .top-header-nav .static-item, .top-header-nav .account, .top-header-nav .search {
+  .top-header-nav .monetary-choice, .top-header-nav .account, .top-header-nav .search {
     display: inline-block; }
   .top-header-nav a {
     display: block;
     color: #fff;
     text-decoration: none; }
-  .top-header-nav > .static-item, .top-header-nav > .search {
+  .top-header-nav > .monetary-choice, .top-header-nav > .search {
     border-left: 1px solid #444;
     border-right: 1px solid #444; }
 
-.static-item {
+.monetary-choice {
   position: relative; }
-  .static-item .dropdown-items {
+  .monetary-choice .dropdown-items {
     position: absolute;
     display: none;
     width: 100%;
@@ -134,18 +134,19 @@ h6 {
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
     z-index: 20; }
-  .static-item a {
+  .monetary-choice a {
     padding: 5px 0 5px 15px; }
-  .static-item > a {
+  .monetary-choice span {
+    display: block;
     padding: 10px 30px 10px 15px; }
-    .static-item > a:after {
+    .monetary-choice span:after {
       content: "";
       position: absolute;
       top: 15px;
       right: 10px;
       border: 5px solid transparent;
       border-top: 5px solid #fff; }
-  .static-item:hover .dropdown-items {
+  .monetary-choice:hover .dropdown-items {
     display: block; }
 
 .account {
@@ -216,7 +217,7 @@ h6 {
 
 .logo {
   float: left;
-  padding-top: 20px; }
+  padding: 20px 0 10px 0; }
   .logo strong {
     display: inline-block;
     font-size: 0;
@@ -226,9 +227,9 @@ h6 {
     font-size: 20px;
     line-height: 24px; }
 
-.cart-wrapper {
+.wrapper-cart {
   float: right; }
-  .cart-wrapper a {
+  .wrapper-cart a {
     position: relative;
     display: block;
     width: 192px;
@@ -236,9 +237,9 @@ h6 {
     border: 1px solid #d6d6d6;
     text-decoration: none;
     color: #949393; }
-    .cart-wrapper a:hover {
+    .wrapper-cart a:hover {
       background-color: #f6f3ec; }
-    .cart-wrapper a:first-child:after {
+    .wrapper-cart a:first-child:after {
       content: "";
       position: absolute;
       top: 15px;
@@ -246,10 +247,10 @@ h6 {
       border: 5px solid transparent;
       border-top: 5px solid #d6d6d6;
       z-index: 10; }
-    .cart-wrapper a:last-child {
+    .wrapper-cart a:last-child {
       text-align: right;
       border-top: none; }
-      .cart-wrapper a:last-child:before {
+      .wrapper-cart a:last-child:before {
         content: "";
         position: absolute;
         top: 5px;
@@ -278,7 +279,7 @@ h6 {
   .main-header-nav .main-dropdown-menu a {
     font-size: 16px; }
 
-.media-nav-btn {
+.media-nav-list {
   padding: 15px 20px; }
 
 .main-header-nav .inline-block-list > li {
@@ -340,7 +341,7 @@ h6 {
     color: #fff; }
   .main-dropdown-menu {
     display: none; }
-  .main-header-nav .main-dropdown-menu .nav-btn {
+  .main-header-nav .main-dropdown-menu .nav-list {
     padding: 0 20px; }
   .main-header-nav .submenu {
     position: static;
@@ -357,7 +358,7 @@ h6 {
     display: block; }
   .main-header-nav .inline-block-list > li a:after {
     border: none; }
-  .cart-wrapper {
+  .wrapper-cart {
     padding-bottom: 20px; } }
 
 @media only screen and (max-device-width: 640px) {
@@ -376,12 +377,12 @@ h6 {
     display: table;
     table-layout: fixed;
     text-align: center; }
-    .top-header .top-header-nav .static-item {
+    .top-header .top-header-nav .monetary-choice {
       float: left;
       margin-left: -25px;
       padding: 25px;
       border-left: none; }
-      .top-header .top-header-nav .static-item > a:after {
+      .top-header .top-header-nav .monetary-choice > a:after {
         top: 53px;
         right: 12px;
         border: 10px solid transparent;
@@ -434,19 +435,19 @@ h6 {
     float: none;
     padding-bottom: 50px;
     text-align: center; }
-  .cart-wrapper {
+  .wrapper-cart {
     float: none; }
-    .cart-wrapper a {
+    .wrapper-cart a {
       width: auto;
       height: 80px;
       padding-right: 20px;
       font-size: 30px;
       line-height: 80px; }
-      .cart-wrapper a:first-child {
+      .wrapper-cart a:first-child {
         display: none; }
-      .cart-wrapper a:nth-child(2) {
+      .wrapper-cart a:nth-child(2) {
         border-top: 1px solid #949393; }
-      .cart-wrapper a:last-child:before {
+      .wrapper-cart a:last-child:before {
         top: 16px;
         left: 20px;
         height: 50px;
@@ -457,21 +458,21 @@ h6 {
     right: 20px;
     height: 30px;
     width: 33px; }
-  .main-header-nav .media-nav-btn {
+  .main-header-nav .media-nav-list {
     font-size: 30px;
     padding: 25px 20px; } }
 
 @media only screen and (max-device-width: 600px) {
   .logo {
     padding-bottom: 20px; }
-  .cart-wrapper a:nth-child(2) {
+  .wrapper-cart a:nth-child(2) {
     height: 50px; }
-  .cart-wrapper a:last-child:before {
+  .wrapper-cart a:last-child:before {
     top: 5px;
     left: 10px; }
-  .cart-wrapper a:last-child {
+  .wrapper-cart a:last-child {
     line-height: 50px; }
-  .main-header-nav .media-nav-btn {
+  .main-header-nav .media-nav-list {
     padding: 10px 15px; }
   .main-header-nav > a:after {
     top: 15px;
@@ -487,12 +488,12 @@ h6 {
     font-size: 15px; }
   .top-header .top-header-nav {
     font-size: 15px; }
-    .top-header .top-header-nav .static-item {
+    .top-header .top-header-nav .monetary-choice {
       padding: 15px;
       padding-right: 30px; }
-      .top-header .top-header-nav .static-item > a {
+      .top-header .top-header-nav .monetary-choice > a {
         padding: 0 0 0 25px; }
-      .top-header .top-header-nav .static-item a:after {
+      .top-header .top-header-nav .monetary-choice a:after {
         top: 24px;
         right: 15px;
         border: 5px solid transparent;
@@ -536,12 +537,12 @@ h6 {
       height: 15px; }
   .logo {
     padding: 0 0 10px 0; }
-  .cart-wrapper a:nth-child(2) {
+  .wrapper-cart a:nth-child(2) {
     height: 40px;
     font-size: 18px; }
-  .cart-wrapper a:last-child:before {
+  .wrapper-cart a:last-child:before {
     top: 0px; }
-  .cart-wrapper a:last-child {
+  .wrapper-cart a:last-child {
     line-height: 40px; } }
 
 .bx-wrapper {
@@ -586,9 +587,9 @@ h6 {
   .slide .container {
     position: relative;
     height: 100%; }
-  .slide .slideImg {
+  .slide .slide-img {
     height: 100%; }
-    .slide .slideImg img {
+    .slide .slide-img img {
       height: 100%;
       margin: 0 0 0 360px; }
   .slide .slide-info {
@@ -1091,7 +1092,7 @@ main .bx-wrapper .bx-viewport {
     padding: 20px 10px;
     font-size: 20px; } }
 
-.tabs-wrapper {
+.wrapper-tabs {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0; }
@@ -1325,7 +1326,7 @@ main .bx-wrapper .bx-viewport {
   .tabs .container {
     position: relative;
     padding: 0; }
-  .tabs .tabs-wrapper .tab {
+  .tabs .wrapper-tabs .tab {
     position: absolute;
     display: none;
     padding: 30px 15px;
@@ -1333,23 +1334,23 @@ main .bx-wrapper .bx-viewport {
     text-align: left;
     background-color: #f4845d;
     color: #fff; }
-  .tabs .tabs-wrapper .tab {
+  .tabs .wrapper-tabs .tab {
     position: absolute;
     display: block;
     width: 100%;
     z-index: 10; }
-  .tabs .tabs-wrapper .tab-1 {
+  .tabs .wrapper-tabs .tab-1 {
     top: 100%; }
-  .tabs .tabs-wrapper .tab-2 {
+  .tabs .wrapper-tabs .tab-2 {
     top: 195%; }
-  .tabs .tabs-wrapper .tab-3 {
+  .tabs .wrapper-tabs .tab-3 {
     top: 285%; }
-  .tabs .tabs-wrapper .tab.active {
+  .tabs .wrapper-tabs .tab.active {
     position: relative;
     display: block;
     width: 100%;
     background-color: #f4845d; }
-    .tabs .tabs-wrapper .tab.active:after {
+    .tabs .wrapper-tabs .tab.active:after {
       content: '';
       position: absolute;
       right: 60px;
@@ -2421,7 +2422,7 @@ main .bx-wrapper .bx-viewport {
     line-height: 1.2; } }
 
 @media only screen and (max-device-width: 640px) and (max-device-width: 535px) {
-  .content-wrapper aside .navbar-holder ul {
+  .wrapper-content aside .navbar-holder ul {
     font-size: 14px; } }
 
 @media only screen and (max-device-width: 768px) {

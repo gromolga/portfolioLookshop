@@ -8,9 +8,9 @@ $header-bg-nav-responsive-color: #fd926d;
 $header-top-responsive-text-color: #838383;
 //slider-colors
 $slider-dark-color: #78645d;
-$slider-button-color: #fd926d;
+$slider-button-color: $header-bg-nav-responsive-color;
 $slider-border-button-color: #dd6b44;
-$slider-ratio-inactive: #867a76;
+$slider-ratio-inactive-color: #867a76;
 $slider-ratio-active: $slider-button-color;
 $slider-ratio-hover: $slider-button-color;
 //social-colors
@@ -29,7 +29,7 @@ $banner-medium-color: #6a6a6a;
 $banner-border-color: #dfedee;
 //tabs-colors
 $tabs-main-bg-color: $slider-button-color;
-$tabs-item-bg-color: #f7f7f7;
+$tabs-item-bg-color: $social-bg-light-color;
 $tabs-text-color: #555;
 $tabs-inset-bg-color: #4c4c4c;
 $tabs-hover-bg-color: #3d3d3d;
@@ -39,22 +39,22 @@ $tabs-border-button-color: $slider-border-button-color;
 $tabs-paginator-bg-color: #f2f2f2;
 $tabs-paginator-text-color: #979797;
 //discount-colors
-$discount-item-bg-color: #f7f7f7;
+$discount-item-bg-color: $social-bg-light-color;
 $discount-border-color: #d8d8d8;
 //brands
-$brands-border-color: #d8d8d8;
-$brands-text-color: #414141;
+$brands-border-color: $discount-border-color;
+$brands-text-color: $banner-dark-color;
 //about
-$about-header-color: #414141;
-$about-text-color: #999999;
+$about-header-color: $banner-dark-color;
+$about-text-color: #999;
 //footer
-$payment-system-bg-color: #f7f7f7;
-$footer-nav-bg-color: #ededed;
+$payment-system-bg-color: $social-bg-light-color;
+$footer-nav-bg-color: $social-bg-main-color;
 $footer-nav-text-color: #8d8d8d;
 $footer-hover-text-color: #625d5c;
-$footer-header-color: #625d5c;
+$footer-header-color: $footer-hover-text-color;
 $secured-color: #a59d9a;
-$footer-social-background: #4c4c4b;
+$footer-social-bg-color: #4c4c4b;
 $footer-links-color: #808080;
 
 //products-page
@@ -64,7 +64,7 @@ $products-header-color: #4a4a4a;
 //bread-crumbs-colors
 $products-bread-crumbs-color: #7a706d;
 //slider-colors
-$products-price-color: #fd926d;
+$products-price-color: $header-bg-nav-responsive-color;
 $products-slider-border-color: $cart-wrapper-border-color;
 //content-colors
 $products-content-wrapper-nav-bg-color: #f4f4f4;

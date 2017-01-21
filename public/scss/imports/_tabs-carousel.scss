@@ -1,4 +1,4 @@
-.tabs-wrapper {
+.wrapper-tabs {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0;
@@ -9,7 +9,7 @@
         float: left;
         padding: 15px 20px;
         font-size: 15px;
-        line-height: 15px;
+        line-height: 1;
         text-transform: uppercase;
         text-align: center;
         text-decoration: none;
@@ -175,11 +175,12 @@
     }
     .item-name {
         font-size: 12px;
-        line-height: 25px;
+        line-height: 2;
         text-transform: uppercase;
     }
     .item-price {
         font-size: 22px;
+        line-height: 1.2;
         margin-bottom: 10px;
     }
     .button {
@@ -190,7 +191,7 @@
         padding: 10px;
         text-align: left;
         font-size: 9px;
-        line-height: 9px;
+        line-height: 1;
         text-transform: uppercase;
         text-decoration: none;
         border-bottom: 3px solid $tabs-main-bg-color;
@@ -255,12 +256,13 @@
             position: relative;
             padding: 0;
         }
-        .tabs-wrapper {
+        .wrapper-tabs {
             .tab {
                 position: absolute;
                 display: none;
                 padding: 30px 15px;
                 font-size: 30px;
+                line-height: 1.2;
                 text-align: left;
                 background-color: #f4845d;
                 color: #fff;
@@ -349,6 +351,7 @@
         z-index: 10;
         a {
             display: inline-block;
+            vertical-align: middle;
             padding: 20px 50px;
             text-transform: uppercase;
             text-decoration: none;
@@ -361,16 +364,17 @@
         font-weight: normal;
         .item-name {
             font-size: 18px;
-            line-height: 30px;
+            line-height: 1.6px;
         }
         .item-price {
             font-size: 28px;
-            line-height: 40px;
+            line-height: 1.4px;
         }
         .button {
             width: 220px;
             padding: 20px;
             font-size: 20px;
+            line-height: 1.2;
             border-bottom: 7px solid $tabs-border-button-color;
             @include plus(17px);
         }
