@@ -8,18 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lookshop</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link href="./css/jquery.bxslider.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="./js/jquery.bxslider.min.js"></script>
-    <link href="./css/jquery.bxslider.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="fonts/fonts.css">
-    <link rel="stylesheet" href="css/main.css">
     <header class="header">
         <section class="top-header">
             <div class="container clearfix">
                 <strong class="phone">custom care:  888-23-4567</strong>
                 <div class="top-header-nav">
-                    <div class="static-item">
-                        <a href="#">$ us</a>
+                    <div class="monetary-choice">
+                        <span>$ us</span>
                         <ul class="dropdown-items hide-dropdown-items">
                             <li><a href="#">€ us</a></li>
                             <li><a href="#">Rub us</a></li>
@@ -27,7 +28,7 @@
                         </ul>
                     </div>
                     <a class="account" href="#">My account</a>
-                    <form class="search disabled" action="">
+                    <form method="get" action="#" class="search disabled">
                         <label class="search-icon" for="search"></label>
                         <input id="search" type="search" name="serch" placeholder="Введите Ваш запрос">
                         <ul id="search-result" class="slide-down disabled">
@@ -45,20 +46,20 @@
                     <a href="#"><img id ="logo" src="img/logo/logo-small.png" alt="lookshop" data-large="img/logo/logo-large.png" data-small="img/logo/logo-small.png"></a>
                     <strong>lookshop</strong>
                 </div>
-                <div class="cart-wrapper">
+                <div class="wrapper-cart">
                     <a href="#">Your cart</a>
                     <a href="#">0 items | $ 0</a>
                 </div>
                 <nav class="main-header-nav">
-                    <a class="media-nav-btn">Menu</a>
+                    <a class="media-nav-list">Menu</a>
                     <ul class="inline-block-list main-dropdown-menu">
-                        <li><a class="nav-btn">new</a>
+                        <li><a class="nav-list">new</a>
                             <ul class="submenu">
                                 <li><a href="#">women</a></li>
                                 <li><a href="#">men</a></li>
                             </ul>
                         </li>
-                        <li><a class="nav-btn">designers</a>
+                        <li><a class="nav-list">designers</a>
                             <ul class="submenu">
                                 <li><a href="#">Oksana Mukha</a></li>
                                 <li><a href="#">Giorgio Armani</a></li>
@@ -67,7 +68,7 @@
                                 <li><a href="#">Yudashkin</a></li>
                             </ul>
                         </li>
-                        <li><a class="nav-btn">women</a>
+                        <li><a class="nav-list">women</a>
                             <ul class="submenu">
                                 <li><a href="#">classic</a></li>
                                 <li><a href="#">sport</a></li>
@@ -76,7 +77,7 @@
                                 <li><a href="#">business-casual</a></li>
                             </ul>
                         </li>
-                        <li><a class="nav-btn">men</a>
+                        <li><a class="nav-list">men</a>
                             <ul class="submenu">
                                 <li><a href="#">classic</a></li>
                                 <li><a href="#">sport</a></li>
@@ -85,7 +86,7 @@
                                 <li><a href="#">business-casual</a></li>
                             </ul>
                         </li>
-                        <li><a class="nav-btn">clearence</a>
+                        <li><a class="nav-list">clearence</a>
                             <ul class="submenu">
                                 <li><a href="#">men</a></li>
                                 <li><a href="#">women</a></li>
@@ -100,7 +101,7 @@
         <div class="container">
             <div class="bread-crumbs">
                 <ul class="inline-block-list">
-                    <li><a class="icon icon-home" href="">Homepage</a></li>
+                    <li class="icon-home-holder"><a class="icon icon-home" href="">Homepage</a></li>
                     <li><a href=""> > Women</a></li>
                     <li><a href=""> > Clothes</a></li>
                 </ul>
@@ -110,8 +111,8 @@
             <ul class="bxslider clearfix">
                 <li class="slide product-slide">
                     <div class="container">
-                        <div class="slideImg">
-                            <img src="./img/slides/product-slider.png" alt="#">
+                        <div class="slide-img">
+                            <img src="./img/slides/product-slider.png" alt="product-slide">
                         </div>
                         <div class="product-info">
                             <span class="product-name">Open Heart Top</span>
@@ -130,8 +131,8 @@
                 </li>
                 <li class="slide product-slide">
                     <div class="container">
-                        <div class="slideImg">
-                            <img src="./img/slides/product-slider.png" alt="#">
+                        <div class="slide-img">
+                            <img src="./img/slides/product-slider.png" alt="product-slide">
                         </div>
                         <div class="product-info">
                             <span class="product-name">Open Heart Top</span>
@@ -150,8 +151,8 @@
                 </li>
                 <li class="slide product-slide">
                     <div class="container">
-                        <div class="slideImg">
-                            <img src="./img/slides/product-slider.png" alt="#">
+                        <div class="slide-img">
+                            <img src="./img/slides/product-slider.png" alt="product-slide">
                         </div>
                         <div class="product-info">
                             <span class="product-name">Open Heart Top</span>
@@ -170,8 +171,8 @@
                 </li>
                 <li class="slide product-slide">
                     <div class="container">
-                        <div class="slideImg">
-                            <img src="./img/slides/product-slider.png" alt="#">
+                        <div class="slide-img">
+                            <img src="./img/slides/product-slider.png" alt="product-slide">
                         </div>
                         <div class="product-info">
                             <span class="product-name">Open Heart Top</span>
@@ -190,8 +191,8 @@
                 </li>
                 <li class="slide product-slide">
                     <div class="container">
-                        <div class="slideImg">
-                            <img src="./img/slides/product-slider.png" alt="#">
+                        <div class="slide-img">
+                            <img src="./img/slides/product-slider.png" alt="product-slide">
                         </div>
                         <div class="product-info">
                             <span class="product-name">Open Heart Top</span>
@@ -210,77 +211,398 @@
                 </li>
             </ul>
         </section>
-       <div class="container content-wrapper">
-          <div class="leftcol">
-              <div class="nav clearfix">
-                  <div class="sort-view-label" id="sort-view-label">
-                      <span class="description">Sort by</span>
-                      <span class="selected">Date</span>
-                      <ul class="dropdown-menu">
-                          <li><span>Date</span></li>
-                          <li><a href="#">Popularity</a></li>
-                          <li><a href="#">Price up</a></li>
-                          <li><a href="#">Price down</a></li>
-                      </ul>
-                  </div>
-                  <div class="paginator">
-                      <span>Showing 1-12 of 347 results</span>
-                      <ul class="inline-block-list">
-                          <li><a href="#">1</a></li>
-                          <li><a href="#">2</a></li>
-                          <li><a href="#">3</a></li>
-                          <li><a href="#">Arrow-right</a></li>
-                      </ul>
-                  </div>
-              </div>
-              <!--<div class="products-list-wrapper">-->
-                  <!--<ul class="products-list">-->
-                      <!--<li class="product-item">-->
-                          <!--<div class="item-img">-->
-                              <!--<div class="inset" >-->
-                                  <!--<span>sale</span>-->
-                              <!--</div>-->
-                              <!--<img src="./img/products/product1.jpg" alt="feel tank">-->
-                          <!--</div>-->
-                          <!--<div class="item-info">-->
-                              <!--<span class="item-name">feel tank</span>-->
-                              <!--<span class="item-price">$76.95</span>-->
-                              <!--<a class="button" href="#">add to cart-->
-                                  <!--<div class="wrapper-plus">-->
-                                      <!--<i class="plus"></i>-->
-                                  <!--</div>-->
-                              <!--</a>-->
-                              <!--<div class="active-item">-->
-                                  <!--<a href="#">shop it</a>-->
-                              <!--</div>-->
-                          <!--</div>-->
-                      <!--</li>-->
-                  <!--</ul>-->
-              <!--</div>-->
-          </div>
+       <div class="container wrapper-content clearfix">
            <aside>
-
+               <div class="navbar-holder">
+                   <h6 class="navbar-holder-head">Categories</h6>
+                   <ul class="navbar-items">
+                       <li>
+                           <div class="navbar-item">
+                               <span>New</span>
+                               <div class="wrapper-dark-plus">
+                                   <i class="dark-plus"></i>
+                               </div>
+                           </div>
+                           <ul class="navbar-dropdown-menu">
+                               <li><a href="#">Women</a></li>
+                               <li><a href="#">Men</a></li>
+                           </ul>
+                       </li>
+                       <li>
+                           <div class="navbar-item">
+                               <span>Designers</span>
+                               <div class="wrapper-dark-plus">
+                                   <i class="dark-plus"></i>
+                               </div>
+                           </div>
+                           <ul class="navbar-dropdown-menu">
+                               <li><a href="#">Oksana Mukha</a></li>
+                               <li><a href="#">Giorgio Armani</a></li>
+                               <li><a href="#">Chanel</a></li>
+                               <li><a href="#">Gucci</a></li>
+                               <li><a href="#">Yudashkin</a></li>
+                           </ul>
+                       </li>
+                       <li>
+                           <div class="navbar-item">
+                               <span>Women</span>
+                               <div class="wrapper-dark-plus">
+                                   <i class="dark-plus"></i>
+                               </div>
+                           </div>
+                           <ul class="navbar-dropdown-menu">
+                               <li><a href="#">classic</a></li>
+                               <li><a href="#">sport</a></li>
+                               <li><a href="#">casual</a></li>
+                               <li><a href="#">smart-casual</a></li>
+                               <li><a href="#">business-casual</a></li>
+                           </ul>
+                       </li>
+                       <li>
+                           <div class="navbar-item">
+                               <span>Men</span>
+                               <div class="wrapper-dark-plus">
+                                   <i class="dark-plus"></i>
+                               </div>
+                           </div>
+                           <ul class="navbar-dropdown-menu">
+                               <li><a href="#">classic</a></li>
+                               <li><a href="#">sport</a></li>
+                               <li><a href="#">casual</a></li>
+                               <li><a href="#">smart-casual</a></li>
+                               <li><a href="#">business-casual</a></li>
+                           </ul>
+                       </li>
+                       <li>
+                           <div class="navbar-item">
+                               <span>Clearance</span>
+                               <div class="wrapper-dark-plus">
+                                   <i class="dark-plus"></i>
+                               </div>
+                           </div>
+                           <ul class="navbar-dropdown-menu">
+                               <li><a href="#">men</a></li>
+                               <li><a href="#">women</a></li>
+                           </ul>
+                       </li>
+                   </ul>
+               </div>
+               <form method="get" action="#">
+                   <div id="range" class="range"></div>
+                   <span>Price $</span>
+                   <span id="range-value-lower"></span>
+                   <span>&ndash;</span>
+                   <span id="range-value-upper"></span>
+                   <span>$</span>
+                   <div class="checkbox">
+                       <span>Select your size</span>
+                       <div class="field-group">
+                           <input id="size1" type="checkbox" name="#" value="#">
+                           <label for="size1">XS</label>
+                           <input id="size2" type="checkbox" name="#" value="#">
+                           <label for="size2">S</label>
+                           <input id="size3" type="checkbox" name="#" value="#">
+                           <label for="size3">M</label>
+                           <input id="size4" type="checkbox" name="#" value="#">
+                           <label for="size4">L</label>
+                           <input id="size5" type="checkbox" name="#" value="#">
+                           <label for="size5">XL</label>
+                       </div>
+                   </div>
+               </form>
+               <div class="navbar-holder">
+                   <h6 class="navbar-holder-head">
+                       <a href="#">On sale</a>
+                   </h6>
+                   <ul>
+                       <li class="aside-product clearfix">
+                           <a href="#">
+                               <div class="product-img">
+                                   <img src="./img/products/product-aside-1.jpg" alt="product">
+                               </div>
+                               <p>Pintuck tank</p>
+                               <span>$45.55</span>
+                           </a>
+                       </li>
+                       <li class="aside-product clearfix">
+                           <a href="#">
+                               <div class="product-img">
+                                   <img src="./img/products/product-aside-1.jpg" alt="product">
+                               </div>
+                               <p>Pintuck tank</p>
+                               <span>$45.55</span>
+                           </a>
+                       </li>
+                       <li class="aside-product clearfix">
+                           <a href="#">
+                               <div class="product-img">
+                                   <img src="./img/products/product-aside-1.jpg" alt="product">
+                               </div>
+                               <p>Pintuck tank</p>
+                               <span>$45.55</span>
+                           </a>
+                       </li>
+                   </ul>
+               </div>
+               <div class="navbar-holder">
+                   <h6 class="navbar-holder-head">
+                       <a href="#">Featured products</a>
+                   </h6>
+                   <ul>
+                       <li class="aside-product clearfix">
+                           <a href="#">
+                               <div class="product-img">
+                                   <img src="./img/products/product-aside-2.jpg" alt="product">
+                               </div>
+                               <p>Pintuck tank</p>
+                               <span>$45.55</span>
+                           </a>
+                       </li>
+                       <li class="aside-product clearfix">
+                           <a href="#">
+                               <div class="product-img">
+                                   <img src="./img/products/product-aside-2.jpg" alt="product">
+                               </div>
+                               <p>Pintuck tank</p>
+                               <span>$45.55</span>
+                           </a>
+                       </li>
+                       <li class="aside-product clearfix">
+                           <a href="#">
+                               <div class="product-img">
+                                   <img src="./img/products/product-aside-2.jpg" alt="product">
+                               </div>
+                               <p>Pintuck tank</p>
+                               <span>$45.55</span>
+                           </a>
+                       </li>
+                   </ul>
+               </div>
            </aside>
+           <div class="leftcol">
+               <div class="nav clearfix">
+                   <div class="sort-view-label" id="sort-view-label">
+                       <span class="description">Sort by</span>
+                       <span class="selected">Date</span>
+                       <ul class="dropdown-menu">
+                           <li><span>Date</span></li>
+                           <li><a href="#">Popularity</a></li>
+                           <li><a href="#">Price up</a></li>
+                           <li><a href="#">Price down</a></li>
+                       </ul>
+                   </div>
+                   <div class="paginator">
+                       <span>Showing 1-12 of 347 results</span>
+                       <ul class="inline-block-list">
+                           <li><a href="#">1</a></li>
+                           <li><a href="#">2</a></li>
+                           <li><a href="#">3</a></li>
+                           <li><a href="#">Arrow-right</a></li>
+                       </ul>
+                   </div>
+               </div>
+               <div class="wrapper-products-list">
+                   <ul class="products-list">
+                       <li class="product-item">
+                           <div class="item-img">
+                               <div class="inset" >
+                                   <span>sale</span>
+                               </div>
+                               <img src="./img/products/product6.jpg" alt="feel tank">
+                           </div>
+                           <div class="item-info">
+                               <span class="item-name">feel tank</span>
+                               <span class="item-price">$76.95</span>
+                               <a class="button" href="#">add to cart
+                                   <div class="wrapper-plus">
+                                       <i class="plus"></i>
+                                   </div>
+                               </a>
+                               <div class="active-item">
+                                   <a href="#">shop it</a>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="product-item">
+                           <div class="item-img">
+                               <div class="inset">
+                                   <span>sale</span>
+                               </div>
+                               <img src="./img/products/product6.jpg" alt="feel tank">
+                           </div>
+                           <div class="item-info">
+                               <span class="item-name">feel tank</span>
+                               <span class="item-price">$76.95</span>
+                               <a class="button" href="#">add to cart
+                                   <div class="wrapper-plus">
+                                       <i class="plus"></i>
+                                   </div>
+                               </a>
+                               <div class="active-item">
+                                   <a href="#">shop it</a>
+                               </div>
+                           </div>
+                      </li>
+                       <li class="product-item">
+                           <div class="item-img">
+                               <div class="inset" >
+                                   <span>sale</span>
+                               </div>
+                               <img src="./img/products/product6.jpg" alt="feel tank">
+                           </div>
+                           <div class="item-info">
+                               <span class="item-name">feel tank</span>
+                               <span class="item-price">$76.95</span>
+                               <a class="button" href="#">add to cart
+                                   <div class="wrapper-plus">
+                                       <i class="plus"></i>
+                                   </div>
+                               </a>
+                               <div class="active-item">
+                                   <a href="#">shop it</a>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="product-item">
+                           <div class="item-img">
+                               <div class="inset" >
+                                   <span>sale</span>
+                               </div>
+                               <img src="./img/products/product6.jpg" alt="feel tank">
+                           </div>
+                           <div class="item-info">
+                               <span class="item-name">feel tank</span>
+                               <span class="item-price">$76.95</span>
+                               <a class="button" href="#">add to cart
+                                   <div class="wrapper-plus">
+                                       <i class="plus"></i>
+                                   </div>
+                               </a>
+                               <div class="active-item">
+                                   <a href="#">shop it</a>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="product-item">
+                           <div class="item-img">
+                               <div class="inset" >
+                                   <span>sale</span>
+                               </div>
+                               <img src="./img/products/product6.jpg" alt="feel tank">
+                           </div>
+                           <div class="item-info">
+                               <span class="item-name">feel tank</span>
+                               <span class="item-price">$76.95</span>
+                               <a class="button" href="#">add to cart
+                                   <div class="wrapper-plus">
+                                       <i class="plus"></i>
+                                   </div>
+                               </a>
+                               <div class="active-item">
+                                   <a href="#">shop it</a>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="product-item">
+                           <div class="item-img">
+                               <div class="inset" >
+                                   <span>sale</span>
+                               </div>
+                               <img src="./img/products/product6.jpg" alt="feel tank">
+                           </div>
+                           <div class="item-info">
+                               <span class="item-name">feel tank</span>
+                               <span class="item-price">$76.95</span>
+                               <a class="button" href="#">add to cart
+                                   <div class="wrapper-plus">
+                                       <i class="plus"></i>
+                                   </div>
+                               </a>
+                               <div class="active-item">
+                                   <a href="#">shop it</a>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="product-item">
+                           <div class="item-img">
+                               <div class="inset" >
+                                   <span>sale</span>
+                               </div>
+                               <img src="./img/products/product6.jpg" alt="feel tank">
+                           </div>
+                           <div class="item-info">
+                               <span class="item-name">feel tank</span>
+                               <span class="item-price">$76.95</span>
+                               <a class="button" href="#">add to cart
+                                   <div class="wrapper-plus">
+                                       <i class="plus"></i>
+                                   </div>
+                               </a>
+                               <div class="active-item">
+                                   <a href="#">shop it</a>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="product-item">
+                           <div class="item-img">
+                               <div class="inset" >
+                                   <span>sale</span>
+                               </div>
+                               <img src="./img/products/product6.jpg" alt="feel tank">
+                           </div>
+                           <div class="item-info">
+                               <span class="item-name">feel tank</span>
+                               <span class="item-price">$76.95</span>
+                               <a class="button" href="#">add to cart
+                                   <div class="wrapper-plus">
+                                       <i class="plus"></i>
+                                   </div>
+                               </a>
+                               <div class="active-item">
+                                   <a href="#">shop it</a>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="product-item">
+                           <div class="item-img">
+                               <div class="inset" >
+                                   <span>sale</span>
+                               </div>
+                               <img src="./img/products/product6.jpg" alt="feel tank">
+                           </div>
+                           <div class="item-info">
+                               <span class="item-name">feel tank</span>
+                               <span class="item-price">$76.95</span>
+                               <a class="button" href="#">add to cart
+                                   <div class="wrapper-plus">
+                                       <i class="plus"></i>
+                                   </div>
+                               </a>
+                               <div class="active-item">
+                                   <a href="#">shop it</a>
+                               </div>
+                           </div>
+                      </li>
+                  </ul>
+              </div>
+          </div>
        </div>
-
-
-
     </main>
     <footer>
         <section class="payment-system">
             <div class="container">
                 <span>We accept</span>
-                <img src="./img/payment-system/visa.jpg" alt="">
-                <img src="./img/payment-system/master-card.jpg" alt="">
-                <img src="./img/payment-system/paypal.jpg" alt="">
-                <img src="./img/payment-system/ami-hecan.jpg" alt="">
-                <img src="./img/payment-system/visa-electron.jpg" alt="">
-                <img src="./img/payment-system/lafer.jpg" alt="">
-                <img src="./img/payment-system/maestro.jpg" alt="">
-                <img src="./img/payment-system/delta.jpg" alt="">
-                <img src="./img/payment-system/loto.jpg" alt="">
-                <img src="./img/payment-system/ideal.jpg" alt="">
-                <img src="./img/payment-system/dk.jpg" alt="">
+                <img src="./img/payment-system/visa.jpg" alt="visa">
+                <img src="./img/payment-system/master-card.jpg" alt="master-card">
+                <img src="./img/payment-system/paypal.jpg" alt="paypal">
+                <img src="./img/payment-system/ami-hecan.jpg" alt="ami-hecan">
+                <img src="./img/payment-system/visa-electron.jpg" alt="visa-electron">
+                <img src="./img/payment-system/lafer.jpg" alt="lafer">
+                <img src="./img/payment-system/maestro.jpg" alt="maestro">
+                <img src="./img/payment-system/delta.jpg" alt="delta">
+                <img src="./img/payment-system/loto.jpg" alt="loto">
+                <img src="./img/payment-system/ideal.jpg" alt="ideal">
+                <img src="./img/payment-system/dk.jpg" alt="dk">
             </div>
         </section>
         <section class="footer-navigation">
@@ -350,8 +672,8 @@
         <section class="down-footer">
             <div class="container clearfix">
                 <div class="copyright">
-                    &copy;LookShop.com
-                    All Rights Reserved
+                    <p>&copy;LookShop.com</p>
+                    <p>All Rights Reserved</p>
                 </div>
                 <div class="nav-footer">
                     <div class="footer-burger-menu"></div>
@@ -366,6 +688,7 @@
             </div>
         </section>
     </footer>
+    <script src="./js/nouislider.min.js"></script>
     <script src="./js/common.js"></script>
     <script src="./js/products-page.js"></script>
 </body>
